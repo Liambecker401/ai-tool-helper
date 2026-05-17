@@ -1,0 +1,4926 @@
+[
+  {
+    "id": "perplexity-ai-perplexity-search-standard",
+    "name": "Perplexity Search (Standard)",
+    "provider": "Perplexity AI",
+    "categories": [
+      "code",
+      "research",
+      "write",
+      "learn"
+    ],
+    "tags": [
+      "code",
+      "research",
+      "write",
+      "learn",
+      "web search",
+      "design"
+    ],
+    "skillLevel": [
+      "beginner",
+      "some",
+      "technical"
+    ],
+    "frequency": [
+      "once"
+    ],
+    "ephemerality": [
+      "throwaway",
+      "production"
+    ],
+    "goodFor": [
+      "Quick factual questions",
+      "Current events",
+      "Source",
+      "Backed answers",
+      "Fact",
+      "Checking",
+      "Finding citations"
+    ],
+    "badFor": [
+      "Long",
+      "Form creative writing",
+      "Coding",
+      "Content generation",
+      "Complex multi",
+      "Step reasoning"
+    ],
+    "accessSteps": [
+      "Perplexity.ai → ask a question in the main bar"
+    ],
+    "promptTemplate": "Use Perplexity Search (Standard) when I need help with quick factual questions, current events, source-backed answers. Ask clarifying questions if needed, then produce a practical result with any relevant sources, files, or next steps.",
+    "tiers": [
+      {
+        "tier": "free",
+        "label": "Free tier with usage limits.",
+        "monthlyCost": "Free tier available"
+      }
+    ],
+    "creditCost": {
+      "estimate": "moderate",
+      "notes": "Free tier with usage limits."
+    },
+    "alternatives": [
+      "google-notebooklm",
+      "phind-phind",
+      "google-deepmind-gemini-chat-default-2-5-pro-3-pro"
+    ],
+    "lastVerified": "2026-05-01"
+  },
+  {
+    "id": "perplexity-ai-perplexity-pro-search",
+    "name": "Perplexity Pro Search",
+    "provider": "Perplexity AI",
+    "categories": [
+      "code",
+      "research",
+      "learn",
+      "design"
+    ],
+    "tags": [
+      "code",
+      "research",
+      "learn",
+      "design",
+      "web search"
+    ],
+    "skillLevel": [
+      "beginner",
+      "some",
+      "technical"
+    ],
+    "frequency": [
+      "once",
+      "occasional"
+    ],
+    "ephemerality": [
+      "throwaway",
+      "project",
+      "production"
+    ],
+    "goodFor": [
+      "Multi",
+      "Faceted questions",
+      "Comparison research",
+      "More thorough sourced answers than standard search"
+    ],
+    "badFor": [
+      "Same limitations as standard search",
+      "Not for creative or coding tasks"
+    ],
+    "accessSteps": [
+      "Perplexity.ai → toggle \"Pro\" in the search bar"
+    ],
+    "promptTemplate": "Use Perplexity Pro Search when I need help with multi-faceted questions, comparison research, more thorough sourced answers than standard search. Ask clarifying questions if needed, then produce a practical result with any relevant sources, files, or next steps.",
+    "tiers": [
+      {
+        "tier": "paid-low",
+        "label": "Perplexity Pro ($20/mo).",
+        "monthlyCost": "Varies"
+      }
+    ],
+    "creditCost": {
+      "estimate": "moderate",
+      "notes": "Perplexity Pro ($20/mo)."
+    },
+    "alternatives": [
+      "google-notebooklm",
+      "anthropic-claude-projects",
+      "google-deepmind-gemini-chat-default-2-5-pro-3-pro"
+    ],
+    "lastVerified": "2026-05-01"
+  },
+  {
+    "id": "perplexity-ai-perplexity-deep-research",
+    "name": "Perplexity Deep Research",
+    "provider": "Perplexity AI",
+    "categories": [
+      "code",
+      "research",
+      "write",
+      "analyze"
+    ],
+    "tags": [
+      "code",
+      "research",
+      "write",
+      "analyze",
+      "web search",
+      "research report",
+      "automation"
+    ],
+    "skillLevel": [
+      "beginner",
+      "some",
+      "technical"
+    ],
+    "frequency": [
+      "once"
+    ],
+    "ephemerality": [
+      "throwaway",
+      "project",
+      "production"
+    ],
+    "goodFor": [
+      "Research reports",
+      "Due diligence",
+      "Market analysis",
+      "Academic",
+      "Style summaries",
+      "Anything needing sourced depth"
+    ],
+    "badFor": [
+      "Quick answers",
+      "Creative writing",
+      "Coding",
+      "Real",
+      "Time conversation"
+    ],
+    "accessSteps": [
+      "Perplexity.ai → select \"Deep Research\" in mode picker"
+    ],
+    "promptTemplate": "Use Perplexity Deep Research when I need help with research reports, due diligence, market analysis. Ask clarifying questions if needed, then produce a practical result with any relevant sources, files, or next steps.",
+    "tiers": [
+      {
+        "tier": "paid-low",
+        "label": "Pro plan, 300 Deep Research runs/month.",
+        "monthlyCost": "Varies"
+      }
+    ],
+    "creditCost": {
+      "estimate": "high",
+      "notes": "Pro plan, 300 Deep Research runs/month."
+    },
+    "alternatives": [
+      "openai-chatgpt-deep-research",
+      "anthropic-claude-opus-4-6",
+      "openai-chatgpt-chat-default-gpt-5"
+    ],
+    "lastVerified": "2026-05-01"
+  },
+  {
+    "id": "perplexity-ai-perplexity-spaces",
+    "name": "Perplexity Spaces",
+    "provider": "Perplexity AI",
+    "categories": [
+      "research",
+      "automate",
+      "learn",
+      "design"
+    ],
+    "tags": [
+      "research",
+      "automate",
+      "learn",
+      "design",
+      "web search",
+      "workspace"
+    ],
+    "skillLevel": [
+      "some",
+      "technical"
+    ],
+    "frequency": [
+      "ongoing"
+    ],
+    "ephemerality": [
+      "throwaway",
+      "project",
+      "production"
+    ],
+    "goodFor": [
+      "Collaborative research",
+      "Ongoing investigation into a topic",
+      "Building a knowledge base over time",
+      "Team research projects"
+    ],
+    "badFor": [
+      "One",
+      "Off questions",
+      "Solo quick tasks",
+      "Non",
+      "Research workflows"
+    ],
+    "accessSteps": [
+      "Perplexity.ai → Spaces in left sidebar → create new space"
+    ],
+    "promptTemplate": "Use Perplexity Spaces when I need help with collaborative research, ongoing investigation into a topic, building a knowledge base over time. Ask clarifying questions if needed, then produce a practical result with any relevant sources, files, or next steps.",
+    "tiers": [
+      {
+        "tier": "paid-low",
+        "label": "Pro plan or higher.",
+        "monthlyCost": "Varies"
+      }
+    ],
+    "creditCost": {
+      "estimate": "moderate",
+      "notes": "Pro plan or higher."
+    },
+    "alternatives": [
+      "openai-chatgpt-custom-gpts",
+      "google-gemini-live",
+      "perplexity-ai-perplexity-computer"
+    ],
+    "lastVerified": "2026-05-01"
+  },
+  {
+    "id": "perplexity-ai-perplexity-comet-ai-browser",
+    "name": "Perplexity Comet (AI Browser)",
+    "provider": "Perplexity AI",
+    "categories": [
+      "code",
+      "write",
+      "automate",
+      "design"
+    ],
+    "tags": [
+      "code",
+      "write",
+      "automate",
+      "design",
+      "voice",
+      "browser agent",
+      "automation"
+    ],
+    "skillLevel": [
+      "some",
+      "technical"
+    ],
+    "frequency": [
+      "ongoing"
+    ],
+    "ephemerality": [
+      "project",
+      "production"
+    ],
+    "goodFor": [
+      "Hands",
+      "Free web tasks",
+      "Accessibility",
+      "Navigating complex sites",
+      "Automating browser workflows",
+      "Screen",
+      "Aware help"
+    ],
+    "badFor": [
+      "Pure content generation",
+      "Coding",
+      "Anything not browser",
+      "Based"
+    ],
+    "accessSteps": [
+      "Download Comet browser from perplexity.ai/comet"
+    ],
+    "promptTemplate": "Use Perplexity Comet (AI Browser) when I need help with hands-free web tasks, accessibility, navigating complex sites. Ask clarifying questions if needed, then produce a practical result with any relevant sources, files, or next steps.",
+    "tiers": [
+      {
+        "tier": "paid-low",
+        "label": "Pro plan.",
+        "monthlyCost": "Varies"
+      }
+    ],
+    "creditCost": {
+      "estimate": "moderate",
+      "notes": "Pro plan."
+    },
+    "alternatives": [
+      "descript-descript",
+      "canva-gemini-canvas",
+      "stackblitz-bolt-stackblitz"
+    ],
+    "lastVerified": "2026-05-01"
+  },
+  {
+    "id": "perplexity-ai-perplexity-computer",
+    "name": "Perplexity Computer",
+    "provider": "Perplexity AI",
+    "categories": [
+      "research",
+      "analyze",
+      "automate",
+      "design"
+    ],
+    "tags": [
+      "research",
+      "analyze",
+      "automate",
+      "design",
+      "web search",
+      "chat",
+      "automation"
+    ],
+    "skillLevel": [
+      "some",
+      "technical"
+    ],
+    "frequency": [
+      "ongoing"
+    ],
+    "ephemerality": [
+      "project",
+      "production"
+    ],
+    "goodFor": [
+      "Background workflows",
+      "Recurring research tasks",
+      "Multi",
+      "Step web automation",
+      "\"AI assistant\" tasks that take minutes to hours"
+    ],
+    "badFor": [
+      "Real",
+      "Time conversation",
+      "Creative work",
+      "Anything needing immediate response"
+    ],
+    "accessSteps": [
+      "Perplexity.ai → Computer in left sidebar"
+    ],
+    "promptTemplate": "Use Perplexity Computer when I need help with background workflows, recurring research tasks, multi-step web automation. Ask clarifying questions if needed, then produce a practical result with any relevant sources, files, or next steps.",
+    "tiers": [
+      {
+        "tier": "paid-low",
+        "label": "Pro plan, with additional charges for heavy usage.",
+        "monthlyCost": "Varies"
+      }
+    ],
+    "creditCost": {
+      "estimate": "high",
+      "notes": "Pro plan, with additional charges for heavy usage."
+    },
+    "alternatives": [
+      "openai-chatgpt-custom-gpts",
+      "openai-chatgpt-operator",
+      "anthropic-claude-in-chrome-browsing-agent"
+    ],
+    "lastVerified": "2026-05-01"
+  },
+  {
+    "id": "perplexity-ai-perplexity-voice",
+    "name": "Perplexity Voice",
+    "provider": "Perplexity AI",
+    "categories": [
+      "research",
+      "learn",
+      "design"
+    ],
+    "tags": [
+      "research",
+      "learn",
+      "design",
+      "web search",
+      "voice"
+    ],
+    "skillLevel": [
+      "beginner",
+      "some"
+    ],
+    "frequency": [
+      "once",
+      "occasional"
+    ],
+    "ephemerality": [
+      "throwaway",
+      "production"
+    ],
+    "goodFor": [
+      "Driving",
+      "Hands",
+      "Free questions",
+      "Quick voice search"
+    ],
+    "badFor": [
+      "Long or detailed responses",
+      "Anything requiring visual context"
+    ],
+    "accessSteps": [
+      "Perplexity mobile app → tap voice icon"
+    ],
+    "promptTemplate": "Use Perplexity Voice when I need help with driving, hands-free questions, quick voice search. Ask clarifying questions if needed, then produce a practical result with any relevant sources, files, or next steps.",
+    "tiers": [
+      {
+        "tier": "free",
+        "label": "Available on free and paid tiers (with limits).",
+        "monthlyCost": "Free tier available"
+      }
+    ],
+    "creditCost": {
+      "estimate": "moderate",
+      "notes": "Available on free and paid tiers (with limits)."
+    },
+    "alternatives": [
+      "perplexity-ai-perplexity-pro-search",
+      "perplexity-ai-perplexity-spaces",
+      "google-notebooklm"
+    ],
+    "lastVerified": "2026-05-01"
+  },
+  {
+    "id": "perplexity-ai-perplexity-api-sonar",
+    "name": "Perplexity API (Sonar)",
+    "provider": "Perplexity AI",
+    "categories": [
+      "code",
+      "research",
+      "analyze",
+      "design"
+    ],
+    "tags": [
+      "code",
+      "research",
+      "analyze",
+      "design",
+      "web search",
+      "api",
+      "data analysis"
+    ],
+    "skillLevel": [
+      "technical"
+    ],
+    "frequency": [
+      "occasional",
+      "ongoing"
+    ],
+    "ephemerality": [
+      "project",
+      "production"
+    ],
+    "goodFor": [
+      "Building search",
+      "Grounded features into apps",
+      "RAG pipelines that need fresh web data"
+    ],
+    "badFor": [
+      "General chat",
+      "Anything requiring local data"
+    ],
+    "accessSteps": [
+      "Docs.perplexity.ai for API keys",
+      "Documentation"
+    ],
+    "promptTemplate": "Use Perplexity API (Sonar) when I need help with building search-grounded features into apps, rag pipelines that need fresh web data. Ask clarifying questions if needed, then produce a practical result with any relevant sources, files, or next steps.",
+    "tiers": [
+      {
+        "tier": "paid-low",
+        "label": "Pay-per-use, varies by model.",
+        "monthlyCost": "Usage-based"
+      }
+    ],
+    "creditCost": {
+      "estimate": "moderate",
+      "notes": "Pay-per-use, varies by model."
+    },
+    "alternatives": [
+      "openai-chatgpt-data-analysis-advanced-data-analysis",
+      "openai-chatgpt-deep-research",
+      "openai-chatgpt-operator"
+    ],
+    "lastVerified": "2026-05-01"
+  },
+  {
+    "id": "openai-chatgpt-chat-default-gpt-5",
+    "name": "ChatGPT Chat (default GPT-5)",
+    "provider": "OpenAI",
+    "categories": [
+      "code",
+      "research",
+      "write",
+      "analyze"
+    ],
+    "tags": [
+      "code",
+      "research",
+      "write",
+      "analyze",
+      "chat"
+    ],
+    "skillLevel": [
+      "beginner",
+      "some",
+      "technical"
+    ],
+    "frequency": [
+      "once",
+      "occasional"
+    ],
+    "ephemerality": [
+      "throwaway",
+      "project"
+    ],
+    "goodFor": [
+      "Almost any task",
+      "Writing",
+      "Code",
+      "Analysis",
+      "Explanations",
+      "Brainstorming",
+      "Problem",
+      "Solving"
+    ],
+    "badFor": [
+      "Real",
+      "Time current events without web search enabled",
+      "Autonomous multi",
+      "Step tasks",
+      "Very large codebases"
+    ],
+    "accessSteps": [
+      "Chatgpt.com → start a new chat"
+    ],
+    "promptTemplate": "Use ChatGPT Chat (default GPT-5) when I need help with almost any task — writing, code, analysis. Ask clarifying questions if needed, then produce a practical result with any relevant sources, files, or next steps.",
+    "tiers": [
+      {
+        "tier": "free",
+        "label": "Free tier with limits; Plus $20/mo for higher limits and premium models.",
+        "monthlyCost": "Free tier available"
+      }
+    ],
+    "creditCost": {
+      "estimate": "moderate",
+      "notes": "Free tier with limits; Plus $20/mo for higher limits and premium models."
+    },
+    "alternatives": [
+      "anthropic-claude-chat-default-sonnet-4-6",
+      "openai-chatgpt-deep-research",
+      "anthropic-claude-opus-4-6"
+    ],
+    "lastVerified": "2026-05-01"
+  },
+  {
+    "id": "openai-chatgpt-deep-research",
+    "name": "ChatGPT Deep Research",
+    "provider": "OpenAI",
+    "categories": [
+      "code",
+      "research",
+      "write",
+      "analyze"
+    ],
+    "tags": [
+      "code",
+      "research",
+      "write",
+      "analyze",
+      "web search",
+      "research report",
+      "chat"
+    ],
+    "skillLevel": [
+      "beginner",
+      "some"
+    ],
+    "frequency": [
+      "once"
+    ],
+    "ephemerality": [
+      "throwaway",
+      "project"
+    ],
+    "goodFor": [
+      "In",
+      "Depth research",
+      "Due diligence",
+      "Comprehensive topic analysis",
+      "Sourced reports"
+    ],
+    "badFor": [
+      "Quick questions",
+      "Creative writing",
+      "Coding"
+    ],
+    "accessSteps": [
+      "ChatGPT → tools menu → Deep Research"
+    ],
+    "promptTemplate": "Use ChatGPT Deep Research when I need help with in-depth research, due diligence, comprehensive topic analysis. Ask clarifying questions if needed, then produce a practical result with any relevant sources, files, or next steps.",
+    "tiers": [
+      {
+        "tier": "paid-low",
+        "label": "Plus plan or higher (limited monthly runs).",
+        "monthlyCost": "Varies"
+      }
+    ],
+    "creditCost": {
+      "estimate": "moderate",
+      "notes": "Plus plan or higher (limited monthly runs)."
+    },
+    "alternatives": [
+      "perplexity-ai-perplexity-deep-research",
+      "anthropic-claude-chat-default-sonnet-4-6",
+      "anthropic-claude-opus-4-6"
+    ],
+    "lastVerified": "2026-05-01"
+  },
+  {
+    "id": "canva-chatgpt-canvas",
+    "name": "ChatGPT Canvas",
+    "provider": "Canva",
+    "categories": [
+      "code",
+      "write",
+      "learn",
+      "design"
+    ],
+    "tags": [
+      "code",
+      "write",
+      "learn",
+      "design",
+      "chat",
+      "coding agent"
+    ],
+    "skillLevel": [
+      "beginner",
+      "some",
+      "technical"
+    ],
+    "frequency": [
+      "occasional",
+      "ongoing"
+    ],
+    "ephemerality": [
+      "throwaway",
+      "project"
+    ],
+    "goodFor": [
+      "Writing",
+      "Editing long documents",
+      "Code refactoring with explanation",
+      "Content that needs iterative refinement"
+    ],
+    "badFor": [
+      "Quick questions",
+      "One",
+      "Shot outputs"
+    ],
+    "accessSteps": [
+      "ChatGPT → tools menu → Canvas"
+    ],
+    "promptTemplate": "Use ChatGPT Canvas when I need help with writing, editing long documents, code refactoring with explanation. Ask clarifying questions if needed, then produce a practical result with any relevant sources, files, or next steps.",
+    "tiers": [
+      {
+        "tier": "free",
+        "label": "Available on free and paid tiers.",
+        "monthlyCost": "Free tier available"
+      }
+    ],
+    "creditCost": {
+      "estimate": "moderate",
+      "notes": "Available on free and paid tiers."
+    },
+    "alternatives": [
+      "github-github-copilot",
+      "openai-chatgpt-voice-mode",
+      "anthropic-claude-artifacts"
+    ],
+    "lastVerified": "2026-05-01"
+  },
+  {
+    "id": "openai-chatgpt-voice-mode",
+    "name": "ChatGPT Voice Mode",
+    "provider": "OpenAI",
+    "categories": [
+      "code",
+      "learn",
+      "design"
+    ],
+    "tags": [
+      "code",
+      "learn",
+      "design",
+      "chat",
+      "voice"
+    ],
+    "skillLevel": [
+      "beginner",
+      "some"
+    ],
+    "frequency": [
+      "once",
+      "occasional"
+    ],
+    "ephemerality": [
+      "throwaway"
+    ],
+    "goodFor": [
+      "Hands",
+      "Free use",
+      "Language practice",
+      "Brainstorming on the go",
+      "Quick verbal questions"
+    ],
+    "badFor": [
+      "Anything requiring visual output",
+      "Code",
+      "Or detailed written responses"
+    ],
+    "accessSteps": [
+      "ChatGPT mobile app → voice icon. Web also supports voice"
+    ],
+    "promptTemplate": "Use ChatGPT Voice Mode when I need help with hands-free use, language practice, brainstorming on the go. Ask clarifying questions if needed, then produce a practical result with any relevant sources, files, or next steps.",
+    "tiers": [
+      {
+        "tier": "free",
+        "label": "Free tier (limited); Plus for full access.",
+        "monthlyCost": "Free tier available"
+      }
+    ],
+    "creditCost": {
+      "estimate": "moderate",
+      "notes": "Free tier (limited); Plus for full access."
+    },
+    "alternatives": [
+      "google-gemini-live",
+      "canva-chatgpt-canvas",
+      "perplexity-ai-perplexity-pro-search"
+    ],
+    "lastVerified": "2026-05-01"
+  },
+  {
+    "id": "openai-chatgpt-operator",
+    "name": "ChatGPT Operator",
+    "provider": "OpenAI",
+    "categories": [
+      "code",
+      "analyze",
+      "automate",
+      "design"
+    ],
+    "tags": [
+      "code",
+      "analyze",
+      "automate",
+      "design",
+      "chat",
+      "browser agent",
+      "api",
+      "automation"
+    ],
+    "skillLevel": [
+      "some",
+      "technical"
+    ],
+    "frequency": [
+      "occasional",
+      "ongoing"
+    ],
+    "ephemerality": [
+      "production"
+    ],
+    "goodFor": [
+      "Booking flights",
+      "Ordering items",
+      "Filling forms",
+      "Scraping info",
+      "Repetitive web tasks"
+    ],
+    "badFor": [
+      "Tasks requiring login to secure financial accounts",
+      "Anything that needs human judgment on edge cases"
+    ],
+    "accessSteps": [
+      "Operator.openai.com → describe the task"
+    ],
+    "promptTemplate": "Use ChatGPT Operator when I need help with booking flights, ordering items, filling forms. Ask clarifying questions if needed, then produce a practical result with any relevant sources, files, or next steps.",
+    "tiers": [
+      {
+        "tier": "paid-high",
+        "label": "ChatGPT Pro ($200/mo) required.",
+        "monthlyCost": "ChatGPT Pro ($200/mo) required."
+      }
+    ],
+    "creditCost": {
+      "estimate": "high",
+      "notes": "ChatGPT Pro ($200/mo) required."
+    },
+    "alternatives": [
+      "microsoft-power-platform-copilot",
+      "stackblitz-bolt-stackblitz",
+      "anthropic-claude-api"
+    ],
+    "lastVerified": "2026-05-01"
+  },
+  {
+    "id": "openai-chatgpt-custom-gpts",
+    "name": "ChatGPT Custom GPTs",
+    "provider": "OpenAI",
+    "categories": [
+      "research",
+      "automate",
+      "design",
+      "build"
+    ],
+    "tags": [
+      "research",
+      "automate",
+      "design",
+      "build",
+      "chat",
+      "automation"
+    ],
+    "skillLevel": [
+      "some",
+      "technical"
+    ],
+    "frequency": [
+      "once",
+      "occasional"
+    ],
+    "ephemerality": [
+      "throwaway"
+    ],
+    "goodFor": [
+      "Repeatable workflows with specific personas",
+      "Domain experts",
+      "Integrating private knowledge bases"
+    ],
+    "badFor": [
+      "One",
+      "Off tasks where building a GPT is overkill"
+    ],
+    "accessSteps": [
+      "ChatGPT → Explore GPTs → Create"
+    ],
+    "promptTemplate": "Use ChatGPT Custom GPTs when I need help with repeatable workflows with specific personas, domain experts, integrating private knowledge bases. Ask clarifying questions if needed, then produce a practical result with any relevant sources, files, or next steps.",
+    "tiers": [
+      {
+        "tier": "paid-low",
+        "label": "Plus or higher to build; using community GPTs requires Plus.",
+        "monthlyCost": "Varies"
+      }
+    ],
+    "creditCost": {
+      "estimate": "moderate",
+      "notes": "Plus or higher to build; using community GPTs requires Plus."
+    },
+    "alternatives": [
+      "stability-ai-stable-diffusion-open-source",
+      "perplexity-ai-perplexity-computer",
+      "stackblitz-bolt-stackblitz"
+    ],
+    "lastVerified": "2026-05-01"
+  },
+  {
+    "id": "openai-chatgpt-image-generation-gpt-image-dall-e",
+    "name": "ChatGPT Image Generation (GPT-Image / DALL·E)",
+    "provider": "OpenAI",
+    "categories": [
+      "code",
+      "design"
+    ],
+    "tags": [
+      "code",
+      "design",
+      "chat",
+      "image generation"
+    ],
+    "skillLevel": [
+      "beginner",
+      "some"
+    ],
+    "frequency": [
+      "once",
+      "occasional"
+    ],
+    "ephemerality": [
+      "throwaway",
+      "project"
+    ],
+    "goodFor": [
+      "Marketing visuals",
+      "Mockups",
+      "Illustrations",
+      "Infographics",
+      "Images with text"
+    ],
+    "badFor": [
+      "Highly artistic or stylized outputs (Midjourney is better)",
+      "Video"
+    ],
+    "accessSteps": [
+      "ChatGPT → ask for an image directly"
+    ],
+    "promptTemplate": "Use ChatGPT Image Generation (GPT-Image / DALL·E) when I need help with marketing visuals, mockups, illustrations. Ask clarifying questions if needed, then produce a practical result with any relevant sources, files, or next steps.",
+    "tiers": [
+      {
+        "tier": "free",
+        "label": "Free tier (limited); Plus for higher limits.",
+        "monthlyCost": "Free tier available"
+      }
+    ],
+    "creditCost": {
+      "estimate": "moderate",
+      "notes": "Free tier (limited); Plus for higher limits."
+    },
+    "alternatives": [
+      "anthropic-claude-artifacts",
+      "microsoft-copilot-chat-bing-chat-edge",
+      "google-deepmind-gemini-chat-default-2-5-pro-3-pro"
+    ],
+    "lastVerified": "2026-05-01"
+  },
+  {
+    "id": "openai-chatgpt-data-analysis-advanced-data-analysis",
+    "name": "ChatGPT Data Analysis (Advanced Data Analysis)",
+    "provider": "OpenAI",
+    "categories": [
+      "code",
+      "analyze",
+      "design",
+      "build"
+    ],
+    "tags": [
+      "code",
+      "analyze",
+      "design",
+      "build",
+      "chat",
+      "image generation",
+      "data analysis"
+    ],
+    "skillLevel": [
+      "technical"
+    ],
+    "frequency": [
+      "occasional",
+      "ongoing"
+    ],
+    "ephemerality": [
+      "throwaway",
+      "production"
+    ],
+    "goodFor": [
+      "Quick data analysis",
+      "Chart generation",
+      "Statistical work",
+      "File conversion"
+    ],
+    "badFor": [
+      "Production data pipelines",
+      "Very large datasets",
+      "Anything requiring persistent storage"
+    ],
+    "accessSteps": [
+      "ChatGPT → upload file → ask for analysis"
+    ],
+    "promptTemplate": "Use ChatGPT Data Analysis (Advanced Data Analysis) when I need help with quick data analysis, chart generation, statistical work. Ask clarifying questions if needed, then produce a practical result with any relevant sources, files, or next steps.",
+    "tiers": [
+      {
+        "tier": "paid-low",
+        "label": "Plus plan.",
+        "monthlyCost": "Varies"
+      }
+    ],
+    "creditCost": {
+      "estimate": "moderate",
+      "notes": "Plus plan."
+    },
+    "alternatives": [
+      "lovable-lovable",
+      "anthropic-claude-artifacts",
+      "microsoft-copilot-chat-bing-chat-edge"
+    ],
+    "lastVerified": "2026-05-01"
+  },
+  {
+    "id": "openai-chatgpt-codex",
+    "name": "ChatGPT Codex",
+    "provider": "OpenAI",
+    "categories": [
+      "code",
+      "automate",
+      "build"
+    ],
+    "tags": [
+      "code",
+      "automate",
+      "build",
+      "chat",
+      "coding agent",
+      "automation"
+    ],
+    "skillLevel": [
+      "technical"
+    ],
+    "frequency": [
+      "occasional",
+      "ongoing"
+    ],
+    "ephemerality": [
+      "project"
+    ],
+    "goodFor": [
+      "Multi",
+      "File coding tasks",
+      "Autonomous feature implementation",
+      "Agentic dev work"
+    ],
+    "badFor": [
+      "Single",
+      "Line autocomplete (use Copilot for that)",
+      "Non",
+      "Coding tasks"
+    ],
+    "accessSteps": [
+      "Chatgpt.com/codex"
+    ],
+    "promptTemplate": "Use ChatGPT Codex when I need help with multi-file coding tasks, autonomous feature implementation, agentic dev work. Ask clarifying questions if needed, then produce a practical result with any relevant sources, files, or next steps.",
+    "tiers": [
+      {
+        "tier": "paid-low",
+        "label": "ChatGPT Pro plan.",
+        "monthlyCost": "Varies"
+      }
+    ],
+    "creditCost": {
+      "estimate": "high",
+      "notes": "ChatGPT Pro plan."
+    },
+    "alternatives": [
+      "anthropic-claude-code",
+      "anysphere-cursor",
+      "codeium-windsurf-formerly-codeium"
+    ],
+    "lastVerified": "2026-05-01"
+  },
+  {
+    "id": "openai-openai-api",
+    "name": "OpenAI API",
+    "provider": "OpenAI",
+    "categories": [
+      "code",
+      "design",
+      "build"
+    ],
+    "tags": [
+      "code",
+      "design",
+      "build",
+      "voice",
+      "image generation",
+      "api"
+    ],
+    "skillLevel": [
+      "technical"
+    ],
+    "frequency": [
+      "occasional",
+      "ongoing"
+    ],
+    "ephemerality": [
+      "production"
+    ],
+    "goodFor": [
+      "Building any AI",
+      "Powered product or feature"
+    ],
+    "badFor": [
+      "Tasks outside its intended workflow"
+    ],
+    "accessSteps": [
+      "Platform.openai.com"
+    ],
+    "promptTemplate": "Use OpenAI API when I need help with building any ai-powered product or feature. Ask clarifying questions if needed, then produce a practical result with any relevant sources, files, or next steps.",
+    "tiers": [
+      {
+        "tier": "paid-low",
+        "label": "Pay-per-token, varies by model.",
+        "monthlyCost": "Usage-based"
+      }
+    ],
+    "creditCost": {
+      "estimate": "moderate",
+      "notes": "Pay-per-token, varies by model."
+    },
+    "alternatives": [
+      "adobe-adobe-firefly",
+      "anthropic-claude-api",
+      "anthropic-claude-artifacts"
+    ],
+    "lastVerified": "2026-05-01"
+  },
+  {
+    "id": "anthropic-claude-chat-default-sonnet-4-6",
+    "name": "Claude Chat (default Sonnet 4.6)",
+    "provider": "Anthropic",
+    "categories": [
+      "code",
+      "research",
+      "write",
+      "analyze"
+    ],
+    "tags": [
+      "code",
+      "research",
+      "write",
+      "analyze",
+      "chat",
+      "design"
+    ],
+    "skillLevel": [
+      "beginner",
+      "some"
+    ],
+    "frequency": [
+      "once",
+      "occasional"
+    ],
+    "ephemerality": [
+      "throwaway",
+      "project"
+    ],
+    "goodFor": [
+      "Writing",
+      "Analysis",
+      "Complex reasoning",
+      "Coding",
+      "Document review",
+      "Anything requiring careful thought"
+    ],
+    "badFor": [
+      "Real",
+      "Time web info without web search enabled",
+      "Image generation",
+      "Video"
+    ],
+    "accessSteps": [
+      "Claude.ai → start chat"
+    ],
+    "promptTemplate": "Use Claude Chat (default Sonnet 4.6) when I need help with writing, analysis, complex reasoning. Ask clarifying questions if needed, then produce a practical result with any relevant sources, files, or next steps.",
+    "tiers": [
+      {
+        "tier": "paid-high",
+        "label": "Free tier; Pro $20/mo; Max $100-200/mo for heavy usage.",
+        "monthlyCost": "Free tier; Pro $20/mo; Max $100-200/mo for heavy usage."
+      }
+    ],
+    "creditCost": {
+      "estimate": "high",
+      "notes": "Free tier; Pro $20/mo; Max $100-200/mo for heavy usage."
+    },
+    "alternatives": [
+      "openai-chatgpt-chat-default-gpt-5",
+      "openai-chatgpt-deep-research",
+      "perplexity-ai-perplexity-deep-research"
+    ],
+    "lastVerified": "2026-05-01"
+  },
+  {
+    "id": "anthropic-claude-opus-4-6",
+    "name": "Claude Opus (4.6)",
+    "provider": "Anthropic",
+    "categories": [
+      "code",
+      "research",
+      "write",
+      "analyze"
+    ],
+    "tags": [
+      "code",
+      "research",
+      "write",
+      "analyze",
+      "web search"
+    ],
+    "skillLevel": [
+      "beginner",
+      "some"
+    ],
+    "frequency": [
+      "once",
+      "occasional"
+    ],
+    "ephemerality": [
+      "throwaway",
+      "project"
+    ],
+    "goodFor": [
+      "Complex analysis",
+      "Hard coding problems",
+      "Multi",
+      "Step reasoning",
+      "Top",
+      "Tier writing quality"
+    ],
+    "badFor": [
+      "Quick simple tasks (Sonnet is faster",
+      "Cheaper)",
+      "Anything where speed matters more than depth"
+    ],
+    "accessSteps": [
+      "Claude.ai → model picker → Opus"
+    ],
+    "promptTemplate": "Use Claude Opus (4.6) when I need help with complex analysis, hard coding problems, multi-step reasoning. Ask clarifying questions if needed, then produce a practical result with any relevant sources, files, or next steps.",
+    "tiers": [
+      {
+        "tier": "paid-low",
+        "label": "Included in Claude Pro (limited messages) and Max plans.",
+        "monthlyCost": "Varies"
+      }
+    ],
+    "creditCost": {
+      "estimate": "moderate",
+      "notes": "Included in Claude Pro (limited messages) and Max plans."
+    },
+    "alternatives": [
+      "openai-chatgpt-deep-research",
+      "perplexity-ai-perplexity-deep-research",
+      "openai-chatgpt-chat-default-gpt-5"
+    ],
+    "lastVerified": "2026-05-01"
+  },
+  {
+    "id": "anthropic-claude-projects",
+    "name": "Claude Projects",
+    "provider": "Anthropic",
+    "categories": [
+      "code",
+      "research",
+      "learn",
+      "build"
+    ],
+    "tags": [
+      "code",
+      "research",
+      "learn",
+      "build",
+      "web search",
+      "chat",
+      "coding agent",
+      "workspace"
+    ],
+    "skillLevel": [
+      "beginner",
+      "some",
+      "technical"
+    ],
+    "frequency": [
+      "occasional",
+      "ongoing"
+    ],
+    "ephemerality": [
+      "throwaway",
+      "project"
+    ],
+    "goodFor": [
+      "Ongoing work on a specific topic",
+      "Codebase",
+      "Research area",
+      "Or client. Anything where context persistence matters"
+    ],
+    "badFor": [
+      "One",
+      "Off questions",
+      "Throwaway tasks"
+    ],
+    "accessSteps": [
+      "Claude.ai → Projects in left sidebar → new project"
+    ],
+    "promptTemplate": "Use Claude Projects when I need help with ongoing work on a specific topic, codebase, research area. Ask clarifying questions if needed, then produce a practical result with any relevant sources, files, or next steps.",
+    "tiers": [
+      {
+        "tier": "paid-low",
+        "label": "Pro or higher.",
+        "monthlyCost": "Varies"
+      }
+    ],
+    "creditCost": {
+      "estimate": "moderate",
+      "notes": "Pro or higher."
+    },
+    "alternatives": [
+      "google-notebooklm",
+      "perplexity-ai-perplexity-pro-search",
+      "perplexity-ai-perplexity-search-standard"
+    ],
+    "lastVerified": "2026-05-01"
+  },
+  {
+    "id": "anthropic-claude-artifacts",
+    "name": "Claude Artifacts",
+    "provider": "Anthropic",
+    "categories": [
+      "code",
+      "write",
+      "design",
+      "build"
+    ],
+    "tags": [
+      "code",
+      "write",
+      "design",
+      "build",
+      "chat",
+      "image generation"
+    ],
+    "skillLevel": [
+      "beginner",
+      "some",
+      "technical"
+    ],
+    "frequency": [
+      "occasional",
+      "ongoing"
+    ],
+    "ephemerality": [
+      "project"
+    ],
+    "goodFor": [
+      "Building single",
+      "Page apps",
+      "Interactive components",
+      "Visualizations",
+      "Documents that need iterative editing",
+      "Working prototypes"
+    ],
+    "badFor": [
+      "Multi",
+      "File projects",
+      "Anything needing a real backend"
+    ],
+    "accessSteps": [
+      "Claude.ai → ask Claude to build or create something visual or executable",
+      "An Artifact panel opens automatically"
+    ],
+    "promptTemplate": "Use Claude Artifacts when I need help with building single-page apps, interactive components, visualizations. Ask clarifying questions if needed, then produce a practical result with any relevant sources, files, or next steps.",
+    "tiers": [
+      {
+        "tier": "free",
+        "label": "Free and paid tiers.",
+        "monthlyCost": "Free tier available"
+      }
+    ],
+    "creditCost": {
+      "estimate": "moderate",
+      "notes": "Free and paid tiers."
+    },
+    "alternatives": [
+      "openai-chatgpt-data-analysis-advanced-data-analysis",
+      "microsoft-copilot-chat-bing-chat-edge",
+      "google-deepmind-gemini-chat-default-2-5-pro-3-pro"
+    ],
+    "lastVerified": "2026-05-01"
+  },
+  {
+    "id": "anthropic-claude-code",
+    "name": "Claude Code",
+    "provider": "Anthropic",
+    "categories": [
+      "code",
+      "automate",
+      "design",
+      "build"
+    ],
+    "tags": [
+      "code",
+      "automate",
+      "design",
+      "build",
+      "coding agent",
+      "automation"
+    ],
+    "skillLevel": [
+      "some",
+      "technical"
+    ],
+    "frequency": [
+      "occasional",
+      "ongoing"
+    ],
+    "ephemerality": [
+      "project"
+    ],
+    "goodFor": [
+      "Multi",
+      "File refactors",
+      "Autonomous feature implementation",
+      "Debugging across files",
+      "Building tools",
+      "Scripts",
+      "Agentic dev work in real projects"
+    ],
+    "badFor": [
+      "Total beginners with no ability to evaluate generated code",
+      "Single",
+      "Line autocomplete",
+      "Design work"
+    ],
+    "accessSteps": [
+      "Install via `npm install",
+      "G @anthropic",
+      "Ai/claude",
+      "Code`",
+      "Run `claude` in your project folder"
+    ],
+    "promptTemplate": "Use Claude Code when I need help with multi-file refactors, autonomous feature implementation, debugging across files. Ask clarifying questions if needed, then produce a practical result with any relevant sources, files, or next steps.",
+    "tiers": [
+      {
+        "tier": "paid-low",
+        "label": "Included with Pro and Max plans (with usage limits scaling by tier); also available via API.",
+        "monthlyCost": "Usage-based"
+      }
+    ],
+    "creditCost": {
+      "estimate": "high",
+      "notes": "Included with Pro and Max plans (with usage limits scaling by tier); also available via API."
+    },
+    "alternatives": [
+      "stackblitz-bolt-stackblitz",
+      "udio-copilot-studio",
+      "figma-figma-ai-make"
+    ],
+    "lastVerified": "2026-05-01"
+  },
+  {
+    "id": "anthropic-claude-in-chrome-browsing-agent",
+    "name": "Claude in Chrome (Browsing Agent)",
+    "provider": "Anthropic",
+    "categories": [
+      "code",
+      "research",
+      "analyze",
+      "automate"
+    ],
+    "tags": [
+      "code",
+      "research",
+      "analyze",
+      "automate",
+      "web search",
+      "browser agent",
+      "automation"
+    ],
+    "skillLevel": [
+      "beginner",
+      "some",
+      "technical"
+    ],
+    "frequency": [
+      "occasional",
+      "ongoing"
+    ],
+    "ephemerality": [
+      "project"
+    ],
+    "goodFor": [
+      "Web research with action",
+      "Form filling",
+      "Navigating complex sites",
+      "Browser",
+      "Based agentic workflows"
+    ],
+    "badFor": [
+      "Anything outside the browser",
+      "Sensitive financial transactions"
+    ],
+    "accessSteps": [
+      "Claude.ai → Chrome extension install link"
+    ],
+    "promptTemplate": "Use Claude in Chrome (Browsing Agent) when I need help with web research with action, form filling, navigating complex sites. Ask clarifying questions if needed, then produce a practical result with any relevant sources, files, or next steps.",
+    "tiers": [
+      {
+        "tier": "paid-low",
+        "label": "Beta access via Max plan or waitlist.",
+        "monthlyCost": "Varies"
+      }
+    ],
+    "creditCost": {
+      "estimate": "high",
+      "notes": "Beta access via Max plan or waitlist."
+    },
+    "alternatives": [
+      "openai-chatgpt-operator",
+      "perplexity-ai-perplexity-computer",
+      "perplexity-ai-perplexity-deep-research"
+    ],
+    "lastVerified": "2026-05-01"
+  },
+  {
+    "id": "anthropic-claude-in-excel",
+    "name": "Claude in Excel",
+    "provider": "Anthropic",
+    "categories": [
+      "code",
+      "write",
+      "analyze",
+      "automate"
+    ],
+    "tags": [
+      "code",
+      "write",
+      "analyze",
+      "automate",
+      "workspace",
+      "data analysis"
+    ],
+    "skillLevel": [
+      "beginner",
+      "some",
+      "technical"
+    ],
+    "frequency": [
+      "occasional",
+      "ongoing"
+    ],
+    "ephemerality": [
+      "project"
+    ],
+    "goodFor": [
+      "Data analysis in Excel",
+      "Formula generation",
+      "Cleaning messy spreadsheets",
+      "Financial modeling assistance"
+    ],
+    "badFor": [
+      "Non",
+      "Excel data workflows"
+    ],
+    "accessSteps": [
+      "Claude.ai → Excel integration setup"
+    ],
+    "promptTemplate": "Use Claude in Excel when I need help with data analysis in excel, formula generation, cleaning messy spreadsheets. Ask clarifying questions if needed, then produce a practical result with any relevant sources, files, or next steps.",
+    "tiers": [
+      {
+        "tier": "paid-low",
+        "label": "Beta access.",
+        "monthlyCost": "Varies"
+      }
+    ],
+    "creditCost": {
+      "estimate": "low",
+      "notes": "Beta access."
+    },
+    "alternatives": [
+      "notion-notion-ai",
+      "coda-coda-ai",
+      "google-gemini-in-google-workspace-gmail-docs-sheets-slides"
+    ],
+    "lastVerified": "2026-05-01"
+  },
+  {
+    "id": "anthropic-claude-cowork",
+    "name": "Claude Cowork",
+    "provider": "Anthropic",
+    "categories": [
+      "code",
+      "automate",
+      "build"
+    ],
+    "tags": [
+      "code",
+      "automate",
+      "build",
+      "workspace",
+      "api",
+      "automation"
+    ],
+    "skillLevel": [
+      "some",
+      "technical"
+    ],
+    "frequency": [
+      "occasional",
+      "ongoing"
+    ],
+    "ephemerality": [
+      "project"
+    ],
+    "goodFor": [
+      "File",
+      "Task management automation",
+      "Cross",
+      "App workflows",
+      "Non",
+      "Developer agentic tasks on desktop"
+    ],
+    "badFor": [
+      "Tasks that need persistent server",
+      "Side automation"
+    ],
+    "accessSteps": [
+      "Download from claude.ai"
+    ],
+    "promptTemplate": "Use Claude Cowork when I need help with file, task management automation, cross-app workflows. Ask clarifying questions if needed, then produce a practical result with any relevant sources, files, or next steps.",
+    "tiers": [
+      {
+        "tier": "paid-low",
+        "label": "Beta.",
+        "monthlyCost": "Varies"
+      }
+    ],
+    "creditCost": {
+      "estimate": "high",
+      "notes": "Beta."
+    },
+    "alternatives": [
+      "stackblitz-bolt-stackblitz",
+      "openai-chatgpt-codex",
+      "anthropic-claude-api"
+    ],
+    "lastVerified": "2026-05-01"
+  },
+  {
+    "id": "anthropic-claude-api",
+    "name": "Claude API",
+    "provider": "Anthropic",
+    "categories": [
+      "code",
+      "automate",
+      "design",
+      "build"
+    ],
+    "tags": [
+      "code",
+      "automate",
+      "design",
+      "build",
+      "api",
+      "automation"
+    ],
+    "skillLevel": [
+      "technical"
+    ],
+    "frequency": [
+      "occasional",
+      "ongoing"
+    ],
+    "ephemerality": [
+      "production"
+    ],
+    "goodFor": [
+      "Building any AI",
+      "Powered product",
+      "RAG pipelines",
+      "Agentic tools"
+    ],
+    "badFor": [
+      "Tasks outside its intended workflow"
+    ],
+    "accessSteps": [
+      "Console.anthropic.com"
+    ],
+    "promptTemplate": "Use Claude API when I need help with building any ai-powered product, rag pipelines, agentic tools. Ask clarifying questions if needed, then produce a practical result with any relevant sources, files, or next steps.",
+    "tiers": [
+      {
+        "tier": "paid-low",
+        "label": "Pay-per-token (~$3/M input, $15/M output for Sonnet, varies by model).",
+        "monthlyCost": "Usage-based"
+      }
+    ],
+    "creditCost": {
+      "estimate": "high",
+      "notes": "Pay-per-token (~$3/M input, $15/M output for Sonnet, varies by model)."
+    },
+    "alternatives": [
+      "stackblitz-bolt-stackblitz",
+      "udio-copilot-studio",
+      "figma-figma-ai-make"
+    ],
+    "lastVerified": "2026-05-01"
+  },
+  {
+    "id": "google-deepmind-gemini-chat-default-2-5-pro-3-pro",
+    "name": "Gemini Chat (default 2.5 Pro / 3 Pro)",
+    "provider": "Google DeepMind",
+    "categories": [
+      "code",
+      "research",
+      "write",
+      "design"
+    ],
+    "tags": [
+      "code",
+      "research",
+      "write",
+      "design",
+      "web search",
+      "chat",
+      "voice",
+      "image generation"
+    ],
+    "skillLevel": [
+      "beginner",
+      "some"
+    ],
+    "frequency": [
+      "occasional",
+      "ongoing"
+    ],
+    "ephemerality": [
+      "project"
+    ],
+    "goodFor": [
+      "Long",
+      "Context tasks",
+      "Research",
+      "Multimodal input (image",
+      "Audio",
+      "Video)",
+      "Google Workspace integration"
+    ],
+    "badFor": [
+      "Tasks where tone",
+      "Writing quality matter most (ChatGPT/Claude often win)",
+      "Some regions have limited features"
+    ],
+    "accessSteps": [
+      "Gemini.google.com"
+    ],
+    "promptTemplate": "Use Gemini Chat (default 2.5 Pro / 3 Pro) when I need help with long-context tasks, research, multimodal input (image. Ask clarifying questions if needed, then produce a practical result with any relevant sources, files, or next steps.",
+    "tiers": [
+      {
+        "tier": "free",
+        "label": "Free tier; Google AI Pro ~$20/mo; Ultra plans for heavy usage.",
+        "monthlyCost": "Free tier available"
+      }
+    ],
+    "creditCost": {
+      "estimate": "high",
+      "notes": "Free tier; Google AI Pro ~$20/mo; Ultra plans for heavy usage."
+    },
+    "alternatives": [
+      "google-notebooklm",
+      "openai-chatgpt-deep-research",
+      "anthropic-claude-artifacts"
+    ],
+    "lastVerified": "2026-05-01"
+  },
+  {
+    "id": "google-gemini-deep-research",
+    "name": "Gemini Deep Research",
+    "provider": "Google",
+    "categories": [
+      "code",
+      "research",
+      "write",
+      "automate"
+    ],
+    "tags": [
+      "code",
+      "research",
+      "write",
+      "automate",
+      "web search",
+      "research report"
+    ],
+    "skillLevel": [
+      "beginner",
+      "some"
+    ],
+    "frequency": [
+      "occasional",
+      "ongoing"
+    ],
+    "ephemerality": [
+      "throwaway",
+      "project"
+    ],
+    "goodFor": [
+      "Research reports",
+      "Comprehensive topic exploration with sources",
+      "Especially anything benefiting from Google's search index"
+    ],
+    "badFor": [
+      "Quick questions",
+      "Creative writing",
+      "Coding"
+    ],
+    "accessSteps": [
+      "Gemini.google.com → Deep Research toggle"
+    ],
+    "promptTemplate": "Use Gemini Deep Research when I need help with research reports, comprehensive topic exploration with sources, especially anything benefiting from google's search index. Ask clarifying questions if needed, then produce a practical result with any relevant sources, files, or next steps.",
+    "tiers": [
+      {
+        "tier": "paid-low",
+        "label": "Google AI Pro or higher.",
+        "monthlyCost": "Varies"
+      }
+    ],
+    "creditCost": {
+      "estimate": "moderate",
+      "notes": "Google AI Pro or higher."
+    },
+    "alternatives": [
+      "openai-chatgpt-deep-research",
+      "perplexity-ai-perplexity-deep-research",
+      "anthropic-claude-in-chrome-browsing-agent"
+    ],
+    "lastVerified": "2026-05-01"
+  },
+  {
+    "id": "canva-gemini-canvas",
+    "name": "Gemini Canvas",
+    "provider": "Canva",
+    "categories": [
+      "code",
+      "write",
+      "automate",
+      "design"
+    ],
+    "tags": [
+      "code",
+      "write",
+      "automate",
+      "design",
+      "chat",
+      "workspace",
+      "automation"
+    ],
+    "skillLevel": [
+      "beginner",
+      "some"
+    ],
+    "frequency": [
+      "occasional",
+      "ongoing"
+    ],
+    "ephemerality": [
+      "throwaway",
+      "project"
+    ],
+    "goodFor": [
+      "Document drafting",
+      "Code iteration",
+      "Content that benefits from side",
+      "By",
+      "Side editing"
+    ],
+    "badFor": [
+      "Quick one",
+      "Shot tasks"
+    ],
+    "accessSteps": [
+      "Gemini.google.com → Canvas mode"
+    ],
+    "promptTemplate": "Use Gemini Canvas when I need help with document drafting, code iteration, content that benefits from side-by-side editing. Ask clarifying questions if needed, then produce a practical result with any relevant sources, files, or next steps.",
+    "tiers": [
+      {
+        "tier": "paid-low",
+        "label": "Available in Gemini app.",
+        "monthlyCost": "Varies"
+      }
+    ],
+    "creditCost": {
+      "estimate": "low",
+      "notes": "Available in Gemini app."
+    },
+    "alternatives": [
+      "descript-descript",
+      "perplexity-ai-perplexity-comet-ai-browser",
+      "openai-chatgpt-operator"
+    ],
+    "lastVerified": "2026-05-01"
+  },
+  {
+    "id": "google-gemini-live",
+    "name": "Gemini Live",
+    "provider": "Google",
+    "categories": [
+      "code",
+      "automate",
+      "learn",
+      "design"
+    ],
+    "tags": [
+      "code",
+      "automate",
+      "learn",
+      "design",
+      "chat",
+      "voice",
+      "image generation",
+      "video generation"
+    ],
+    "skillLevel": [
+      "beginner",
+      "some"
+    ],
+    "frequency": [
+      "occasional",
+      "ongoing"
+    ],
+    "ephemerality": [
+      "project"
+    ],
+    "goodFor": [
+      "Hands",
+      "Free conversation",
+      "Learning with visual aids",
+      "Getting help while looking at something",
+      "Language practice"
+    ],
+    "badFor": [
+      "Detailed written output",
+      "Code generation in chat"
+    ],
+    "accessSteps": [
+      "Gemini mobile app → Live mode"
+    ],
+    "promptTemplate": "Use Gemini Live when I need help with hands-free conversation, learning with visual aids, getting help while looking at something. Ask clarifying questions if needed, then produce a practical result with any relevant sources, files, or next steps.",
+    "tiers": [
+      {
+        "tier": "free",
+        "label": "Free and Pro tiers.",
+        "monthlyCost": "Free tier available"
+      }
+    ],
+    "creditCost": {
+      "estimate": "high",
+      "notes": "Free and Pro tiers."
+    },
+    "alternatives": [
+      "openai-chatgpt-voice-mode",
+      "microsoft-copilot-chat-bing-chat-edge",
+      "descript-descript"
+    ],
+    "lastVerified": "2026-05-01"
+  },
+  {
+    "id": "google-notebooklm",
+    "name": "NotebookLM",
+    "provider": "Google",
+    "categories": [
+      "code",
+      "research",
+      "write",
+      "learn"
+    ],
+    "tags": [
+      "code",
+      "research",
+      "write",
+      "learn",
+      "web search",
+      "voice",
+      "workspace",
+      "design"
+    ],
+    "skillLevel": [
+      "beginner",
+      "some",
+      "technical"
+    ],
+    "frequency": [
+      "ongoing"
+    ],
+    "ephemerality": [
+      "project"
+    ],
+    "goodFor": [
+      "Studying",
+      "Research synthesis",
+      "Building a knowledge base from your own documents",
+      "Audio overviews of research material",
+      "Learning"
+    ],
+    "badFor": [
+      "General chat",
+      "Anything outside the uploaded source material"
+    ],
+    "accessSteps": [
+      "Notebooklm.google.com"
+    ],
+    "promptTemplate": "Use NotebookLM when I need help with studying, research synthesis, building a knowledge base from your own documents. Ask clarifying questions if needed, then produce a practical result with any relevant sources, files, or next steps.",
+    "tiers": [
+      {
+        "tier": "free",
+        "label": "Free with a generous tier; NotebookLM Plus for higher limits.",
+        "monthlyCost": "Free tier available"
+      }
+    ],
+    "creditCost": {
+      "estimate": "moderate",
+      "notes": "Free with a generous tier; NotebookLM Plus for higher limits."
+    },
+    "alternatives": [
+      "perplexity-ai-perplexity-search-standard",
+      "phind-phind",
+      "google-deepmind-gemini-chat-default-2-5-pro-3-pro"
+    ],
+    "lastVerified": "2026-05-01"
+  },
+  {
+    "id": "google-gemini-in-google-workspace-gmail-docs-sheets-slides",
+    "name": "Gemini in Google Workspace (Gmail, Docs, Sheets, Slides)",
+    "provider": "Google",
+    "categories": [
+      "code",
+      "write",
+      "analyze",
+      "build"
+    ],
+    "tags": [
+      "code",
+      "write",
+      "analyze",
+      "build",
+      "workspace",
+      "data analysis"
+    ],
+    "skillLevel": [
+      "beginner",
+      "some"
+    ],
+    "frequency": [
+      "occasional",
+      "ongoing"
+    ],
+    "ephemerality": [
+      "project"
+    ],
+    "goodFor": [
+      "Productivity work within Google's ecosystem",
+      "Email drafting",
+      "Document summarization",
+      "Spreadsheet help"
+    ],
+    "badFor": [
+      "Anything outside Google apps"
+    ],
+    "accessSteps": [
+      "Within Gmail",
+      "Docs",
+      "Sheets",
+      "Slides",
+      "Gemini icon in toolbar"
+    ],
+    "promptTemplate": "Use Gemini in Google Workspace (Gmail, Docs, Sheets, Slides) when I need help with productivity work within google's ecosystem, email drafting, document summarization. Ask clarifying questions if needed, then produce a practical result with any relevant sources, files, or next steps.",
+    "tiers": [
+      {
+        "tier": "paid-low",
+        "label": "Included in Google Workspace Business plans and Google One AI Premium.",
+        "monthlyCost": "Varies"
+      }
+    ],
+    "creditCost": {
+      "estimate": "moderate",
+      "notes": "Included in Google Workspace Business plans and Google One AI Premium."
+    },
+    "alternatives": [
+      "anthropic-claude-in-excel",
+      "coda-coda-ai",
+      "microsoft-microsoft-365-copilot"
+    ],
+    "lastVerified": "2026-05-01"
+  },
+  {
+    "id": "google-imagen-4",
+    "name": "Imagen 4",
+    "provider": "Google",
+    "categories": [
+      "design"
+    ],
+    "tags": [
+      "design",
+      "image generation"
+    ],
+    "skillLevel": [
+      "beginner",
+      "some"
+    ],
+    "frequency": [
+      "once",
+      "occasional"
+    ],
+    "ephemerality": [
+      "throwaway"
+    ],
+    "goodFor": [
+      "Photo",
+      "Realistic images",
+      "Marketing visuals",
+      "Image generation needing high quality"
+    ],
+    "badFor": [
+      "Highly stylized artistic outputs (Midjourney often preferred)"
+    ],
+    "accessSteps": [
+      "Via Gemini app or Vertex AI"
+    ],
+    "promptTemplate": "Use Imagen 4 when I need help with photo-realistic images, marketing visuals, image generation needing high quality. Ask clarifying questions if needed, then produce a practical result with any relevant sources, files, or next steps.",
+    "tiers": [
+      {
+        "tier": "free",
+        "label": "Free tier in Gemini app; API via Vertex AI.",
+        "monthlyCost": "Free"
+      }
+    ],
+    "creditCost": {
+      "estimate": "moderate",
+      "notes": "Free tier in Gemini app; API via Vertex AI."
+    },
+    "alternatives": [
+      "adobe-adobe-firefly",
+      "canva-canva-ai-magic-studio",
+      "openai-chatgpt-data-analysis-advanced-data-analysis"
+    ],
+    "lastVerified": "2026-05-01"
+  },
+  {
+    "id": "google-veo",
+    "name": "Veo",
+    "provider": "Google",
+    "categories": [
+      "code",
+      "design"
+    ],
+    "tags": [
+      "code",
+      "design",
+      "video generation"
+    ],
+    "skillLevel": [
+      "beginner",
+      "some"
+    ],
+    "frequency": [
+      "occasional",
+      "ongoing"
+    ],
+    "ephemerality": [
+      "project"
+    ],
+    "goodFor": [
+      "Short",
+      "Form video generation",
+      "Marketing clips",
+      "Creative video work"
+    ],
+    "badFor": [
+      "Long",
+      "Form video",
+      "Anything requiring exact control over motion"
+    ],
+    "accessSteps": [
+      "Through Gemini or Vertex AI"
+    ],
+    "promptTemplate": "Use Veo when I need help with short-form video generation, marketing clips, creative video work. Ask clarifying questions if needed, then produce a practical result with any relevant sources, files, or next steps.",
+    "tiers": [
+      {
+        "tier": "paid-low",
+        "label": "Limited access via Gemini app and Vertex AI.",
+        "monthlyCost": "Varies"
+      }
+    ],
+    "creditCost": {
+      "estimate": "high",
+      "notes": "Limited access via Gemini app and Vertex AI."
+    },
+    "alternatives": [
+      "adobe-adobe-firefly",
+      "descript-descript",
+      "xai-grok-imagine"
+    ],
+    "lastVerified": "2026-05-01"
+  },
+  {
+    "id": "google-lyria",
+    "name": "Lyria",
+    "provider": "Google",
+    "categories": [
+      "design"
+    ],
+    "tags": [
+      "design",
+      "music generation"
+    ],
+    "skillLevel": [
+      "beginner",
+      "some"
+    ],
+    "frequency": [
+      "once",
+      "occasional"
+    ],
+    "ephemerality": [
+      "throwaway"
+    ],
+    "goodFor": [
+      "AI music generation",
+      "Soundtracks"
+    ],
+    "badFor": [
+      "Tasks outside its intended workflow"
+    ],
+    "accessSteps": [
+      "Via Google AI products"
+    ],
+    "promptTemplate": "Use Lyria when I need help with ai music generation, soundtracks. Ask clarifying questions if needed, then produce a practical result with any relevant sources, files, or next steps.",
+    "tiers": [
+      {
+        "tier": "paid-low",
+        "label": "Limited access.",
+        "monthlyCost": "Varies"
+      }
+    ],
+    "creditCost": {
+      "estimate": "low",
+      "notes": "Limited access."
+    },
+    "alternatives": [
+      "suno-suno",
+      "udio-udio",
+      "adobe-adobe-firefly"
+    ],
+    "lastVerified": "2026-05-01"
+  },
+  {
+    "id": "google-vertex-ai-gemini-api",
+    "name": "Vertex AI / Gemini API",
+    "provider": "Google",
+    "categories": [
+      "code"
+    ],
+    "tags": [
+      "code",
+      "api"
+    ],
+    "skillLevel": [
+      "beginner",
+      "some"
+    ],
+    "frequency": [
+      "once",
+      "occasional"
+    ],
+    "ephemerality": [
+      "throwaway",
+      "production"
+    ],
+    "goodFor": [
+      "Developer platform for accessing Gemini models with enterprise features"
+    ],
+    "badFor": [
+      "Tasks outside its intended workflow"
+    ],
+    "accessSteps": [
+      "Cloud.google.com/vertex",
+      "Ai"
+    ],
+    "promptTemplate": "Use Vertex AI / Gemini API when I need help with this task. Ask clarifying questions if needed, then produce a practical result with any relevant sources, files, or next steps.",
+    "tiers": [
+      {
+        "tier": "paid-low",
+        "label": "Pay-per-token.",
+        "monthlyCost": "Usage-based"
+      }
+    ],
+    "creditCost": {
+      "estimate": "high",
+      "notes": "Pay-per-token."
+    },
+    "alternatives": [
+      "openai-chatgpt-operator",
+      "anthropic-claude-api",
+      "anthropic-claude-cowork"
+    ],
+    "lastVerified": "2026-05-01"
+  },
+  {
+    "id": "xai-grok-chat",
+    "name": "Grok Chat",
+    "provider": "xAI",
+    "categories": [
+      "research",
+      "write",
+      "analyze",
+      "design"
+    ],
+    "tags": [
+      "research",
+      "write",
+      "analyze",
+      "design",
+      "chat",
+      "data analysis"
+    ],
+    "skillLevel": [
+      "beginner",
+      "some"
+    ],
+    "frequency": [
+      "once",
+      "occasional"
+    ],
+    "ephemerality": [
+      "throwaway",
+      "production"
+    ],
+    "goodFor": [
+      "Current events from X",
+      "Real",
+      "Time social info",
+      "Math",
+      "Logic problems",
+      "Less filtered output"
+    ],
+    "badFor": [
+      "Tasks requiring strict safety guardrails",
+      "Enterprise compliance",
+      "Polished writing"
+    ],
+    "accessSteps": [
+      "Grok.com or X app"
+    ],
+    "promptTemplate": "Use Grok Chat when I need help with current events from x, real-time social info, math. Ask clarifying questions if needed, then produce a practical result with any relevant sources, files, or next steps.",
+    "tiers": [
+      {
+        "tier": "paid-high",
+        "label": "Free tier; SuperGrok $30/mo; SuperGrok Heavy $300/mo for top models.",
+        "monthlyCost": "Free tier; SuperGrok $30/mo; SuperGrok Heavy $300/mo for top models."
+      }
+    ],
+    "creditCost": {
+      "estimate": "high",
+      "notes": "Free tier; SuperGrok $30/mo; SuperGrok Heavy $300/mo for top models."
+    },
+    "alternatives": [
+      "anthropic-claude-chat-default-sonnet-4-6",
+      "openai-chatgpt-chat-default-gpt-5",
+      "openai-chatgpt-deep-research"
+    ],
+    "lastVerified": "2026-05-01"
+  },
+  {
+    "id": "xai-grok-think-reasoning-mode",
+    "name": "Grok Think (Reasoning Mode)",
+    "provider": "xAI",
+    "categories": [
+      "learn",
+      "design"
+    ],
+    "tags": [
+      "learn",
+      "design"
+    ],
+    "skillLevel": [
+      "beginner",
+      "some"
+    ],
+    "frequency": [
+      "once",
+      "occasional"
+    ],
+    "ephemerality": [
+      "throwaway"
+    ],
+    "goodFor": [
+      "Hard math",
+      "Complex logic",
+      "Multi",
+      "Step problems"
+    ],
+    "badFor": [
+      "Quick questions where speed matters"
+    ],
+    "accessSteps": [
+      "Grok.com → Think mode"
+    ],
+    "promptTemplate": "Use Grok Think (Reasoning Mode) when I need help with hard math, complex logic, multi-step problems. Ask clarifying questions if needed, then produce a practical result with any relevant sources, files, or next steps.",
+    "tiers": [
+      {
+        "tier": "paid-low",
+        "label": "SuperGrok or higher.",
+        "monthlyCost": "Varies"
+      }
+    ],
+    "creditCost": {
+      "estimate": "moderate",
+      "notes": "SuperGrok or higher."
+    },
+    "alternatives": [
+      "canva-chatgpt-canvas",
+      "openai-chatgpt-voice-mode",
+      "google-gemini-live"
+    ],
+    "lastVerified": "2026-05-01"
+  },
+  {
+    "id": "xai-grok-deepsearch",
+    "name": "Grok DeepSearch",
+    "provider": "xAI",
+    "categories": [
+      "research",
+      "build"
+    ],
+    "tags": [
+      "research",
+      "build",
+      "web search"
+    ],
+    "skillLevel": [
+      "beginner",
+      "some"
+    ],
+    "frequency": [
+      "once",
+      "occasional"
+    ],
+    "ephemerality": [
+      "throwaway",
+      "project"
+    ],
+    "goodFor": [
+      "Current events",
+      "Real",
+      "Time information",
+      "Things happening on X/social media"
+    ],
+    "badFor": [
+      "Tasks outside its intended workflow"
+    ],
+    "accessSteps": [
+      "Grok.com → DeepSearch toggle"
+    ],
+    "promptTemplate": "Use Grok DeepSearch when I need help with current events, real-time information, things happening on x/social media. Ask clarifying questions if needed, then produce a practical result with any relevant sources, files, or next steps.",
+    "tiers": [
+      {
+        "tier": "free",
+        "label": "Free and paid tiers.",
+        "monthlyCost": "Free tier available"
+      }
+    ],
+    "creditCost": {
+      "estimate": "moderate",
+      "notes": "Free and paid tiers."
+    },
+    "alternatives": [
+      "anthropic-claude-projects",
+      "meta-llama-models-open-source",
+      "you-com-you-com"
+    ],
+    "lastVerified": "2026-05-01"
+  },
+  {
+    "id": "xai-grok-voice",
+    "name": "Grok Voice",
+    "provider": "xAI",
+    "categories": [
+      "design"
+    ],
+    "tags": [
+      "design",
+      "chat",
+      "voice"
+    ],
+    "skillLevel": [
+      "beginner",
+      "some"
+    ],
+    "frequency": [
+      "once",
+      "occasional"
+    ],
+    "ephemerality": [
+      "throwaway"
+    ],
+    "goodFor": [
+      "Hands",
+      "Free interaction",
+      "Casual conversation"
+    ],
+    "badFor": [
+      "Tasks outside its intended workflow"
+    ],
+    "accessSteps": [
+      "Grok mobile app"
+    ],
+    "promptTemplate": "Use Grok Voice when I need help with hands-free interaction, casual conversation. Ask clarifying questions if needed, then produce a practical result with any relevant sources, files, or next steps.",
+    "tiers": [
+      {
+        "tier": "paid-low",
+        "label": "SuperGrok plan.",
+        "monthlyCost": "Varies"
+      }
+    ],
+    "creditCost": {
+      "estimate": "minimal",
+      "notes": "SuperGrok plan."
+    },
+    "alternatives": [
+      "openai-chatgpt-voice-mode",
+      "google-deepmind-gemini-chat-default-2-5-pro-3-pro",
+      "google-gemini-live"
+    ],
+    "lastVerified": "2026-05-01"
+  },
+  {
+    "id": "xai-grok-imagine",
+    "name": "Grok Imagine",
+    "provider": "xAI",
+    "categories": [
+      "code",
+      "write",
+      "design"
+    ],
+    "tags": [
+      "code",
+      "write",
+      "design",
+      "image generation",
+      "video generation"
+    ],
+    "skillLevel": [
+      "beginner",
+      "some"
+    ],
+    "frequency": [
+      "occasional",
+      "ongoing"
+    ],
+    "ephemerality": [
+      "throwaway",
+      "project"
+    ],
+    "goodFor": [
+      "Quick image generation with fewer content restrictions than competitors"
+    ],
+    "badFor": [
+      "High",
+      "Quality artistic output",
+      "Longer videos"
+    ],
+    "accessSteps": [
+      "Grok.com → Imagine"
+    ],
+    "promptTemplate": "Use Grok Imagine when I need help with quick image generation with fewer content restrictions than competitors. Ask clarifying questions if needed, then produce a practical result with any relevant sources, files, or next steps.",
+    "tiers": [
+      {
+        "tier": "paid-low",
+        "label": "SuperGrok plan.",
+        "monthlyCost": "Varies"
+      }
+    ],
+    "creditCost": {
+      "estimate": "high",
+      "notes": "SuperGrok plan."
+    },
+    "alternatives": [
+      "canva-canva-ai-magic-studio",
+      "anthropic-claude-artifacts",
+      "descript-descript"
+    ],
+    "lastVerified": "2026-05-01"
+  },
+  {
+    "id": "xai-xai-api",
+    "name": "xAI API",
+    "provider": "xAI",
+    "categories": [
+      "code"
+    ],
+    "tags": [
+      "code",
+      "api"
+    ],
+    "skillLevel": [
+      "beginner",
+      "some"
+    ],
+    "frequency": [
+      "occasional",
+      "ongoing"
+    ],
+    "ephemerality": [
+      "production"
+    ],
+    "goodFor": [
+      "Developer API for Grok models"
+    ],
+    "badFor": [
+      "Tasks outside its intended workflow"
+    ],
+    "accessSteps": [
+      "X.ai/api"
+    ],
+    "promptTemplate": "Use xAI API when I need help with this task. Ask clarifying questions if needed, then produce a practical result with any relevant sources, files, or next steps.",
+    "tiers": [
+      {
+        "tier": "paid-low",
+        "label": "Pay-per-token.",
+        "monthlyCost": "Usage-based"
+      }
+    ],
+    "creditCost": {
+      "estimate": "moderate",
+      "notes": "Pay-per-token."
+    },
+    "alternatives": [
+      "openai-chatgpt-operator",
+      "anthropic-claude-api",
+      "anthropic-claude-cowork"
+    ],
+    "lastVerified": "2026-05-01"
+  },
+  {
+    "id": "meta-meta-ai-assistant",
+    "name": "Meta AI Assistant",
+    "provider": "Meta",
+    "categories": [
+      "learn",
+      "design",
+      "build"
+    ],
+    "tags": [
+      "learn",
+      "design",
+      "build",
+      "chat",
+      "image generation"
+    ],
+    "skillLevel": [
+      "beginner",
+      "some"
+    ],
+    "frequency": [
+      "occasional",
+      "ongoing"
+    ],
+    "ephemerality": [
+      "throwaway",
+      "project",
+      "production"
+    ],
+    "goodFor": [
+      "Quick questions in Meta's apps",
+      "Casual chat",
+      "Image generation in chat"
+    ],
+    "badFor": [
+      "Professional work",
+      "Enterprise tasks",
+      "Integration with non",
+      "Meta tools"
+    ],
+    "accessSteps": [
+      "Meta.ai or inside any Meta app"
+    ],
+    "promptTemplate": "Use Meta AI Assistant when I need help with quick questions in meta's apps, casual chat, image generation in chat. Ask clarifying questions if needed, then produce a practical result with any relevant sources, files, or next steps.",
+    "tiers": [
+      {
+        "tier": "free",
+        "label": "Free.",
+        "monthlyCost": "Free"
+      }
+    ],
+    "creditCost": {
+      "estimate": "moderate",
+      "notes": "Free."
+    },
+    "alternatives": [
+      "openai-chatgpt-data-analysis-advanced-data-analysis",
+      "anthropic-claude-artifacts",
+      "microsoft-copilot-chat-bing-chat-edge"
+    ],
+    "lastVerified": "2026-05-01"
+  },
+  {
+    "id": "meta-meta-ai-on-ray-ban-smart-glasses",
+    "name": "Meta AI on Ray-Ban Smart Glasses",
+    "provider": "Meta",
+    "categories": [
+      "code",
+      "design"
+    ],
+    "tags": [
+      "code",
+      "design",
+      "voice"
+    ],
+    "skillLevel": [
+      "beginner",
+      "some"
+    ],
+    "frequency": [
+      "occasional",
+      "ongoing"
+    ],
+    "ephemerality": [
+      "project"
+    ],
+    "goodFor": [
+      "Hands",
+      "Free queries",
+      "Identifying what you're looking at",
+      "Capturing",
+      "Describing surroundings"
+    ],
+    "badFor": [
+      "Tasks outside its intended workflow"
+    ],
+    "accessSteps": [
+      "Ray",
+      "Ban Meta glasses + Meta View app"
+    ],
+    "promptTemplate": "Use Meta AI on Ray-Ban Smart Glasses when I need help with hands-free queries, identifying what you're looking at, capturing. Ask clarifying questions if needed, then produce a practical result with any relevant sources, files, or next steps.",
+    "tiers": [
+      {
+        "tier": "free",
+        "label": "Free with glasses purchase.",
+        "monthlyCost": "Free"
+      }
+    ],
+    "creditCost": {
+      "estimate": "minimal",
+      "notes": "Free with glasses purchase."
+    },
+    "alternatives": [
+      "adobe-adobe-firefly",
+      "openai-chatgpt-voice-mode",
+      "descript-descript"
+    ],
+    "lastVerified": "2026-05-01"
+  },
+  {
+    "id": "meta-meta-imagine-image-generation",
+    "name": "Meta Imagine (Image Generation)",
+    "provider": "Meta",
+    "categories": [
+      "design",
+      "build"
+    ],
+    "tags": [
+      "design",
+      "build",
+      "image generation"
+    ],
+    "skillLevel": [
+      "beginner",
+      "some"
+    ],
+    "frequency": [
+      "once",
+      "occasional"
+    ],
+    "ephemerality": [
+      "throwaway",
+      "project"
+    ],
+    "goodFor": [
+      "Quick casual images",
+      "Fast previews as you type"
+    ],
+    "badFor": [
+      "Professional",
+      "Quality output"
+    ],
+    "accessSteps": [
+      "Meta apps → Imagine command"
+    ],
+    "promptTemplate": "Use Meta Imagine (Image Generation) when I need help with quick casual images, fast previews as you type. Ask clarifying questions if needed, then produce a practical result with any relevant sources, files, or next steps.",
+    "tiers": [
+      {
+        "tier": "free",
+        "label": "Free.",
+        "monthlyCost": "Free"
+      }
+    ],
+    "creditCost": {
+      "estimate": "minimal",
+      "notes": "Free."
+    },
+    "alternatives": [
+      "adobe-adobe-firefly",
+      "openai-chatgpt-data-analysis-advanced-data-analysis",
+      "anthropic-claude-artifacts"
+    ],
+    "lastVerified": "2026-05-01"
+  },
+  {
+    "id": "meta-llama-models-open-source",
+    "name": "Llama Models (Open-Source)",
+    "provider": "Meta",
+    "categories": [
+      "research",
+      "design",
+      "build"
+    ],
+    "tags": [
+      "research",
+      "design",
+      "build",
+      "web search",
+      "open source"
+    ],
+    "skillLevel": [
+      "technical"
+    ],
+    "frequency": [
+      "once",
+      "occasional"
+    ],
+    "ephemerality": [
+      "throwaway",
+      "project",
+      "production"
+    ],
+    "goodFor": [
+      "Self",
+      "Hosted AI",
+      "Fine",
+      "Tuning",
+      "Research",
+      "On",
+      "Device inference",
+      "Building products without per",
+      "Token costs"
+    ],
+    "badFor": [
+      "Users without technical setup capabilities",
+      "Tasks where frontier closed models still win"
+    ],
+    "accessSteps": [
+      "Llama.meta.com or Hugging Face"
+    ],
+    "promptTemplate": "Use Llama Models (Open-Source) when I need help with self-hosted ai, fine-tuning, research. Ask clarifying questions if needed, then produce a practical result with any relevant sources, files, or next steps.",
+    "tiers": [
+      {
+        "tier": "paid-low",
+        "label": "Free (compute costs only).",
+        "monthlyCost": "Usage-based"
+      }
+    ],
+    "creditCost": {
+      "estimate": "moderate",
+      "notes": "Free (compute costs only)."
+    },
+    "alternatives": [
+      "stability-ai-stable-diffusion-open-source",
+      "openai-chatgpt-custom-gpts",
+      "anthropic-claude-projects"
+    ],
+    "lastVerified": "2026-05-01"
+  },
+  {
+    "id": "microsoft-microsoft-365-copilot",
+    "name": "Microsoft 365 Copilot",
+    "provider": "Microsoft",
+    "categories": [
+      "code",
+      "write",
+      "analyze"
+    ],
+    "tags": [
+      "code",
+      "write",
+      "analyze",
+      "chat",
+      "workspace",
+      "data analysis"
+    ],
+    "skillLevel": [
+      "beginner",
+      "some"
+    ],
+    "frequency": [
+      "occasional",
+      "ongoing"
+    ],
+    "ephemerality": [
+      "project",
+      "production"
+    ],
+    "goodFor": [
+      "Document drafting",
+      "Email summarization",
+      "Spreadsheet analysis",
+      "Slide generation",
+      "Meeting summaries",
+      "All grounded in your work data"
+    ],
+    "badFor": [
+      "Anything outside the Microsoft ecosystem"
+    ],
+    "accessSteps": [
+      "Within Word",
+      "Excel",
+      "PowerPoint",
+      "Outlook",
+      "Teams"
+    ],
+    "promptTemplate": "Use Microsoft 365 Copilot when I need help with document drafting, email summarization, spreadsheet analysis. Ask clarifying questions if needed, then produce a practical result with any relevant sources, files, or next steps.",
+    "tiers": [
+      {
+        "tier": "paid-mid",
+        "label": "~$30/user/month on top of Microsoft 365.",
+        "monthlyCost": "~$30/user/month on top of Microsoft 365."
+      }
+    ],
+    "creditCost": {
+      "estimate": "low",
+      "notes": "~$30/user/month on top of Microsoft 365."
+    },
+    "alternatives": [
+      "anthropic-claude-in-excel",
+      "coda-coda-ai",
+      "google-gemini-in-google-workspace-gmail-docs-sheets-slides"
+    ],
+    "lastVerified": "2026-05-01"
+  },
+  {
+    "id": "microsoft-windows-copilot",
+    "name": "Windows Copilot",
+    "provider": "Microsoft",
+    "categories": [
+      "code",
+      "automate",
+      "design"
+    ],
+    "tags": [
+      "code",
+      "automate",
+      "design",
+      "chat",
+      "automation"
+    ],
+    "skillLevel": [
+      "beginner",
+      "some"
+    ],
+    "frequency": [
+      "occasional",
+      "ongoing"
+    ],
+    "ephemerality": [
+      "project"
+    ],
+    "goodFor": [
+      "OS",
+      "Level help",
+      "File management",
+      "Screen",
+      "Aware assistance",
+      "Settings changes"
+    ],
+    "badFor": [
+      "Specialized tasks better served by domain tools"
+    ],
+    "accessSteps": [
+      "Windows key + C",
+      "Or Copilot icon in taskbar"
+    ],
+    "promptTemplate": "Use Windows Copilot when I need help with os-level help, file management, screen-aware assistance. Ask clarifying questions if needed, then produce a practical result with any relevant sources, files, or next steps.",
+    "tiers": [
+      {
+        "tier": "free",
+        "label": "Free with Windows 11.",
+        "monthlyCost": "Free"
+      }
+    ],
+    "creditCost": {
+      "estimate": "minimal",
+      "notes": "Free with Windows 11."
+    },
+    "alternatives": [
+      "openai-chatgpt-operator",
+      "canva-gemini-canvas",
+      "stackblitz-bolt-stackblitz"
+    ],
+    "lastVerified": "2026-05-01"
+  },
+  {
+    "id": "microsoft-copilot-chat-bing-chat-edge",
+    "name": "Copilot Chat (Bing Chat / Edge)",
+    "provider": "Microsoft",
+    "categories": [
+      "code",
+      "automate",
+      "design",
+      "build"
+    ],
+    "tags": [
+      "code",
+      "automate",
+      "design",
+      "build",
+      "chat",
+      "browser agent",
+      "image generation"
+    ],
+    "skillLevel": [
+      "beginner",
+      "some"
+    ],
+    "frequency": [
+      "occasional",
+      "ongoing"
+    ],
+    "ephemerality": [
+      "project"
+    ],
+    "goodFor": [
+      "Free access to powerful chat",
+      "Web",
+      "Grounded answers",
+      "Image generation"
+    ],
+    "badFor": [
+      "Tasks where ChatGPT/Claude provide better quality"
+    ],
+    "accessSteps": [
+      "Copilot.microsoft.com or Edge browser"
+    ],
+    "promptTemplate": "Use Copilot Chat (Bing Chat / Edge) when I need help with free access to powerful chat, web-grounded answers, image generation. Ask clarifying questions if needed, then produce a practical result with any relevant sources, files, or next steps.",
+    "tiers": [
+      {
+        "tier": "free",
+        "label": "Free; Copilot Pro $20/mo for priority access.",
+        "monthlyCost": "Free tier available"
+      }
+    ],
+    "creditCost": {
+      "estimate": "moderate",
+      "notes": "Free; Copilot Pro $20/mo for priority access."
+    },
+    "alternatives": [
+      "stackblitz-bolt-stackblitz",
+      "runway-runway",
+      "anthropic-claude-api"
+    ],
+    "lastVerified": "2026-05-01"
+  },
+  {
+    "id": "udio-copilot-studio",
+    "name": "Copilot Studio",
+    "provider": "Udio",
+    "categories": [
+      "code",
+      "automate",
+      "design",
+      "build"
+    ],
+    "tags": [
+      "code",
+      "automate",
+      "design",
+      "build",
+      "automation"
+    ],
+    "skillLevel": [
+      "technical"
+    ],
+    "frequency": [
+      "occasional",
+      "ongoing"
+    ],
+    "ephemerality": [
+      "production"
+    ],
+    "goodFor": [
+      "Custom enterprise AI agents",
+      "Workflow automation",
+      "Internal tooling"
+    ],
+    "badFor": [
+      "Tasks outside its intended workflow"
+    ],
+    "accessSteps": [
+      "Copilotstudio.microsoft.com"
+    ],
+    "promptTemplate": "Use Copilot Studio when I need help with custom enterprise ai agents, workflow automation, internal tooling. Ask clarifying questions if needed, then produce a practical result with any relevant sources, files, or next steps.",
+    "tiers": [
+      {
+        "tier": "paid-high",
+        "label": "Enterprise licensing.",
+        "monthlyCost": "Enterprise licensing."
+      }
+    ],
+    "creditCost": {
+      "estimate": "high",
+      "notes": "Enterprise licensing."
+    },
+    "alternatives": [
+      "stackblitz-bolt-stackblitz",
+      "anthropic-claude-api",
+      "anthropic-claude-code"
+    ],
+    "lastVerified": "2026-05-01"
+  },
+  {
+    "id": "microsoft-power-platform-copilot",
+    "name": "Power Platform Copilot",
+    "provider": "Microsoft",
+    "categories": [
+      "code",
+      "analyze",
+      "automate",
+      "design"
+    ],
+    "tags": [
+      "code",
+      "analyze",
+      "automate",
+      "design",
+      "chat",
+      "automation"
+    ],
+    "skillLevel": [
+      "beginner",
+      "some"
+    ],
+    "frequency": [
+      "occasional",
+      "ongoing"
+    ],
+    "ephemerality": [
+      "project"
+    ],
+    "goodFor": [
+      "Building dashboards",
+      "Apps",
+      "Automations within Power Platform"
+    ],
+    "badFor": [
+      "Tasks outside its intended workflow"
+    ],
+    "accessSteps": [
+      "Within Power Platform tools"
+    ],
+    "promptTemplate": "Use Power Platform Copilot when I need help with building dashboards, apps, automations within power platform. Ask clarifying questions if needed, then produce a practical result with any relevant sources, files, or next steps.",
+    "tiers": [
+      {
+        "tier": "paid-low",
+        "label": "Per-license.",
+        "monthlyCost": "Varies"
+      }
+    ],
+    "creditCost": {
+      "estimate": "low",
+      "notes": "Per-license."
+    },
+    "alternatives": [
+      "openai-chatgpt-operator",
+      "canva-gemini-canvas",
+      "perplexity-ai-perplexity-computer"
+    ],
+    "lastVerified": "2026-05-01"
+  },
+  {
+    "id": "microsoft-dynamics-365-copilot",
+    "name": "Dynamics 365 Copilot",
+    "provider": "Microsoft",
+    "categories": [
+      "code",
+      "automate",
+      "build"
+    ],
+    "tags": [
+      "code",
+      "automate",
+      "build",
+      "automation"
+    ],
+    "skillLevel": [
+      "beginner",
+      "some"
+    ],
+    "frequency": [
+      "occasional",
+      "ongoing"
+    ],
+    "ephemerality": [
+      "production"
+    ],
+    "goodFor": [
+      "Sales",
+      "Customer service",
+      "Supply chain workflows within Dynamics"
+    ],
+    "badFor": [
+      "Tasks outside its intended workflow"
+    ],
+    "accessSteps": [
+      "Within Dynamics 365"
+    ],
+    "promptTemplate": "Use Dynamics 365 Copilot when I need help with sales, customer service, supply chain workflows within dynamics. Ask clarifying questions if needed, then produce a practical result with any relevant sources, files, or next steps.",
+    "tiers": [
+      {
+        "tier": "paid-low",
+        "label": "Per-license.",
+        "monthlyCost": "Varies"
+      }
+    ],
+    "creditCost": {
+      "estimate": "low",
+      "notes": "Per-license."
+    },
+    "alternatives": [
+      "stackblitz-bolt-stackblitz",
+      "openai-chatgpt-codex",
+      "anthropic-claude-api"
+    ],
+    "lastVerified": "2026-05-01"
+  },
+  {
+    "id": "github-github-copilot",
+    "name": "GitHub Copilot",
+    "provider": "GitHub",
+    "categories": [
+      "code",
+      "write",
+      "design"
+    ],
+    "tags": [
+      "code",
+      "write",
+      "design",
+      "chat",
+      "coding agent",
+      "image generation"
+    ],
+    "skillLevel": [
+      "some",
+      "technical"
+    ],
+    "frequency": [
+      "occasional",
+      "ongoing"
+    ],
+    "ephemerality": [
+      "project",
+      "production"
+    ],
+    "goodFor": [
+      "Inline code suggestions",
+      "Writing boilerplate",
+      "Code explanation",
+      "PR reviews",
+      "Codebase",
+      "Wide chat"
+    ],
+    "badFor": [
+      "Fully autonomous multi",
+      "File work (Claude Code",
+      "Cursor",
+      "Or Codex are stronger)"
+    ],
+    "accessSteps": [
+      "Install Copilot extension in your IDE"
+    ],
+    "promptTemplate": "Use GitHub Copilot when I need help with inline code suggestions, writing boilerplate, code explanation. Ask clarifying questions if needed, then produce a practical result with any relevant sources, files, or next steps.",
+    "tiers": [
+      {
+        "tier": "paid-high",
+        "label": "Free tier (limited); Pro $10/mo; Pro+ $39/mo; Enterprise custom.",
+        "monthlyCost": "Free tier (limited); Pro $10/mo; Pro+ $39/mo; Enterprise custom."
+      }
+    ],
+    "creditCost": {
+      "estimate": "high",
+      "notes": "Free tier (limited); Pro $10/mo; Pro+ $39/mo; Enterprise custom."
+    },
+    "alternatives": [
+      "canva-chatgpt-canvas",
+      "anthropic-claude-artifacts",
+      "google-deepmind-gemini-chat-default-2-5-pro-3-pro"
+    ],
+    "lastVerified": "2026-05-01"
+  },
+  {
+    "id": "anysphere-cursor",
+    "name": "Cursor",
+    "provider": "Anysphere",
+    "categories": [
+      "code",
+      "automate",
+      "build"
+    ],
+    "tags": [
+      "code",
+      "automate",
+      "build",
+      "chat",
+      "coding agent"
+    ],
+    "skillLevel": [
+      "technical"
+    ],
+    "frequency": [
+      "occasional",
+      "ongoing"
+    ],
+    "ephemerality": [
+      "project"
+    ],
+    "goodFor": [
+      "Active development work where you're driving but want AI as a constant pair programmer",
+      "Multi",
+      "File edits",
+      "Codebase chat"
+    ],
+    "badFor": [
+      "Total beginners",
+      "Non",
+      "Coding work"
+    ],
+    "accessSteps": [
+      "Download from cursor.com"
+    ],
+    "promptTemplate": "Use Cursor when I need help with active development work where you're driving but want ai as a constant pair programmer, multi-file edits, codebase chat. Ask clarifying questions if needed, then produce a practical result with any relevant sources, files, or next steps.",
+    "tiers": [
+      {
+        "tier": "paid-mid",
+        "label": "Free tier; Pro $20/mo; Business $40/user.",
+        "monthlyCost": "Free tier; Pro $20/mo; Business $40/user."
+      }
+    ],
+    "creditCost": {
+      "estimate": "moderate",
+      "notes": "Free tier; Pro $20/mo; Business $40/user."
+    },
+    "alternatives": [
+      "openai-chatgpt-codex",
+      "anthropic-claude-code",
+      "microsoft-copilot-chat-bing-chat-edge"
+    ],
+    "lastVerified": "2026-05-01"
+  },
+  {
+    "id": "codeium-windsurf-formerly-codeium",
+    "name": "Windsurf (formerly Codeium)",
+    "provider": "Codeium",
+    "categories": [
+      "code",
+      "automate",
+      "build"
+    ],
+    "tags": [
+      "code",
+      "automate",
+      "build",
+      "chat",
+      "automation"
+    ],
+    "skillLevel": [
+      "technical"
+    ],
+    "frequency": [
+      "occasional",
+      "ongoing"
+    ],
+    "ephemerality": [
+      "project"
+    ],
+    "goodFor": [
+      "Free AI coding alternative",
+      "Multi",
+      "File edits",
+      "In",
+      "IDE chat"
+    ],
+    "badFor": [
+      "Tasks outside its intended workflow"
+    ],
+    "accessSteps": [
+      "Windsurf.com"
+    ],
+    "promptTemplate": "Use Windsurf (formerly Codeium) when I need help with free ai coding alternative, multi-file edits, in-ide chat. Ask clarifying questions if needed, then produce a practical result with any relevant sources, files, or next steps.",
+    "tiers": [
+      {
+        "tier": "paid-high",
+        "label": "Free for individuals; paid for teams/enterprise.",
+        "monthlyCost": "Free for individuals; paid for teams/enterprise."
+      }
+    ],
+    "creditCost": {
+      "estimate": "high",
+      "notes": "Free for individuals; paid for teams/enterprise."
+    },
+    "alternatives": [
+      "openai-chatgpt-codex",
+      "stackblitz-bolt-stackblitz",
+      "anthropic-claude-api"
+    ],
+    "lastVerified": "2026-05-01"
+  },
+  {
+    "id": "replit-replit",
+    "name": "Replit",
+    "provider": "Replit",
+    "categories": [
+      "code",
+      "analyze",
+      "automate",
+      "learn"
+    ],
+    "tags": [
+      "code",
+      "analyze",
+      "automate",
+      "learn",
+      "browser agent",
+      "coding agent",
+      "data analysis",
+      "design"
+    ],
+    "skillLevel": [
+      "beginner",
+      "some",
+      "technical"
+    ],
+    "frequency": [
+      "occasional",
+      "ongoing"
+    ],
+    "ephemerality": [
+      "throwaway",
+      "project",
+      "production"
+    ],
+    "goodFor": [
+      "Building",
+      "Deploying small apps without local setup",
+      "Learning to code",
+      "Quick prototypes",
+      "Hackathons"
+    ],
+    "badFor": [
+      "Large production codebases",
+      "Anything needing local dev tools"
+    ],
+    "accessSteps": [
+      "Replit.com"
+    ],
+    "promptTemplate": "Use Replit when I need help with building, deploying small apps without local setup, learning to code. Ask clarifying questions if needed, then produce a practical result with any relevant sources, files, or next steps.",
+    "tiers": [
+      {
+        "tier": "paid-mid",
+        "label": "Free Starter; Core $20/mo; Pro $95/mo.",
+        "monthlyCost": "Free Starter; Core $20/mo; Pro $95/mo."
+      }
+    ],
+    "creditCost": {
+      "estimate": "high",
+      "notes": "Free Starter; Core $20/mo; Pro $95/mo."
+    },
+    "alternatives": [
+      "openai-chatgpt-operator",
+      "anthropic-claude-in-chrome-browsing-agent",
+      "anthropic-claude-in-excel"
+    ],
+    "lastVerified": "2026-05-01"
+  },
+  {
+    "id": "replit-replit-agent",
+    "name": "Replit Agent",
+    "provider": "Replit",
+    "categories": [
+      "code",
+      "automate",
+      "design",
+      "build"
+    ],
+    "tags": [
+      "code",
+      "automate",
+      "design",
+      "build",
+      "coding agent"
+    ],
+    "skillLevel": [
+      "beginner",
+      "some"
+    ],
+    "frequency": [
+      "occasional",
+      "ongoing"
+    ],
+    "ephemerality": [
+      "project",
+      "production"
+    ],
+    "goodFor": [
+      "Going from idea to deployed app without coding",
+      "Especially small projects"
+    ],
+    "badFor": [
+      "Complex production systems"
+    ],
+    "accessSteps": [
+      "Within Replit"
+    ],
+    "promptTemplate": "Use Replit Agent when I need help with going from idea to deployed app without coding, especially small projects. Ask clarifying questions if needed, then produce a practical result with any relevant sources, files, or next steps.",
+    "tiers": [
+      {
+        "tier": "paid-low",
+        "label": "Replit Core or Pro.",
+        "monthlyCost": "Varies"
+      }
+    ],
+    "creditCost": {
+      "estimate": "moderate",
+      "notes": "Replit Core or Pro."
+    },
+    "alternatives": [
+      "anthropic-claude-code",
+      "stackblitz-bolt-stackblitz",
+      "anthropic-claude-api"
+    ],
+    "lastVerified": "2026-05-01"
+  },
+  {
+    "id": "lovable-lovable",
+    "name": "Lovable",
+    "provider": "Lovable",
+    "categories": [
+      "code",
+      "analyze",
+      "design",
+      "build"
+    ],
+    "tags": [
+      "code",
+      "analyze",
+      "design",
+      "build",
+      "data analysis"
+    ],
+    "skillLevel": [
+      "beginner",
+      "some",
+      "technical"
+    ],
+    "frequency": [
+      "once"
+    ],
+    "ephemerality": [
+      "throwaway",
+      "project",
+      "production"
+    ],
+    "goodFor": [
+      "Non",
+      "Coders building MVPs",
+      "Founders prototyping",
+      "Fast no",
+      "Code apps with real backends"
+    ],
+    "badFor": [
+      "Production apps at scale (cost)",
+      "Users who need full code control",
+      "Complex business logic"
+    ],
+    "accessSteps": [
+      "Lovable.dev"
+    ],
+    "promptTemplate": "Use Lovable when I need help with non-coders building mvps, founders prototyping, fast no-code apps with real backends. Ask clarifying questions if needed, then produce a practical result with any relevant sources, files, or next steps.",
+    "tiers": [
+      {
+        "tier": "paid-high",
+        "label": "Free (5 credits/day); Pro $25/mo; Business $50/mo. Realistic active use often runs $100-500/mo.",
+        "monthlyCost": "Free (5 credits/day); Pro $25/mo; Business $50/mo. Realistic active use often runs $100-500/mo."
+      }
+    ],
+    "creditCost": {
+      "estimate": "high",
+      "notes": "Free (5 credits/day); Pro $25/mo; Business $50/mo. Realistic active use often runs $100-500/mo."
+    },
+    "alternatives": [
+      "openai-chatgpt-data-analysis-advanced-data-analysis",
+      "google-gemini-in-google-workspace-gmail-docs-sheets-slides",
+      "ideogram-ideogram"
+    ],
+    "lastVerified": "2026-05-01"
+  },
+  {
+    "id": "vercel-v0-by-vercel",
+    "name": "v0 by Vercel",
+    "provider": "Vercel",
+    "categories": [
+      "code",
+      "automate",
+      "design",
+      "build"
+    ],
+    "tags": [
+      "code",
+      "automate",
+      "design",
+      "build",
+      "automation"
+    ],
+    "skillLevel": [
+      "some",
+      "technical"
+    ],
+    "frequency": [
+      "once",
+      "occasional"
+    ],
+    "ephemerality": [
+      "throwaway",
+      "project",
+      "production"
+    ],
+    "goodFor": [
+      "Generating UI components",
+      "Scaffolding Next.js apps",
+      "Design",
+      "To",
+      "Code workflows",
+      "When you want to own",
+      "Edit the code"
+    ],
+    "badFor": [
+      "Total no",
+      "Coders (you'll still need to deploy",
+      "Customize)",
+      "Non",
+      "React stacks"
+    ],
+    "accessSteps": [
+      "V0.dev"
+    ],
+    "promptTemplate": "Use v0 by Vercel when I need help with generating ui components, scaffolding next.js apps, design-to-code workflows. Ask clarifying questions if needed, then produce a practical result with any relevant sources, files, or next steps.",
+    "tiers": [
+      {
+        "tier": "paid-high",
+        "label": "Free tier ($5 credits, ~7 messages/day); Premium $20/mo; Team $30/user; Business $100/user.",
+        "monthlyCost": "Free tier ($5 credits, ~7 messages/day); Premium $20/mo; Team $30/user; Business $100/user."
+      }
+    ],
+    "creditCost": {
+      "estimate": "high",
+      "notes": "Free tier ($5 credits, ~7 messages/day); Premium $20/mo; Team $30/user; Business $100/user."
+    },
+    "alternatives": [
+      "stackblitz-bolt-stackblitz",
+      "anthropic-claude-api",
+      "anthropic-claude-code"
+    ],
+    "lastVerified": "2026-05-01"
+  },
+  {
+    "id": "stackblitz-bolt-stackblitz",
+    "name": "Bolt (StackBlitz)",
+    "provider": "StackBlitz",
+    "categories": [
+      "code",
+      "automate",
+      "design",
+      "build"
+    ],
+    "tags": [
+      "code",
+      "automate",
+      "design",
+      "build",
+      "browser agent",
+      "automation"
+    ],
+    "skillLevel": [
+      "some",
+      "technical"
+    ],
+    "frequency": [
+      "once",
+      "occasional"
+    ],
+    "ephemerality": [
+      "throwaway",
+      "project"
+    ],
+    "goodFor": [
+      "Quick web app prototyping",
+      "Design",
+      "System",
+      "Aware UI generation",
+      "Browser",
+      "Only workflows"
+    ],
+    "badFor": [
+      "Heavy backend work",
+      "Very large apps (token costs)"
+    ],
+    "accessSteps": [
+      "Bolt.new"
+    ],
+    "promptTemplate": "Use Bolt (StackBlitz) when I need help with quick web app prototyping, design-system-aware ui generation, browser-only workflows. Ask clarifying questions if needed, then produce a practical result with any relevant sources, files, or next steps.",
+    "tiers": [
+      {
+        "tier": "paid-mid",
+        "label": "Free (300K tokens/day); Pro $25/mo; Teams $30/user.",
+        "monthlyCost": "Free (300K tokens/day); Pro $25/mo; Teams $30/user."
+      }
+    ],
+    "creditCost": {
+      "estimate": "moderate",
+      "notes": "Free (300K tokens/day); Pro $25/mo; Teams $30/user."
+    },
+    "alternatives": [
+      "anthropic-claude-api",
+      "anthropic-claude-code",
+      "microsoft-copilot-chat-bing-chat-edge"
+    ],
+    "lastVerified": "2026-05-01"
+  },
+  {
+    "id": "figma-figma-ai-make",
+    "name": "Figma AI / Make",
+    "provider": "Figma",
+    "categories": [
+      "code",
+      "automate",
+      "design",
+      "build"
+    ],
+    "tags": [
+      "code",
+      "automate",
+      "design",
+      "build",
+      "automation"
+    ],
+    "skillLevel": [
+      "beginner",
+      "some"
+    ],
+    "frequency": [
+      "occasional",
+      "ongoing"
+    ],
+    "ephemerality": [
+      "project"
+    ],
+    "goodFor": [
+      "UI design",
+      "Design system generation",
+      "Design",
+      "To",
+      "Code workflows in Figma"
+    ],
+    "badFor": [
+      "Tasks outside its intended workflow"
+    ],
+    "accessSteps": [
+      "Figma.com → AI features in Figma"
+    ],
+    "promptTemplate": "Use Figma AI / Make when I need help with ui design, design system generation, design-to-code workflows in figma. Ask clarifying questions if needed, then produce a practical result with any relevant sources, files, or next steps.",
+    "tiers": [
+      {
+        "tier": "paid-low",
+        "label": "Included in Figma Professional/Organization plans.",
+        "monthlyCost": "Varies"
+      }
+    ],
+    "creditCost": {
+      "estimate": "moderate",
+      "notes": "Included in Figma Professional/Organization plans."
+    },
+    "alternatives": [
+      "stackblitz-bolt-stackblitz",
+      "anthropic-claude-api",
+      "anthropic-claude-code"
+    ],
+    "lastVerified": "2026-05-01"
+  },
+  {
+    "id": "adobe-adobe-firefly",
+    "name": "Adobe Firefly",
+    "provider": "Adobe",
+    "categories": [
+      "code",
+      "design",
+      "build"
+    ],
+    "tags": [
+      "code",
+      "design",
+      "build",
+      "voice",
+      "image generation",
+      "video generation"
+    ],
+    "skillLevel": [
+      "beginner",
+      "some"
+    ],
+    "frequency": [
+      "occasional",
+      "ongoing"
+    ],
+    "ephemerality": [
+      "project",
+      "production"
+    ],
+    "goodFor": [
+      "Commercial",
+      "Safe image/video generation",
+      "In",
+      "App AI editing in Adobe products",
+      "Generative fill in Photoshop",
+      "Text effects"
+    ],
+    "badFor": [
+      "Users not in Adobe ecosystem",
+      "Sometimes less creative range than Midjourney"
+    ],
+    "accessSteps": [
+      "Firefly.adobe.com or inside Adobe apps"
+    ],
+    "promptTemplate": "Use Adobe Firefly when I need help with commercial-safe image/video generation, in-app ai editing in adobe products, generative fill in photoshop. Ask clarifying questions if needed, then produce a practical result with any relevant sources, files, or next steps.",
+    "tiers": [
+      {
+        "tier": "free",
+        "label": "Free tier; Firefly Premium $10-30/mo; included in Creative Cloud plans.",
+        "monthlyCost": "Free tier available"
+      }
+    ],
+    "creditCost": {
+      "estimate": "high",
+      "notes": "Free tier; Firefly Premium $10-30/mo; included in Creative Cloud plans."
+    },
+    "alternatives": [
+      "openai-openai-api",
+      "runway-runway",
+      "openai-chatgpt-data-analysis-advanced-data-analysis"
+    ],
+    "lastVerified": "2026-05-01"
+  },
+  {
+    "id": "canva-canva-ai-magic-studio",
+    "name": "Canva AI / Magic Studio",
+    "provider": "Canva",
+    "categories": [
+      "code",
+      "write",
+      "design"
+    ],
+    "tags": [
+      "code",
+      "write",
+      "design",
+      "image generation"
+    ],
+    "skillLevel": [
+      "beginner",
+      "some"
+    ],
+    "frequency": [
+      "occasional",
+      "ongoing"
+    ],
+    "ephemerality": [
+      "project"
+    ],
+    "goodFor": [
+      "Non",
+      "Designers making social media graphics",
+      "Presentations",
+      "Marketing materials"
+    ],
+    "badFor": [
+      "Professional design work requiring precision"
+    ],
+    "accessSteps": [
+      "Canva.com → Magic Studio features"
+    ],
+    "promptTemplate": "Use Canva AI / Magic Studio when I need help with non-designers making social media graphics, presentations, marketing materials. Ask clarifying questions if needed, then produce a practical result with any relevant sources, files, or next steps.",
+    "tiers": [
+      {
+        "tier": "free",
+        "label": "Free tier; Canva Pro $15/mo.",
+        "monthlyCost": "Free tier available"
+      }
+    ],
+    "creditCost": {
+      "estimate": "moderate",
+      "notes": "Free tier; Canva Pro $15/mo."
+    },
+    "alternatives": [
+      "anthropic-claude-artifacts",
+      "google-deepmind-gemini-chat-default-2-5-pro-3-pro",
+      "github-github-copilot"
+    ],
+    "lastVerified": "2026-05-01"
+  },
+  {
+    "id": "midjourney-midjourney",
+    "name": "Midjourney",
+    "provider": "Midjourney",
+    "categories": [
+      "code",
+      "design"
+    ],
+    "tags": [
+      "code",
+      "design",
+      "image generation",
+      "video generation"
+    ],
+    "skillLevel": [
+      "beginner",
+      "some"
+    ],
+    "frequency": [
+      "occasional",
+      "ongoing"
+    ],
+    "ephemerality": [
+      "project",
+      "production"
+    ],
+    "goodFor": [
+      "Artistic images",
+      "Concept art",
+      "Marketing visuals with style",
+      "Hero imagery"
+    ],
+    "badFor": [
+      "Accurate text in images",
+      "Precise control",
+      "Anything needing API access"
+    ],
+    "accessSteps": [
+      "Midjourney.com (web) or Discord"
+    ],
+    "promptTemplate": "Use Midjourney when I need help with artistic images, concept art, marketing visuals with style. Ask clarifying questions if needed, then produce a practical result with any relevant sources, files, or next steps.",
+    "tiers": [
+      {
+        "tier": "paid-high",
+        "label": "Basic $10/mo; Standard $30/mo; Pro $60/mo; Mega $120/mo.",
+        "monthlyCost": "Basic $10/mo; Standard $30/mo; Pro $60/mo; Mega $120/mo."
+      }
+    ],
+    "creditCost": {
+      "estimate": "high",
+      "notes": "Basic $10/mo; Standard $30/mo; Pro $60/mo; Mega $120/mo."
+    },
+    "alternatives": [
+      "adobe-adobe-firefly",
+      "google-gemini-live",
+      "xai-grok-imagine"
+    ],
+    "lastVerified": "2026-05-01"
+  },
+  {
+    "id": "ideogram-ideogram",
+    "name": "Ideogram",
+    "provider": "Ideogram",
+    "categories": [
+      "code",
+      "analyze",
+      "design"
+    ],
+    "tags": [
+      "code",
+      "analyze",
+      "design",
+      "image generation",
+      "data analysis"
+    ],
+    "skillLevel": [
+      "beginner",
+      "some"
+    ],
+    "frequency": [
+      "once",
+      "occasional"
+    ],
+    "ephemerality": [
+      "throwaway",
+      "project"
+    ],
+    "goodFor": [
+      "Designs requiring text",
+      "Posters",
+      "Logos",
+      "Typography",
+      "Heavy images"
+    ],
+    "badFor": [
+      "Highly stylized art (Midjourney often better)"
+    ],
+    "accessSteps": [
+      "Ideogram.ai"
+    ],
+    "promptTemplate": "Use Ideogram when I need help with designs requiring text, posters, logos. Ask clarifying questions if needed, then produce a practical result with any relevant sources, files, or next steps.",
+    "tiers": [
+      {
+        "tier": "free",
+        "label": "Free tier; Plus $8/mo; Pro $20/mo.",
+        "monthlyCost": "Free tier available"
+      }
+    ],
+    "creditCost": {
+      "estimate": "high",
+      "notes": "Free tier; Plus $8/mo; Pro $20/mo."
+    },
+    "alternatives": [
+      "openai-chatgpt-data-analysis-advanced-data-analysis",
+      "lovable-lovable",
+      "perplexity-ai-perplexity-api-sonar"
+    ],
+    "lastVerified": "2026-05-01"
+  },
+  {
+    "id": "stability-ai-stable-diffusion-open-source",
+    "name": "Stable Diffusion (Open-Source)",
+    "provider": "Stability AI",
+    "categories": [
+      "research",
+      "automate",
+      "design",
+      "build"
+    ],
+    "tags": [
+      "research",
+      "automate",
+      "design",
+      "build",
+      "image generation",
+      "open source",
+      "automation"
+    ],
+    "skillLevel": [
+      "technical"
+    ],
+    "frequency": [
+      "once",
+      "occasional"
+    ],
+    "ephemerality": [
+      "throwaway"
+    ],
+    "goodFor": [
+      "Self",
+      "Hosting",
+      "Fine",
+      "Tuning",
+      "Full control",
+      "Custom workflows",
+      "ComfyUI users"
+    ],
+    "badFor": [
+      "Tasks outside its intended workflow"
+    ],
+    "accessSteps": [
+      "Hugging Face",
+      "Stability AI",
+      "Or local install"
+    ],
+    "promptTemplate": "Use Stable Diffusion (Open-Source) when I need help with self-hosting, fine-tuning, full control. Ask clarifying questions if needed, then produce a practical result with any relevant sources, files, or next steps.",
+    "tiers": [
+      {
+        "tier": "free",
+        "label": "Free if self-hosted; varies via hosted services.",
+        "monthlyCost": "Free"
+      }
+    ],
+    "creditCost": {
+      "estimate": "minimal",
+      "notes": "Free if self-hosted; varies via hosted services."
+    },
+    "alternatives": [
+      "openai-chatgpt-custom-gpts",
+      "runway-runway",
+      "stackblitz-bolt-stackblitz"
+    ],
+    "lastVerified": "2026-05-01"
+  },
+  {
+    "id": "black-forest-labs-flux-black-forest-labs",
+    "name": "Flux (Black Forest Labs)",
+    "provider": "Black Forest Labs",
+    "categories": [
+      "code",
+      "design"
+    ],
+    "tags": [
+      "code",
+      "design",
+      "image generation",
+      "open source"
+    ],
+    "skillLevel": [
+      "technical"
+    ],
+    "frequency": [
+      "occasional",
+      "ongoing"
+    ],
+    "ephemerality": [
+      "project"
+    ],
+    "goodFor": [
+      "Photo",
+      "Realistic images",
+      "High quality without subscription"
+    ],
+    "badFor": [
+      "Tasks outside its intended workflow"
+    ],
+    "accessSteps": [
+      "Blackforestlabs.ai or partner platforms"
+    ],
+    "promptTemplate": "Use Flux (Black Forest Labs) when I need help with photo-realistic images, high quality without subscription. Ask clarifying questions if needed, then produce a practical result with any relevant sources, files, or next steps.",
+    "tiers": [
+      {
+        "tier": "free",
+        "label": "Free open-source; via APIs varies.",
+        "monthlyCost": "Free"
+      }
+    ],
+    "creditCost": {
+      "estimate": "moderate",
+      "notes": "Free open-source; via APIs varies."
+    },
+    "alternatives": [
+      "adobe-adobe-firefly",
+      "canva-canva-ai-magic-studio",
+      "openai-chatgpt-data-analysis-advanced-data-analysis"
+    ],
+    "lastVerified": "2026-05-01"
+  },
+  {
+    "id": "runway-runway",
+    "name": "Runway",
+    "provider": "Runway",
+    "categories": [
+      "code",
+      "automate",
+      "design",
+      "build"
+    ],
+    "tags": [
+      "code",
+      "automate",
+      "design",
+      "build",
+      "image generation",
+      "video generation",
+      "automation"
+    ],
+    "skillLevel": [
+      "beginner",
+      "some"
+    ],
+    "frequency": [
+      "occasional",
+      "ongoing"
+    ],
+    "ephemerality": [
+      "project"
+    ],
+    "goodFor": [
+      "Text",
+      "To",
+      "Video",
+      "Image",
+      "To",
+      "Video",
+      "Professional video editing with AI",
+      "Filmmaking workflows"
+    ],
+    "badFor": [
+      "Tasks outside its intended workflow"
+    ],
+    "accessSteps": [
+      "Runwayml.com"
+    ],
+    "promptTemplate": "Use Runway when I need help with text-to-video, image-to-video, professional video editing with ai. Ask clarifying questions if needed, then produce a practical result with any relevant sources, files, or next steps.",
+    "tiers": [
+      {
+        "tier": "paid-mid",
+        "label": "Free trial; Standard $15/mo; Pro $35/mo; Unlimited $95/mo.",
+        "monthlyCost": "Free trial; Standard $15/mo; Pro $35/mo; Unlimited $95/mo."
+      }
+    ],
+    "creditCost": {
+      "estimate": "high",
+      "notes": "Free trial; Standard $15/mo; Pro $35/mo; Unlimited $95/mo."
+    },
+    "alternatives": [
+      "stackblitz-bolt-stackblitz",
+      "anthropic-claude-api",
+      "anthropic-claude-code"
+    ],
+    "lastVerified": "2026-05-01"
+  },
+  {
+    "id": "openai-sora-openai",
+    "name": "Sora (OpenAI)",
+    "provider": "OpenAI",
+    "categories": [
+      "code",
+      "design"
+    ],
+    "tags": [
+      "code",
+      "design",
+      "chat",
+      "video generation"
+    ],
+    "skillLevel": [
+      "beginner",
+      "some"
+    ],
+    "frequency": [
+      "occasional",
+      "ongoing"
+    ],
+    "ephemerality": [
+      "project"
+    ],
+    "goodFor": [
+      "High",
+      "Quality video generation from text",
+      "Photorealistic clips"
+    ],
+    "badFor": [
+      "Tasks outside its intended workflow"
+    ],
+    "accessSteps": [
+      "Sora.com or ChatGPT"
+    ],
+    "promptTemplate": "Use Sora (OpenAI) when I need help with high-quality video generation from text, photorealistic clips. Ask clarifying questions if needed, then produce a practical result with any relevant sources, files, or next steps.",
+    "tiers": [
+      {
+        "tier": "paid-low",
+        "label": "ChatGPT Plus (limited) or Pro plan.",
+        "monthlyCost": "Varies"
+      }
+    ],
+    "creditCost": {
+      "estimate": "high",
+      "notes": "ChatGPT Plus (limited) or Pro plan."
+    },
+    "alternatives": [
+      "google-gemini-live",
+      "adobe-adobe-firefly",
+      "canva-chatgpt-canvas"
+    ],
+    "lastVerified": "2026-05-01"
+  },
+  {
+    "id": "pika-labs-pika-labs",
+    "name": "Pika Labs",
+    "provider": "Pika Labs",
+    "categories": [
+      "code",
+      "design"
+    ],
+    "tags": [
+      "code",
+      "design",
+      "video generation"
+    ],
+    "skillLevel": [
+      "beginner",
+      "some"
+    ],
+    "frequency": [
+      "occasional",
+      "ongoing"
+    ],
+    "ephemerality": [
+      "project"
+    ],
+    "goodFor": [
+      "Social",
+      "Media",
+      "Friendly AI videos",
+      "Character",
+      "Driven clips"
+    ],
+    "badFor": [
+      "Tasks outside its intended workflow"
+    ],
+    "accessSteps": [
+      "Pika.art"
+    ],
+    "promptTemplate": "Use Pika Labs when I need help with social-media-friendly ai videos, character-driven clips. Ask clarifying questions if needed, then produce a practical result with any relevant sources, files, or next steps.",
+    "tiers": [
+      {
+        "tier": "free",
+        "label": "Free tier; paid plans from $10/mo.",
+        "monthlyCost": "Free tier available"
+      }
+    ],
+    "creditCost": {
+      "estimate": "high",
+      "notes": "Free tier; paid plans from $10/mo."
+    },
+    "alternatives": [
+      "adobe-adobe-firefly",
+      "descript-descript",
+      "google-gemini-live"
+    ],
+    "lastVerified": "2026-05-01"
+  },
+  {
+    "id": "luma-ai-luma-dream-machine",
+    "name": "Luma Dream Machine",
+    "provider": "Luma AI",
+    "categories": [
+      "code",
+      "design"
+    ],
+    "tags": [
+      "code",
+      "design",
+      "image generation",
+      "video generation"
+    ],
+    "skillLevel": [
+      "beginner",
+      "some"
+    ],
+    "frequency": [
+      "occasional",
+      "ongoing"
+    ],
+    "ephemerality": [
+      "project"
+    ],
+    "goodFor": [
+      "Realistic motion",
+      "Smooth video generation",
+      "Image",
+      "To",
+      "Video"
+    ],
+    "badFor": [
+      "Tasks outside its intended workflow"
+    ],
+    "accessSteps": [
+      "Lumalabs.ai/dream",
+      "Machine"
+    ],
+    "promptTemplate": "Use Luma Dream Machine when I need help with realistic motion, smooth video generation, image-to-video. Ask clarifying questions if needed, then produce a practical result with any relevant sources, files, or next steps.",
+    "tiers": [
+      {
+        "tier": "free",
+        "label": "Free tier; paid plans from $10/mo.",
+        "monthlyCost": "Free tier available"
+      }
+    ],
+    "creditCost": {
+      "estimate": "high",
+      "notes": "Free tier; paid plans from $10/mo."
+    },
+    "alternatives": [
+      "adobe-adobe-firefly",
+      "google-gemini-live",
+      "xai-grok-imagine"
+    ],
+    "lastVerified": "2026-05-01"
+  },
+  {
+    "id": "elevenlabs-elevenlabs",
+    "name": "ElevenLabs",
+    "provider": "ElevenLabs",
+    "categories": [
+      "design",
+      "build"
+    ],
+    "tags": [
+      "design",
+      "build",
+      "voice"
+    ],
+    "skillLevel": [
+      "beginner",
+      "some"
+    ],
+    "frequency": [
+      "once",
+      "occasional"
+    ],
+    "ephemerality": [
+      "throwaway",
+      "project"
+    ],
+    "goodFor": [
+      "Audiobook narration",
+      "Dubbing",
+      "Podcast voices",
+      "Voice cloning",
+      "Custom voices for apps"
+    ],
+    "badFor": [
+      "Tasks outside its intended workflow"
+    ],
+    "accessSteps": [
+      "Elevenlabs.io"
+    ],
+    "promptTemplate": "Use ElevenLabs when I need help with audiobook narration, dubbing, podcast voices. Ask clarifying questions if needed, then produce a practical result with any relevant sources, files, or next steps.",
+    "tiers": [
+      {
+        "tier": "paid-mid",
+        "label": "Free tier; Starter $5/mo; Creator $22/mo; Pro $99/mo.",
+        "monthlyCost": "Free tier; Starter $5/mo; Creator $22/mo; Pro $99/mo."
+      }
+    ],
+    "creditCost": {
+      "estimate": "high",
+      "notes": "Free tier; Starter $5/mo; Creator $22/mo; Pro $99/mo."
+    },
+    "alternatives": [
+      "adobe-adobe-firefly",
+      "openai-openai-api",
+      "stackblitz-bolt-stackblitz"
+    ],
+    "lastVerified": "2026-05-01"
+  },
+  {
+    "id": "suno-suno",
+    "name": "Suno",
+    "provider": "Suno",
+    "categories": [
+      "write",
+      "design",
+      "build"
+    ],
+    "tags": [
+      "write",
+      "design",
+      "build",
+      "music generation"
+    ],
+    "skillLevel": [
+      "beginner",
+      "some"
+    ],
+    "frequency": [
+      "once",
+      "occasional"
+    ],
+    "ephemerality": [
+      "throwaway",
+      "production"
+    ],
+    "goodFor": [
+      "Music creators looking for inspiration",
+      "Drafts",
+      "Full songs from prompts"
+    ],
+    "badFor": [
+      "Professional",
+      "Grade production without further editing"
+    ],
+    "accessSteps": [
+      "Suno.com"
+    ],
+    "promptTemplate": "Use Suno when I need help with music creators looking for inspiration, drafts, full songs from prompts. Ask clarifying questions if needed, then produce a practical result with any relevant sources, files, or next steps.",
+    "tiers": [
+      {
+        "tier": "free",
+        "label": "Free tier; Pro $8/mo; Premier $24/mo.",
+        "monthlyCost": "Free tier available"
+      }
+    ],
+    "creditCost": {
+      "estimate": "moderate",
+      "notes": "Free tier; Pro $8/mo; Premier $24/mo."
+    },
+    "alternatives": [
+      "anthropic-claude-artifacts",
+      "adobe-adobe-firefly",
+      "stackblitz-bolt-stackblitz"
+    ],
+    "lastVerified": "2026-05-01"
+  },
+  {
+    "id": "udio-udio",
+    "name": "Udio",
+    "provider": "Udio",
+    "categories": [
+      "design"
+    ],
+    "tags": [
+      "design",
+      "music generation"
+    ],
+    "skillLevel": [
+      "beginner",
+      "some"
+    ],
+    "frequency": [
+      "once",
+      "occasional"
+    ],
+    "ephemerality": [
+      "throwaway"
+    ],
+    "goodFor": [
+      "Same as Suno",
+      "Alternatives for music generation"
+    ],
+    "badFor": [
+      "Tasks outside its intended workflow"
+    ],
+    "accessSteps": [
+      "Udio.com"
+    ],
+    "promptTemplate": "Use Udio when I need help with same as suno, alternatives for music generation. Ask clarifying questions if needed, then produce a practical result with any relevant sources, files, or next steps.",
+    "tiers": [
+      {
+        "tier": "paid-mid",
+        "label": "Free tier; Standard $10/mo; Pro $30/mo.",
+        "monthlyCost": "Free tier; Standard $10/mo; Pro $30/mo."
+      }
+    ],
+    "creditCost": {
+      "estimate": "moderate",
+      "notes": "Free tier; Standard $10/mo; Pro $30/mo."
+    },
+    "alternatives": [
+      "google-lyria",
+      "suno-suno",
+      "adobe-adobe-firefly"
+    ],
+    "lastVerified": "2026-05-01"
+  },
+  {
+    "id": "descript-descript",
+    "name": "Descript",
+    "provider": "Descript",
+    "categories": [
+      "code",
+      "write",
+      "automate",
+      "design"
+    ],
+    "tags": [
+      "code",
+      "write",
+      "automate",
+      "design",
+      "voice",
+      "video generation",
+      "automation"
+    ],
+    "skillLevel": [
+      "beginner",
+      "some"
+    ],
+    "frequency": [
+      "occasional",
+      "ongoing"
+    ],
+    "ephemerality": [
+      "project"
+    ],
+    "goodFor": [
+      "Podcast editing",
+      "Video editing with transcript",
+      "Based workflow",
+      "Cleaning up speech"
+    ],
+    "badFor": [
+      "Tasks outside its intended workflow"
+    ],
+    "accessSteps": [
+      "Descript.com"
+    ],
+    "promptTemplate": "Use Descript when I need help with podcast editing, video editing with transcript-based workflow, cleaning up speech. Ask clarifying questions if needed, then produce a practical result with any relevant sources, files, or next steps.",
+    "tiers": [
+      {
+        "tier": "paid-mid",
+        "label": "Free tier; Hobbyist $12/mo; Creator $24/mo; Business $40/mo.",
+        "monthlyCost": "Free tier; Hobbyist $12/mo; Creator $24/mo; Business $40/mo."
+      }
+    ],
+    "creditCost": {
+      "estimate": "high",
+      "notes": "Free tier; Hobbyist $12/mo; Creator $24/mo; Business $40/mo."
+    },
+    "alternatives": [
+      "perplexity-ai-perplexity-comet-ai-browser",
+      "canva-gemini-canvas",
+      "google-gemini-live"
+    ],
+    "lastVerified": "2026-05-01"
+  },
+  {
+    "id": "notion-notion-ai",
+    "name": "Notion AI",
+    "provider": "Notion",
+    "categories": [
+      "code",
+      "write",
+      "analyze",
+      "automate"
+    ],
+    "tags": [
+      "code",
+      "write",
+      "analyze",
+      "automate",
+      "workspace",
+      "data analysis",
+      "automation"
+    ],
+    "skillLevel": [
+      "beginner",
+      "some"
+    ],
+    "frequency": [
+      "occasional",
+      "ongoing"
+    ],
+    "ephemerality": [
+      "project"
+    ],
+    "goodFor": [
+      "Anyone already using Notion who wants AI inside their docs",
+      "Databases"
+    ],
+    "badFor": [
+      "Non",
+      "Notion users"
+    ],
+    "accessSteps": [
+      "Within Notion"
+    ],
+    "promptTemplate": "Use Notion AI when I need help with anyone already using notion who wants ai inside their docs, databases. Ask clarifying questions if needed, then produce a practical result with any relevant sources, files, or next steps.",
+    "tiers": [
+      {
+        "tier": "paid-high",
+        "label": "Included in Business ($20/user) and Enterprise; some features use credits.",
+        "monthlyCost": "Included in Business ($20/user) and Enterprise; some features use credits."
+      }
+    ],
+    "creditCost": {
+      "estimate": "high",
+      "notes": "Included in Business ($20/user) and Enterprise; some features use credits."
+    },
+    "alternatives": [
+      "anthropic-claude-in-excel",
+      "coda-coda-ai",
+      "canva-gemini-canvas"
+    ],
+    "lastVerified": "2026-05-01"
+  },
+  {
+    "id": "coda-coda-ai",
+    "name": "Coda AI",
+    "provider": "Coda",
+    "categories": [
+      "code",
+      "write",
+      "analyze"
+    ],
+    "tags": [
+      "code",
+      "write",
+      "analyze",
+      "workspace",
+      "data analysis"
+    ],
+    "skillLevel": [
+      "beginner",
+      "some"
+    ],
+    "frequency": [
+      "occasional",
+      "ongoing"
+    ],
+    "ephemerality": [
+      "project"
+    ],
+    "goodFor": [
+      "Coda users wanting AI inside their workspace"
+    ],
+    "badFor": [
+      "Tasks outside its intended workflow"
+    ],
+    "accessSteps": [
+      "Within Coda"
+    ],
+    "promptTemplate": "Use Coda AI when I need help with coda users wanting ai inside their workspace. Ask clarifying questions if needed, then produce a practical result with any relevant sources, files, or next steps.",
+    "tiers": [
+      {
+        "tier": "paid-low",
+        "label": "Included in paid Coda plans.",
+        "monthlyCost": "Varies"
+      }
+    ],
+    "creditCost": {
+      "estimate": "moderate",
+      "notes": "Included in paid Coda plans."
+    },
+    "alternatives": [
+      "anthropic-claude-in-excel",
+      "google-gemini-in-google-workspace-gmail-docs-sheets-slides",
+      "microsoft-microsoft-365-copilot"
+    ],
+    "lastVerified": "2026-05-01"
+  },
+  {
+    "id": "slack-slack-ai",
+    "name": "Slack AI",
+    "provider": "Slack",
+    "categories": [
+      "code",
+      "research",
+      "write"
+    ],
+    "tags": [
+      "code",
+      "research",
+      "write",
+      "web search",
+      "chat",
+      "workspace"
+    ],
+    "skillLevel": [
+      "beginner",
+      "some"
+    ],
+    "frequency": [
+      "occasional",
+      "ongoing"
+    ],
+    "ephemerality": [
+      "project"
+    ],
+    "goodFor": [
+      "Slack",
+      "Heavy teams catching up on missed conversations"
+    ],
+    "badFor": [
+      "Tasks outside its intended workflow"
+    ],
+    "accessSteps": [
+      "Within Slack workspace"
+    ],
+    "promptTemplate": "Use Slack AI when I need help with slack-heavy teams catching up on missed conversations. Ask clarifying questions if needed, then produce a practical result with any relevant sources, files, or next steps.",
+    "tiers": [
+      {
+        "tier": "paid-low",
+        "label": "Slack add-on, per-user.",
+        "monthlyCost": "Varies"
+      }
+    ],
+    "creditCost": {
+      "estimate": "high",
+      "notes": "Slack add-on, per-user."
+    },
+    "alternatives": [
+      "openai-chatgpt-deep-research",
+      "google-deepmind-gemini-chat-default-2-5-pro-3-pro",
+      "google-notebooklm"
+    ],
+    "lastVerified": "2026-05-01"
+  },
+  {
+    "id": "you-com-you-com",
+    "name": "You.com",
+    "provider": "You.com",
+    "categories": [
+      "research",
+      "automate",
+      "build"
+    ],
+    "tags": [
+      "research",
+      "automate",
+      "build",
+      "web search",
+      "automation"
+    ],
+    "skillLevel": [
+      "beginner",
+      "some"
+    ],
+    "frequency": [
+      "occasional",
+      "ongoing"
+    ],
+    "ephemerality": [
+      "production"
+    ],
+    "goodFor": [
+      "Search alternative to Perplexity",
+      "Multi",
+      "Model access in one place"
+    ],
+    "badFor": [
+      "Tasks outside its intended workflow"
+    ],
+    "accessSteps": [
+      "You.com"
+    ],
+    "promptTemplate": "Use You.com when I need help with search alternative to perplexity, multi-model access in one place. Ask clarifying questions if needed, then produce a practical result with any relevant sources, files, or next steps.",
+    "tiers": [
+      {
+        "tier": "free",
+        "label": "Free tier; Pro $20/mo.",
+        "monthlyCost": "Free tier available"
+      }
+    ],
+    "creditCost": {
+      "estimate": "high",
+      "notes": "Free tier; Pro $20/mo."
+    },
+    "alternatives": [
+      "openai-chatgpt-custom-gpts",
+      "stability-ai-stable-diffusion-open-source",
+      "anthropic-claude-in-chrome-browsing-agent"
+    ],
+    "lastVerified": "2026-05-01"
+  },
+  {
+    "id": "phind-phind",
+    "name": "Phind",
+    "provider": "Phind",
+    "categories": [
+      "code",
+      "research",
+      "write",
+      "learn"
+    ],
+    "tags": [
+      "code",
+      "research",
+      "write",
+      "learn",
+      "web search",
+      "api"
+    ],
+    "skillLevel": [
+      "beginner",
+      "some"
+    ],
+    "frequency": [
+      "once",
+      "occasional"
+    ],
+    "ephemerality": [
+      "throwaway",
+      "project"
+    ],
+    "goodFor": [
+      "Programming help",
+      "Debugging",
+      "Technical documentation search"
+    ],
+    "badFor": [
+      "Tasks outside its intended workflow"
+    ],
+    "accessSteps": [
+      "Phind.com"
+    ],
+    "promptTemplate": "Use Phind when I need help with programming help, debugging, technical documentation search. Ask clarifying questions if needed, then produce a practical result with any relevant sources, files, or next steps.",
+    "tiers": [
+      {
+        "tier": "free",
+        "label": "Free tier; Pro $20/mo.",
+        "monthlyCost": "Free tier available"
+      }
+    ],
+    "creditCost": {
+      "estimate": "moderate",
+      "notes": "Free tier; Pro $20/mo."
+    },
+    "alternatives": [
+      "google-notebooklm",
+      "perplexity-ai-perplexity-search-standard",
+      "openai-chatgpt-deep-research"
+    ],
+    "lastVerified": "2026-05-01"
+  }
+]
