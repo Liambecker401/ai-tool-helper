@@ -15,15 +15,38 @@ import type { Tier, Tool, UserPreferences } from "@/lib/types";
 const tools = toolsJson as Tool[];
 
 const budgetOptions: { value: Tier | "any"; label: string; helper: string }[] = [
-  { value: "any", label: "Any budget", helper: "Show every suitable tool" },
-  { value: "free", label: "Free", helper: "Prefer free plans" },
-  { value: "paid-low", label: "Low", helper: "Roughly individual paid plans" },
-  { value: "paid-mid", label: "Mid", helper: "Creator, team, or pro plans" },
-  { value: "paid-high", label: "High", helper: "Max, heavy, or enterprise use" },
+  { value: "any", label: "Any budget", helper: "Show every plan" },
+  { value: "free", label: "Free ($0)", helper: "Only free plans" },
+  {
+    value: "paid-low",
+    label: "Low ($1-24/mo)",
+    helper: "Free and individual starter plans",
+  },
+  {
+    value: "paid-mid",
+    label: "Mid ($25-99/mo)",
+    helper: "Free, low-cost, creator, and team plans",
+  },
+  {
+    value: "paid-high",
+    label: "High ($100+/mo or custom)",
+    helper: "All paid, heavy, and enterprise plans",
+  },
 ];
+
+const tierRank: Record<Tier, number> = {
+  free: 0,
+  "paid-low": 1,
+  "paid-mid": 2,
+  "paid-high": 3,
+};
 
 function getToolsForPlan(planId: string) {
   return tools.filter((tool) => tool.plansRequired.minimumPlan === planId);
+}
+
+function planFitsBudget(planTier: Tier, budget: Tier | null) {
+  return !budget || tierRank[planTier] <= tierRank[budget];
 }
 
 export default function SettingsPage() {
@@ -55,26 +78,38 @@ export default function SettingsPage() {
 
   const filteredPlanPlatforms = useMemo(() => {
     const normalizedQuery = query.trim().toLowerCase();
+    const selectedBudgetFilter = preferences.budget;
 
-    if (!normalizedQuery) {
-      return planPlatforms;
-    }
+    return planPlatforms
+      .map((planPlatform) => ({
+        ...planPlatform,
+        plans: planPlatform.plans.filter((planOption) =>
+          planFitsBudget(planOption.tier, selectedBudgetFilter),
+        ),
+      }))
+      .filter((planPlatform) => {
+        if (!planPlatform.plans.length) {
+          return false;
+        }
 
-    return planPlatforms.filter((planPlatform) => {
-      const platformTools = planPlatform.plans.flatMap((planOption) =>
-        getToolsForPlan(planOption.id),
-      );
-      const searchableText = [
-        planPlatform.label,
-        ...planPlatform.plans.map((planOption) => planOption.label),
-        ...platformTools.flatMap((tool) => [tool.name, tool.provider]),
-      ]
-        .join(" ")
-        .toLowerCase();
+        if (!normalizedQuery) {
+          return true;
+        }
 
-      return searchableText.includes(normalizedQuery);
-    });
-  }, [query]);
+        const platformTools = planPlatform.plans.flatMap((planOption) =>
+          getToolsForPlan(planOption.id),
+        );
+        const searchableText = [
+          planPlatform.label,
+          ...planPlatform.plans.map((planOption) => planOption.label),
+          ...platformTools.flatMap((tool) => [tool.name, tool.provider]),
+        ]
+          .join(" ")
+          .toLowerCase();
+
+        return searchableText.includes(normalizedQuery);
+      });
+  }, [preferences.budget, query]);
 
   function updatePreferences(updates: Partial<UserPreferences>) {
     setPreferences((currentPreferences) => ({
@@ -96,8 +131,25 @@ export default function SettingsPage() {
   }
 
   function setBudget(value: string) {
+    const budget = value === "any" ? null : (value as Tier);
+    const planSelections = Object.fromEntries(
+      Object.entries(preferences.planSelections).filter(
+        ([platformId, selectedPlanId]) => {
+          const planPlatform = planPlatforms.find(
+            (platform) => platform.id === platformId,
+          );
+          const selectedPlan = planPlatform?.plans.find(
+            (planOption) => planOption.id === selectedPlanId,
+          );
+
+          return selectedPlan && planFitsBudget(selectedPlan.tier, budget);
+        },
+      ),
+    );
+
     updatePreferences({
-      budget: value === "any" ? null : (value as Tier),
+      budget,
+      planSelections,
     });
   }
 
@@ -220,7 +272,8 @@ export default function SettingsPage() {
               Platform plans
             </h2>
             <p className="mt-2 text-sm text-muted-foreground">
-              Choose the highest plan you have for each platform.
+              Choose the highest plan you have for each platform. The budget
+              preference filters which plan choices are shown here.
             </p>
           </div>
           <div className="flex flex-wrap gap-2">
@@ -255,8 +308,14 @@ export default function SettingsPage() {
 
         <div className="grid gap-3 md:grid-cols-2">
           {filteredPlanPlatforms.map((planPlatform) => {
+            const savedPlanId = preferences.planSelections[planPlatform.id];
             const selectedPlanId =
-              preferences.planSelections[planPlatform.id] ?? "";
+              savedPlanId &&
+              planPlatform.plans.some(
+                (planOption) => planOption.id === savedPlanId,
+              )
+                ? savedPlanId
+                : "";
             const includedTools = planPlatform.plans.flatMap((planOption) =>
               getToolsForPlan(planOption.id),
             );

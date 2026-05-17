@@ -1473,8 +1473,8 @@
     ],
     "lastVerified": "2026-05-01",
     "plansRequired": {
-      "minimumPlan": "claude-max",
-      "planLabel": "Beta access via Max plan or waitlist.",
+      "minimumPlan": "claude-max-5x",
+      "planLabel": "Claude Max 5x ($100/mo) or higher",
       "freeAlternative": "claude-free"
     }
   },
@@ -1533,8 +1533,8 @@
     ],
     "lastVerified": "2026-05-01",
     "plansRequired": {
-      "minimumPlan": "claude-max",
-      "planLabel": "Beta access.",
+      "minimumPlan": "claude-max-5x",
+      "planLabel": "Claude Max 5x ($100/mo) or higher",
       "freeAlternative": "claude-free"
     }
   },
@@ -1593,8 +1593,8 @@
     ],
     "lastVerified": "2026-05-01",
     "plansRequired": {
-      "minimumPlan": "claude-max",
-      "planLabel": "Beta.",
+      "minimumPlan": "claude-max-5x",
+      "planLabel": "Claude Max 5x ($100/mo) or higher",
       "freeAlternative": "claude-free"
     }
   },
@@ -1773,8 +1773,8 @@
     ],
     "lastVerified": "2026-05-01",
     "plansRequired": {
-      "minimumPlan": "gemini-advanced",
-      "planLabel": "Google AI Pro or higher.",
+      "minimumPlan": "gemini-ai-pro",
+      "planLabel": "Gemini AI Pro ($19.99/mo) or higher",
       "freeAlternative": "gemini-free"
     }
   },
@@ -2018,8 +2018,8 @@
     ],
     "lastVerified": "2026-05-01",
     "plansRequired": {
-      "minimumPlan": "gemini-advanced",
-      "planLabel": "Included in Google Workspace Business plans and Google One AI Premium.",
+      "minimumPlan": "gemini-ai-pro",
+      "planLabel": "Gemini AI Pro ($19.99/mo) or higher",
       "freeAlternative": "gemini-free"
     }
   },
@@ -2123,8 +2123,8 @@
     ],
     "lastVerified": "2026-05-01",
     "plansRequired": {
-      "minimumPlan": "gemini-advanced",
-      "planLabel": "Limited access via Gemini app and Vertex AI.",
+      "minimumPlan": "gemini-ai-pro",
+      "planLabel": "Gemini AI Pro ($19.99/mo) or higher",
       "freeAlternative": "gemini-free"
     }
   },
@@ -2172,8 +2172,8 @@
     ],
     "lastVerified": "2026-05-01",
     "plansRequired": {
-      "minimumPlan": "gemini-advanced",
-      "planLabel": "Limited access.",
+      "minimumPlan": "gemini-ai-pro",
+      "planLabel": "Gemini AI Pro ($19.99/mo) or higher",
       "freeAlternative": "gemini-free"
     }
   },
@@ -3005,8 +3005,8 @@
     ],
     "lastVerified": "2026-05-01",
     "plansRequired": {
-      "minimumPlan": "copilot-pro-plus",
-      "planLabel": "Enterprise licensing.",
+      "minimumPlan": "copilot-m365-enterprise",
+      "planLabel": "M365 Copilot Enterprise ($30/user) or equivalent",
       "freeAlternative": "copilot-free"
     }
   },
@@ -3062,8 +3062,8 @@
     ],
     "lastVerified": "2026-05-01",
     "plansRequired": {
-      "minimumPlan": "copilot-pro-plus",
-      "planLabel": "Per-license.",
+      "minimumPlan": "copilot-m365-enterprise",
+      "planLabel": "M365 Copilot Enterprise ($30/user) or equivalent",
       "freeAlternative": "copilot-free"
     }
   },
@@ -3714,8 +3714,8 @@
     ],
     "lastVerified": "2026-05-01",
     "plansRequired": {
-      "minimumPlan": "adobe-free",
-      "planLabel": "Free tier; Firefly Premium $10-30/mo; included in Creative Cloud plans."
+      "minimumPlan": "adobe-firefly-free",
+      "planLabel": "Firefly Free"
     }
   },
   {
