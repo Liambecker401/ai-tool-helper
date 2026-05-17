@@ -65,6 +65,7 @@ export interface ModelRanking {
 
 export interface UserPreferences {
   ownedTools: string[];
+  budget: Tier | null;
   onlyShowOwned: boolean;
   flagBetterOptions: boolean;
 }
