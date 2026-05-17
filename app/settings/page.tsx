@@ -57,8 +57,12 @@ export default function SettingsPage() {
   const [query, setQuery] = useState("");
 
   useEffect(() => {
-    setPreferences(loadUserPreferences());
-    setIsLoaded(true);
+    const timeoutId = window.setTimeout(() => {
+      setPreferences(loadUserPreferences());
+      setIsLoaded(true);
+    }, 0);
+
+    return () => window.clearTimeout(timeoutId);
   }, []);
 
   useEffect(() => {
