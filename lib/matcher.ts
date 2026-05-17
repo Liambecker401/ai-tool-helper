@@ -6,7 +6,11 @@ import type {
   Tool,
   UserPreferences,
 } from "@/lib/types";
-import { defaultUserPreferences } from "@/lib/storage";
+import {
+  defaultUserPreferences,
+  getPlanOption,
+  hasPlanAccess,
+} from "@/lib/storage";
 
 const tools = toolsJson as Tool[];
 
@@ -21,15 +25,12 @@ type ScoredTool = {
   tool: Tool;
   score: number;
   withinBudget: boolean;
+  hasSelectedPlan: boolean;
   matchedSignals: string[];
 };
 
-function getLowestTier(tool: Tool): Tier {
-  return tool.tiers.reduce<Tier>((lowestTier, tierRequirement) => {
-    return tierRank[tierRequirement.tier] < tierRank[lowestTier]
-      ? tierRequirement.tier
-      : lowestTier;
-  }, tool.tiers[0]?.tier ?? "paid-high");
+function getRequiredTier(tool: Tool): Tier {
+  return getPlanOption(tool.plansRequired.minimumPlan)?.tier ?? "paid-mid";
 }
 
 function isWithinBudget(tool: Tool, budget: Tier | null) {
@@ -37,10 +38,7 @@ function isWithinBudget(tool: Tool, budget: Tier | null) {
     return true;
   }
 
-  return tool.tiers.some(
-    (tierRequirement) =>
-      tierRank[tierRequirement.tier] <= tierRank[budget],
-  );
+  return tierRank[getRequiredTier(tool)] <= tierRank[budget];
 }
 
 function getTextMatchScore(tool: Tool, freeText: string) {
@@ -78,6 +76,10 @@ function scoreTool(
   let score = 0;
   const matchedSignals: string[] = [];
   const withinBudget = isWithinBudget(tool, intake.budget ?? preferences.budget);
+  const hasSelectedPlan = hasPlanAccess(
+    tool.plansRequired.minimumPlan,
+    preferences.planSelections,
+  );
 
   if (intake.taskCategory && tool.categories.includes(intake.taskCategory)) {
     score += 40;
@@ -109,14 +111,14 @@ function scoreTool(
     matchedSignals.push("may require a higher budget");
   }
 
-  if (preferences.ownedTools.includes(tool.id)) {
+  if (hasSelectedPlan) {
     score += 12;
-    matchedSignals.push("already in your toolkit");
+    matchedSignals.push("is included in your selected plans");
   }
 
   score += getTextMatchScore(tool, intake.freeText);
 
-  return { tool, score, withinBudget, matchedSignals };
+  return { tool, score, withinBudget, hasSelectedPlan, matchedSignals };
 }
 
 function getEstimatedUsage(tool: Tool, withinBudget: boolean) {
@@ -126,8 +128,8 @@ function getEstimatedUsage(tool: Tool, withinBudget: boolean) {
       ? "Best for occasional use"
       : "Best for one-off use";
   const budgetNote = withinBudget
-    ? `Fits at ${getLowestTier(tool)} tier`
-    : `Likely needs ${getLowestTier(tool)} tier or higher`;
+    ? `Fits your budget preference at ${tool.plansRequired.planLabel}`
+    : `Likely needs ${tool.plansRequired.planLabel}`;
 
   return `${cadence}. ${budgetNote}. Credit cost: ${tool.creditCost.estimate}.`;
 }
@@ -147,7 +149,12 @@ export function matchTools(
   preferences: UserPreferences = defaultUserPreferences,
 ): RecommendationResult[] {
   const candidateTools = preferences.onlyShowOwned
-    ? tools.filter((tool) => preferences.ownedTools.includes(tool.id))
+    ? tools.filter((tool) =>
+        hasPlanAccess(
+          tool.plansRequired.minimumPlan,
+          preferences.planSelections,
+        ),
+      )
     : tools;
 
   return candidateTools
@@ -170,7 +177,7 @@ export function matchTools(
         scoredTool.withinBudget,
       ),
       withinBudget: scoredTool.withinBudget,
-      requiresUpgrade: !scoredTool.withinBudget,
+      requiresUpgrade: !scoredTool.hasSelectedPlan || !scoredTool.withinBudget,
     }));
 }
 

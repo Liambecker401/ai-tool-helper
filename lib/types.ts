@@ -27,6 +27,12 @@ export interface TierRequirement {
   monthlyCost: string;
 }
 
+export interface PlansRequired {
+  minimumPlan: string;
+  planLabel: string;
+  freeAlternative?: string;
+}
+
 export interface Tool {
   id: string;
   name: string;
@@ -40,7 +46,7 @@ export interface Tool {
   badFor: string[];
   accessSteps: string[];
   promptTemplate: string;
-  tiers: TierRequirement[];
+  plansRequired: PlansRequired;
   creditCost: CreditCost;
   alternatives: string[];
   lastVerified: string;
@@ -64,7 +70,7 @@ export interface ModelRanking {
 }
 
 export interface UserPreferences {
-  ownedTools: string[];
+  planSelections: Record<string, string>;
   budget: Tier | null;
   onlyShowOwned: boolean;
   flagBetterOptions: boolean;

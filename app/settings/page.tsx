@@ -5,27 +5,25 @@ import { useEffect, useMemo, useState } from "react";
 import toolsJson from "@/data/tools.json";
 import {
   defaultUserPreferences,
+  hasPlanAccess,
   loadUserPreferences,
+  planPlatforms,
   saveUserPreferences,
 } from "@/lib/storage";
 import type { Tier, Tool, UserPreferences } from "@/lib/types";
-import { cn } from "@/lib/utils";
 
 const tools = toolsJson as Tool[];
 
 const budgetOptions: { value: Tier | "any"; label: string; helper: string }[] = [
   { value: "any", label: "Any budget", helper: "Show every suitable tool" },
-  { value: "free", label: "Free", helper: "Prefer free tiers only" },
-  { value: "paid-low", label: "Low", helper: "Up to roughly $20/month" },
-  { value: "paid-mid", label: "Mid", helper: "Team or creator plans" },
-  { value: "paid-high", label: "High", helper: "Pro, heavy, or enterprise use" },
+  { value: "free", label: "Free", helper: "Prefer free plans" },
+  { value: "paid-low", label: "Low", helper: "Roughly individual paid plans" },
+  { value: "paid-mid", label: "Mid", helper: "Creator, team, or pro plans" },
+  { value: "paid-high", label: "High", helper: "Max, heavy, or enterprise use" },
 ];
 
-function getToolSummary(tool: Tool) {
-  const tier = tool.tiers[0]?.label ?? "Pricing varies";
-  const categories = tool.categories.slice(0, 3).join(", ");
-
-  return `${tool.provider} · ${categories} · ${tier}`;
+function getToolsForPlan(planId: string) {
+  return tools.filter((tool) => tool.plansRequired.minimumPlan === planId);
 }
 
 export default function SettingsPage() {
@@ -46,19 +44,30 @@ export default function SettingsPage() {
     }
   }, [isLoaded, preferences]);
 
-  const filteredTools = useMemo(() => {
+  const accessibleToolCount = useMemo(() => {
+    return tools.filter((tool) =>
+      hasPlanAccess(
+        tool.plansRequired.minimumPlan,
+        preferences.planSelections,
+      ),
+    ).length;
+  }, [preferences.planSelections]);
+
+  const filteredPlanPlatforms = useMemo(() => {
     const normalizedQuery = query.trim().toLowerCase();
 
     if (!normalizedQuery) {
-      return tools;
+      return planPlatforms;
     }
 
-    return tools.filter((tool) => {
+    return planPlatforms.filter((planPlatform) => {
+      const platformTools = planPlatform.plans.flatMap((planOption) =>
+        getToolsForPlan(planOption.id),
+      );
       const searchableText = [
-        tool.name,
-        tool.provider,
-        ...tool.categories,
-        ...tool.tags,
+        planPlatform.label,
+        ...planPlatform.plans.map((planOption) => planOption.label),
+        ...platformTools.flatMap((tool) => [tool.name, tool.provider]),
       ]
         .join(" ")
         .toLowerCase();
@@ -74,12 +83,16 @@ export default function SettingsPage() {
     }));
   }
 
-  function toggleOwnedTool(toolId: string) {
-    const ownedTools = preferences.ownedTools.includes(toolId)
-      ? preferences.ownedTools.filter((ownedToolId) => ownedToolId !== toolId)
-      : [...preferences.ownedTools, toolId];
+  function selectPlan(platformId: string, planId: string) {
+    const planSelections = { ...preferences.planSelections };
 
-    updatePreferences({ ownedTools });
+    if (planId) {
+      planSelections[platformId] = planId;
+    } else {
+      delete planSelections[platformId];
+    }
+
+    updatePreferences({ planSelections });
   }
 
   function setBudget(value: string) {
@@ -88,21 +101,26 @@ export default function SettingsPage() {
     });
   }
 
-  function clearOwnedTools() {
-    updatePreferences({ ownedTools: [] });
+  function clearPlanSelections() {
+    updatePreferences({ planSelections: {} });
   }
 
-  function selectFreeTools() {
+  function selectFreePlans() {
     updatePreferences({
-      ownedTools: tools
-        .filter((tool) =>
-          tool.tiers.some((tierRequirement) => tierRequirement.tier === "free"),
-        )
-        .map((tool) => tool.id),
+      planSelections: Object.fromEntries(
+        planPlatforms.flatMap((planPlatform) => {
+          const freePlan = planPlatform.plans.find(
+            (planOption) => planOption.tier === "free",
+          );
+
+          return freePlan ? [[planPlatform.id, freePlan.id]] : [];
+        }),
+      ),
     });
   }
 
   const selectedBudget = preferences.budget ?? "any";
+  const selectedPlanCount = Object.keys(preferences.planSelections).length;
 
   return (
     <main className="mx-auto flex w-full max-w-5xl flex-1 flex-col gap-8 px-6 py-10">
@@ -111,14 +129,16 @@ export default function SettingsPage() {
         <div className="mt-3 flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
           <div>
             <h1 className="text-3xl font-semibold tracking-tight">
-              Preferences
+              Plan access
             </h1>
             <p className="mt-3 max-w-2xl text-sm leading-6 text-muted-foreground">
-              Saved locally in this browser for recommendation filtering.
+              Pick the exact plans you have. These selections are saved locally
+              in this browser and used to filter recommendations.
             </p>
           </div>
           <p className="text-sm text-muted-foreground">
-            {preferences.ownedTools.length} owned
+            {selectedPlanCount} plans selected · {accessibleToolCount} tools
+            accessible
           </p>
         </div>
       </section>
@@ -162,10 +182,10 @@ export default function SettingsPage() {
               />
               <span>
                 <span className="block font-medium">
-                  Only show tools I have
+                  Only show tools in my selected plans
                 </span>
                 <span className="text-muted-foreground">
-                  Hide recommendations outside your owned list.
+                  Hide recommendations that require a different plan.
                 </span>
               </span>
             </label>
@@ -197,23 +217,23 @@ export default function SettingsPage() {
         <div className="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
           <div>
             <h2 className="text-xl font-semibold tracking-tight">
-              Owned tools
+              Platform plans
             </h2>
             <p className="mt-2 text-sm text-muted-foreground">
-              Select the tools and modes you can already access.
+              Choose the highest plan you have for each platform.
             </p>
           </div>
           <div className="flex flex-wrap gap-2">
             <button
               className="h-9 rounded-md border px-3 text-sm hover:bg-muted"
-              onClick={selectFreeTools}
+              onClick={selectFreePlans}
               type="button"
             >
-              Select free tools
+              Select free plans
             </button>
             <button
               className="h-9 rounded-md border px-3 text-sm hover:bg-muted"
-              onClick={clearOwnedTools}
+              onClick={clearPlanSelections}
               type="button"
             >
               Clear
@@ -221,43 +241,63 @@ export default function SettingsPage() {
           </div>
         </div>
 
-        <label className="sr-only" htmlFor="tool-search">
-          Search tools
+        <label className="sr-only" htmlFor="plan-search">
+          Search platforms
         </label>
         <input
           className="h-10 rounded-md border bg-background px-3 text-sm outline-none focus-visible:ring-3 focus-visible:ring-ring/50"
-          id="tool-search"
+          id="plan-search"
           onChange={(event) => setQuery(event.target.value)}
-          placeholder="Search tools by name, provider, category, or tag"
+          placeholder="Search platforms, plans, or tools"
           type="search"
           value={query}
         />
 
         <div className="grid gap-3 md:grid-cols-2">
-          {filteredTools.map((tool) => {
-            const isOwned = preferences.ownedTools.includes(tool.id);
+          {filteredPlanPlatforms.map((planPlatform) => {
+            const selectedPlanId =
+              preferences.planSelections[planPlatform.id] ?? "";
+            const includedTools = planPlatform.plans.flatMap((planOption) =>
+              getToolsForPlan(planOption.id),
+            );
 
             return (
-              <label
-                className={cn(
-                  "flex min-h-24 cursor-pointer gap-3 rounded-lg border bg-card p-4 text-sm text-card-foreground transition-colors",
-                  isOwned && "border-primary bg-muted",
-                )}
-                key={tool.id}
+              <div
+                className="rounded-lg border bg-card p-4 text-card-foreground"
+                key={planPlatform.id}
               >
-                <input
-                  checked={isOwned}
-                  className="mt-1 size-4"
-                  onChange={() => toggleOwnedTool(tool.id)}
-                  type="checkbox"
-                />
-                <span className="min-w-0">
-                  <span className="block font-medium">{tool.name}</span>
-                  <span className="mt-1 block text-muted-foreground">
-                    {getToolSummary(tool)}
-                  </span>
-                </span>
-              </label>
+                <label
+                  className="text-sm font-medium"
+                  htmlFor={`plan-${planPlatform.id}`}
+                >
+                  {planPlatform.label}
+                </label>
+                <select
+                  className="mt-3 h-10 w-full rounded-md border bg-background px-3 text-sm outline-none focus-visible:ring-3 focus-visible:ring-ring/50"
+                  id={`plan-${planPlatform.id}`}
+                  onChange={(event) =>
+                    selectPlan(planPlatform.id, event.target.value)
+                  }
+                  value={selectedPlanId}
+                >
+                  <option value="">No plan selected</option>
+                  {planPlatform.plans.map((planOption) => (
+                    <option key={planOption.id} value={planOption.id}>
+                      {planOption.label}
+                    </option>
+                  ))}
+                </select>
+                <p className="mt-3 text-sm text-muted-foreground">
+                  {includedTools.length
+                    ? `${includedTools.length} tool modes mapped here`
+                    : "No tool modes currently mapped here"}
+                </p>
+                {includedTools.length > 0 && (
+                  <p className="mt-2 line-clamp-2 text-xs text-muted-foreground">
+                    {includedTools.map((tool) => tool.name).join(", ")}
+                  </p>
+                )}
+              </div>
             );
           })}
         </div>

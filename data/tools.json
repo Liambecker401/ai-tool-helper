@@ -50,13 +50,6 @@
       "Perplexity.ai → ask a question in the main bar"
     ],
     "promptTemplate": "Use Perplexity Search (Standard) when I need help with quick factual questions, current events, source-backed answers. Ask clarifying questions if needed, then produce a practical result with any relevant sources, files, or next steps.",
-    "tiers": [
-      {
-        "tier": "free",
-        "label": "Free tier with usage limits.",
-        "monthlyCost": "Free tier available"
-      }
-    ],
     "creditCost": {
       "estimate": "moderate",
       "notes": "Free tier with usage limits."
@@ -66,7 +59,11 @@
       "phind-phind",
       "google-deepmind-gemini-chat-default-2-5-pro-3-pro"
     ],
-    "lastVerified": "2026-05-01"
+    "lastVerified": "2026-05-01",
+    "plansRequired": {
+      "minimumPlan": "perplexity-free",
+      "planLabel": "Free tier with usage limits."
+    }
   },
   {
     "id": "perplexity-ai-perplexity-pro-search",
@@ -113,13 +110,6 @@
       "Perplexity.ai → toggle \"Pro\" in the search bar"
     ],
     "promptTemplate": "Use Perplexity Pro Search when I need help with multi-faceted questions, comparison research, more thorough sourced answers than standard search. Ask clarifying questions if needed, then produce a practical result with any relevant sources, files, or next steps.",
-    "tiers": [
-      {
-        "tier": "paid-low",
-        "label": "Perplexity Pro ($20/mo).",
-        "monthlyCost": "Varies"
-      }
-    ],
     "creditCost": {
       "estimate": "moderate",
       "notes": "Perplexity Pro ($20/mo)."
@@ -129,7 +119,12 @@
       "anthropic-claude-projects",
       "google-deepmind-gemini-chat-default-2-5-pro-3-pro"
     ],
-    "lastVerified": "2026-05-01"
+    "lastVerified": "2026-05-01",
+    "plansRequired": {
+      "minimumPlan": "perplexity-pro",
+      "planLabel": "Perplexity Pro ($20/mo).",
+      "freeAlternative": "perplexity-free"
+    }
   },
   {
     "id": "perplexity-ai-perplexity-deep-research",
@@ -182,13 +177,6 @@
       "Perplexity.ai → select \"Deep Research\" in mode picker"
     ],
     "promptTemplate": "Use Perplexity Deep Research when I need help with research reports, due diligence, market analysis. Ask clarifying questions if needed, then produce a practical result with any relevant sources, files, or next steps.",
-    "tiers": [
-      {
-        "tier": "paid-low",
-        "label": "Pro plan, 300 Deep Research runs/month.",
-        "monthlyCost": "Varies"
-      }
-    ],
     "creditCost": {
       "estimate": "high",
       "notes": "Pro plan, 300 Deep Research runs/month."
@@ -198,7 +186,12 @@
       "anthropic-claude-opus-4-6",
       "openai-chatgpt-chat-default-gpt-5"
     ],
-    "lastVerified": "2026-05-01"
+    "lastVerified": "2026-05-01",
+    "plansRequired": {
+      "minimumPlan": "perplexity-pro",
+      "planLabel": "Pro plan, 300 Deep Research runs/month.",
+      "freeAlternative": "perplexity-free"
+    }
   },
   {
     "id": "perplexity-ai-perplexity-spaces",
@@ -247,13 +240,6 @@
       "Perplexity.ai → Spaces in left sidebar → create new space"
     ],
     "promptTemplate": "Use Perplexity Spaces when I need help with collaborative research, ongoing investigation into a topic, building a knowledge base over time. Ask clarifying questions if needed, then produce a practical result with any relevant sources, files, or next steps.",
-    "tiers": [
-      {
-        "tier": "paid-low",
-        "label": "Pro plan or higher.",
-        "monthlyCost": "Varies"
-      }
-    ],
     "creditCost": {
       "estimate": "moderate",
       "notes": "Pro plan or higher."
@@ -263,7 +249,12 @@
       "google-gemini-live",
       "perplexity-ai-perplexity-computer"
     ],
-    "lastVerified": "2026-05-01"
+    "lastVerified": "2026-05-01",
+    "plansRequired": {
+      "minimumPlan": "perplexity-pro",
+      "planLabel": "Pro plan or higher.",
+      "freeAlternative": "perplexity-free"
+    }
   },
   {
     "id": "perplexity-ai-perplexity-comet-ai-browser",
@@ -314,13 +305,6 @@
       "Download Comet browser from perplexity.ai/comet"
     ],
     "promptTemplate": "Use Perplexity Comet (AI Browser) when I need help with hands-free web tasks, accessibility, navigating complex sites. Ask clarifying questions if needed, then produce a practical result with any relevant sources, files, or next steps.",
-    "tiers": [
-      {
-        "tier": "paid-low",
-        "label": "Pro plan.",
-        "monthlyCost": "Varies"
-      }
-    ],
     "creditCost": {
       "estimate": "moderate",
       "notes": "Pro plan."
@@ -330,7 +314,12 @@
       "canva-gemini-canvas",
       "stackblitz-bolt-stackblitz"
     ],
-    "lastVerified": "2026-05-01"
+    "lastVerified": "2026-05-01",
+    "plansRequired": {
+      "minimumPlan": "perplexity-pro",
+      "planLabel": "Pro plan.",
+      "freeAlternative": "perplexity-free"
+    }
   },
   {
     "id": "perplexity-ai-perplexity-computer",
@@ -379,13 +368,6 @@
       "Perplexity.ai → Computer in left sidebar"
     ],
     "promptTemplate": "Use Perplexity Computer when I need help with background workflows, recurring research tasks, multi-step web automation. Ask clarifying questions if needed, then produce a practical result with any relevant sources, files, or next steps.",
-    "tiers": [
-      {
-        "tier": "paid-low",
-        "label": "Pro plan, with additional charges for heavy usage.",
-        "monthlyCost": "Varies"
-      }
-    ],
     "creditCost": {
       "estimate": "high",
       "notes": "Pro plan, with additional charges for heavy usage."
@@ -395,7 +377,12 @@
       "openai-chatgpt-operator",
       "anthropic-claude-in-chrome-browsing-agent"
     ],
-    "lastVerified": "2026-05-01"
+    "lastVerified": "2026-05-01",
+    "plansRequired": {
+      "minimumPlan": "perplexity-pro",
+      "planLabel": "Pro plan, with additional charges for heavy usage.",
+      "freeAlternative": "perplexity-free"
+    }
   },
   {
     "id": "perplexity-ai-perplexity-voice",
@@ -439,13 +426,6 @@
       "Perplexity mobile app → tap voice icon"
     ],
     "promptTemplate": "Use Perplexity Voice when I need help with driving, hands-free questions, quick voice search. Ask clarifying questions if needed, then produce a practical result with any relevant sources, files, or next steps.",
-    "tiers": [
-      {
-        "tier": "free",
-        "label": "Available on free and paid tiers (with limits).",
-        "monthlyCost": "Free tier available"
-      }
-    ],
     "creditCost": {
       "estimate": "moderate",
       "notes": "Available on free and paid tiers (with limits)."
@@ -455,7 +435,11 @@
       "perplexity-ai-perplexity-spaces",
       "google-notebooklm"
     ],
-    "lastVerified": "2026-05-01"
+    "lastVerified": "2026-05-01",
+    "plansRequired": {
+      "minimumPlan": "perplexity-free",
+      "planLabel": "Available on free and paid tiers (with limits)."
+    }
   },
   {
     "id": "perplexity-ai-perplexity-api-sonar",
@@ -501,13 +485,6 @@
       "Documentation"
     ],
     "promptTemplate": "Use Perplexity API (Sonar) when I need help with building search-grounded features into apps, rag pipelines that need fresh web data. Ask clarifying questions if needed, then produce a practical result with any relevant sources, files, or next steps.",
-    "tiers": [
-      {
-        "tier": "paid-low",
-        "label": "Pay-per-use, varies by model.",
-        "monthlyCost": "Usage-based"
-      }
-    ],
     "creditCost": {
       "estimate": "moderate",
       "notes": "Pay-per-use, varies by model."
@@ -517,7 +494,11 @@
       "openai-chatgpt-deep-research",
       "openai-chatgpt-operator"
     ],
-    "lastVerified": "2026-05-01"
+    "lastVerified": "2026-05-01",
+    "plansRequired": {
+      "minimumPlan": "perplexity-free",
+      "planLabel": "Pay-per-use, varies by model."
+    }
   },
   {
     "id": "openai-chatgpt-chat-default-gpt-5",
@@ -570,13 +551,6 @@
       "Chatgpt.com → start a new chat"
     ],
     "promptTemplate": "Use ChatGPT Chat (default GPT-5) when I need help with almost any task — writing, code, analysis. Ask clarifying questions if needed, then produce a practical result with any relevant sources, files, or next steps.",
-    "tiers": [
-      {
-        "tier": "free",
-        "label": "Free tier with limits; Plus $20/mo for higher limits and premium models.",
-        "monthlyCost": "Free tier available"
-      }
-    ],
     "creditCost": {
       "estimate": "moderate",
       "notes": "Free tier with limits; Plus $20/mo for higher limits and premium models."
@@ -586,7 +560,11 @@
       "openai-chatgpt-deep-research",
       "anthropic-claude-opus-4-6"
     ],
-    "lastVerified": "2026-05-01"
+    "lastVerified": "2026-05-01",
+    "plansRequired": {
+      "minimumPlan": "chatgpt-free",
+      "planLabel": "Free tier with limits; Plus $20/mo for higher limits and premium models."
+    }
   },
   {
     "id": "openai-chatgpt-deep-research",
@@ -634,13 +612,6 @@
       "ChatGPT → tools menu → Deep Research"
     ],
     "promptTemplate": "Use ChatGPT Deep Research when I need help with in-depth research, due diligence, comprehensive topic analysis. Ask clarifying questions if needed, then produce a practical result with any relevant sources, files, or next steps.",
-    "tiers": [
-      {
-        "tier": "paid-low",
-        "label": "Plus plan or higher (limited monthly runs).",
-        "monthlyCost": "Varies"
-      }
-    ],
     "creditCost": {
       "estimate": "moderate",
       "notes": "Plus plan or higher (limited monthly runs)."
@@ -650,7 +621,12 @@
       "anthropic-claude-chat-default-sonnet-4-6",
       "anthropic-claude-opus-4-6"
     ],
-    "lastVerified": "2026-05-01"
+    "lastVerified": "2026-05-01",
+    "plansRequired": {
+      "minimumPlan": "chatgpt-plus",
+      "planLabel": "Plus plan or higher (limited monthly runs).",
+      "freeAlternative": "chatgpt-free"
+    }
   },
   {
     "id": "canva-chatgpt-canvas",
@@ -698,13 +674,6 @@
       "ChatGPT → tools menu → Canvas"
     ],
     "promptTemplate": "Use ChatGPT Canvas when I need help with writing, editing long documents, code refactoring with explanation. Ask clarifying questions if needed, then produce a practical result with any relevant sources, files, or next steps.",
-    "tiers": [
-      {
-        "tier": "free",
-        "label": "Available on free and paid tiers.",
-        "monthlyCost": "Free tier available"
-      }
-    ],
     "creditCost": {
       "estimate": "moderate",
       "notes": "Available on free and paid tiers."
@@ -714,7 +683,11 @@
       "openai-chatgpt-voice-mode",
       "anthropic-claude-artifacts"
     ],
-    "lastVerified": "2026-05-01"
+    "lastVerified": "2026-05-01",
+    "plansRequired": {
+      "minimumPlan": "chatgpt-free",
+      "planLabel": "Available on free and paid tiers."
+    }
   },
   {
     "id": "openai-chatgpt-voice-mode",
@@ -759,13 +732,6 @@
       "ChatGPT mobile app → voice icon. Web also supports voice"
     ],
     "promptTemplate": "Use ChatGPT Voice Mode when I need help with hands-free use, language practice, brainstorming on the go. Ask clarifying questions if needed, then produce a practical result with any relevant sources, files, or next steps.",
-    "tiers": [
-      {
-        "tier": "free",
-        "label": "Free tier (limited); Plus for full access.",
-        "monthlyCost": "Free tier available"
-      }
-    ],
     "creditCost": {
       "estimate": "moderate",
       "notes": "Free tier (limited); Plus for full access."
@@ -775,7 +741,11 @@
       "canva-chatgpt-canvas",
       "perplexity-ai-perplexity-pro-search"
     ],
-    "lastVerified": "2026-05-01"
+    "lastVerified": "2026-05-01",
+    "plansRequired": {
+      "minimumPlan": "chatgpt-free",
+      "planLabel": "Free tier (limited); Plus for full access."
+    }
   },
   {
     "id": "openai-chatgpt-operator",
@@ -823,13 +793,6 @@
       "Operator.openai.com → describe the task"
     ],
     "promptTemplate": "Use ChatGPT Operator when I need help with booking flights, ordering items, filling forms. Ask clarifying questions if needed, then produce a practical result with any relevant sources, files, or next steps.",
-    "tiers": [
-      {
-        "tier": "paid-high",
-        "label": "ChatGPT Pro ($200/mo) required.",
-        "monthlyCost": "ChatGPT Pro ($200/mo) required."
-      }
-    ],
     "creditCost": {
       "estimate": "high",
       "notes": "ChatGPT Pro ($200/mo) required."
@@ -839,7 +802,12 @@
       "stackblitz-bolt-stackblitz",
       "anthropic-claude-api"
     ],
-    "lastVerified": "2026-05-01"
+    "lastVerified": "2026-05-01",
+    "plansRequired": {
+      "minimumPlan": "chatgpt-pro",
+      "planLabel": "ChatGPT Pro ($200/mo) required.",
+      "freeAlternative": "chatgpt-free"
+    }
   },
   {
     "id": "openai-chatgpt-custom-gpts",
@@ -883,13 +851,6 @@
       "ChatGPT → Explore GPTs → Create"
     ],
     "promptTemplate": "Use ChatGPT Custom GPTs when I need help with repeatable workflows with specific personas, domain experts, integrating private knowledge bases. Ask clarifying questions if needed, then produce a practical result with any relevant sources, files, or next steps.",
-    "tiers": [
-      {
-        "tier": "paid-low",
-        "label": "Plus or higher to build; using community GPTs requires Plus.",
-        "monthlyCost": "Varies"
-      }
-    ],
     "creditCost": {
       "estimate": "moderate",
       "notes": "Plus or higher to build; using community GPTs requires Plus."
@@ -899,7 +860,12 @@
       "perplexity-ai-perplexity-computer",
       "stackblitz-bolt-stackblitz"
     ],
-    "lastVerified": "2026-05-01"
+    "lastVerified": "2026-05-01",
+    "plansRequired": {
+      "minimumPlan": "chatgpt-plus",
+      "planLabel": "Plus or higher to build; using community GPTs requires Plus.",
+      "freeAlternative": "chatgpt-free"
+    }
   },
   {
     "id": "openai-chatgpt-image-generation-gpt-image-dall-e",
@@ -942,13 +908,6 @@
       "ChatGPT → ask for an image directly"
     ],
     "promptTemplate": "Use ChatGPT Image Generation (GPT-Image / DALL·E) when I need help with marketing visuals, mockups, illustrations. Ask clarifying questions if needed, then produce a practical result with any relevant sources, files, or next steps.",
-    "tiers": [
-      {
-        "tier": "free",
-        "label": "Free tier (limited); Plus for higher limits.",
-        "monthlyCost": "Free tier available"
-      }
-    ],
     "creditCost": {
       "estimate": "moderate",
       "notes": "Free tier (limited); Plus for higher limits."
@@ -958,7 +917,11 @@
       "microsoft-copilot-chat-bing-chat-edge",
       "google-deepmind-gemini-chat-default-2-5-pro-3-pro"
     ],
-    "lastVerified": "2026-05-01"
+    "lastVerified": "2026-05-01",
+    "plansRequired": {
+      "minimumPlan": "chatgpt-free",
+      "planLabel": "Free tier (limited); Plus for higher limits."
+    }
   },
   {
     "id": "openai-chatgpt-data-analysis-advanced-data-analysis",
@@ -1005,13 +968,6 @@
       "ChatGPT → upload file → ask for analysis"
     ],
     "promptTemplate": "Use ChatGPT Data Analysis (Advanced Data Analysis) when I need help with quick data analysis, chart generation, statistical work. Ask clarifying questions if needed, then produce a practical result with any relevant sources, files, or next steps.",
-    "tiers": [
-      {
-        "tier": "paid-low",
-        "label": "Plus plan.",
-        "monthlyCost": "Varies"
-      }
-    ],
     "creditCost": {
       "estimate": "moderate",
       "notes": "Plus plan."
@@ -1021,7 +977,12 @@
       "anthropic-claude-artifacts",
       "microsoft-copilot-chat-bing-chat-edge"
     ],
-    "lastVerified": "2026-05-01"
+    "lastVerified": "2026-05-01",
+    "plansRequired": {
+      "minimumPlan": "chatgpt-plus",
+      "planLabel": "Plus plan.",
+      "freeAlternative": "chatgpt-free"
+    }
   },
   {
     "id": "openai-chatgpt-codex",
@@ -1066,13 +1027,6 @@
       "Chatgpt.com/codex"
     ],
     "promptTemplate": "Use ChatGPT Codex when I need help with multi-file coding tasks, autonomous feature implementation, agentic dev work. Ask clarifying questions if needed, then produce a practical result with any relevant sources, files, or next steps.",
-    "tiers": [
-      {
-        "tier": "paid-low",
-        "label": "ChatGPT Pro plan.",
-        "monthlyCost": "Varies"
-      }
-    ],
     "creditCost": {
       "estimate": "high",
       "notes": "ChatGPT Pro plan."
@@ -1082,7 +1036,12 @@
       "anysphere-cursor",
       "codeium-windsurf-formerly-codeium"
     ],
-    "lastVerified": "2026-05-01"
+    "lastVerified": "2026-05-01",
+    "plansRequired": {
+      "minimumPlan": "chatgpt-pro",
+      "planLabel": "ChatGPT Pro plan.",
+      "freeAlternative": "chatgpt-free"
+    }
   },
   {
     "id": "openai-openai-api",
@@ -1122,13 +1081,6 @@
       "Platform.openai.com"
     ],
     "promptTemplate": "Use OpenAI API when I need help with building any ai-powered product or feature. Ask clarifying questions if needed, then produce a practical result with any relevant sources, files, or next steps.",
-    "tiers": [
-      {
-        "tier": "paid-low",
-        "label": "Pay-per-token, varies by model.",
-        "monthlyCost": "Usage-based"
-      }
-    ],
     "creditCost": {
       "estimate": "moderate",
       "notes": "Pay-per-token, varies by model."
@@ -1138,7 +1090,11 @@
       "anthropic-claude-api",
       "anthropic-claude-artifacts"
     ],
-    "lastVerified": "2026-05-01"
+    "lastVerified": "2026-05-01",
+    "plansRequired": {
+      "minimumPlan": "openai-api",
+      "planLabel": "OpenAI API pay-as-you-go access"
+    }
   },
   {
     "id": "anthropic-claude-chat-default-sonnet-4-6",
@@ -1188,13 +1144,6 @@
       "Claude.ai → start chat"
     ],
     "promptTemplate": "Use Claude Chat (default Sonnet 4.6) when I need help with writing, analysis, complex reasoning. Ask clarifying questions if needed, then produce a practical result with any relevant sources, files, or next steps.",
-    "tiers": [
-      {
-        "tier": "paid-high",
-        "label": "Free tier; Pro $20/mo; Max $100-200/mo for heavy usage.",
-        "monthlyCost": "Free tier; Pro $20/mo; Max $100-200/mo for heavy usage."
-      }
-    ],
     "creditCost": {
       "estimate": "high",
       "notes": "Free tier; Pro $20/mo; Max $100-200/mo for heavy usage."
@@ -1204,7 +1153,11 @@
       "openai-chatgpt-deep-research",
       "perplexity-ai-perplexity-deep-research"
     ],
-    "lastVerified": "2026-05-01"
+    "lastVerified": "2026-05-01",
+    "plansRequired": {
+      "minimumPlan": "claude-free",
+      "planLabel": "Free tier; Pro $20/mo; Max $100-200/mo for heavy usage."
+    }
   },
   {
     "id": "anthropic-claude-opus-4-6",
@@ -1252,13 +1205,6 @@
       "Claude.ai → model picker → Opus"
     ],
     "promptTemplate": "Use Claude Opus (4.6) when I need help with complex analysis, hard coding problems, multi-step reasoning. Ask clarifying questions if needed, then produce a practical result with any relevant sources, files, or next steps.",
-    "tiers": [
-      {
-        "tier": "paid-low",
-        "label": "Included in Claude Pro (limited messages) and Max plans.",
-        "monthlyCost": "Varies"
-      }
-    ],
     "creditCost": {
       "estimate": "moderate",
       "notes": "Included in Claude Pro (limited messages) and Max plans."
@@ -1268,7 +1214,12 @@
       "perplexity-ai-perplexity-deep-research",
       "openai-chatgpt-chat-default-gpt-5"
     ],
-    "lastVerified": "2026-05-01"
+    "lastVerified": "2026-05-01",
+    "plansRequired": {
+      "minimumPlan": "claude-pro",
+      "planLabel": "Included in Claude Pro (limited messages) and Max plans.",
+      "freeAlternative": "claude-free"
+    }
   },
   {
     "id": "anthropic-claude-projects",
@@ -1318,13 +1269,6 @@
       "Claude.ai → Projects in left sidebar → new project"
     ],
     "promptTemplate": "Use Claude Projects when I need help with ongoing work on a specific topic, codebase, research area. Ask clarifying questions if needed, then produce a practical result with any relevant sources, files, or next steps.",
-    "tiers": [
-      {
-        "tier": "paid-low",
-        "label": "Pro or higher.",
-        "monthlyCost": "Varies"
-      }
-    ],
     "creditCost": {
       "estimate": "moderate",
       "notes": "Pro or higher."
@@ -1334,7 +1278,12 @@
       "perplexity-ai-perplexity-pro-search",
       "perplexity-ai-perplexity-search-standard"
     ],
-    "lastVerified": "2026-05-01"
+    "lastVerified": "2026-05-01",
+    "plansRequired": {
+      "minimumPlan": "claude-pro",
+      "planLabel": "Pro or higher.",
+      "freeAlternative": "claude-free"
+    }
   },
   {
     "id": "anthropic-claude-artifacts",
@@ -1384,13 +1333,6 @@
       "An Artifact panel opens automatically"
     ],
     "promptTemplate": "Use Claude Artifacts when I need help with building single-page apps, interactive components, visualizations. Ask clarifying questions if needed, then produce a practical result with any relevant sources, files, or next steps.",
-    "tiers": [
-      {
-        "tier": "free",
-        "label": "Free and paid tiers.",
-        "monthlyCost": "Free tier available"
-      }
-    ],
     "creditCost": {
       "estimate": "moderate",
       "notes": "Free and paid tiers."
@@ -1400,7 +1342,11 @@
       "microsoft-copilot-chat-bing-chat-edge",
       "google-deepmind-gemini-chat-default-2-5-pro-3-pro"
     ],
-    "lastVerified": "2026-05-01"
+    "lastVerified": "2026-05-01",
+    "plansRequired": {
+      "minimumPlan": "claude-free",
+      "planLabel": "Free and paid tiers."
+    }
   },
   {
     "id": "anthropic-claude-code",
@@ -1454,13 +1400,6 @@
       "Run `claude` in your project folder"
     ],
     "promptTemplate": "Use Claude Code when I need help with multi-file refactors, autonomous feature implementation, debugging across files. Ask clarifying questions if needed, then produce a practical result with any relevant sources, files, or next steps.",
-    "tiers": [
-      {
-        "tier": "paid-low",
-        "label": "Included with Pro and Max plans (with usage limits scaling by tier); also available via API.",
-        "monthlyCost": "Usage-based"
-      }
-    ],
     "creditCost": {
       "estimate": "high",
       "notes": "Included with Pro and Max plans (with usage limits scaling by tier); also available via API."
@@ -1470,7 +1409,12 @@
       "udio-copilot-studio",
       "figma-figma-ai-make"
     ],
-    "lastVerified": "2026-05-01"
+    "lastVerified": "2026-05-01",
+    "plansRequired": {
+      "minimumPlan": "claude-pro",
+      "planLabel": "Included with Pro and Max plans (with usage limits scaling by tier); also available via API.",
+      "freeAlternative": "claude-free"
+    }
   },
   {
     "id": "anthropic-claude-in-chrome-browsing-agent",
@@ -1518,13 +1462,6 @@
       "Claude.ai → Chrome extension install link"
     ],
     "promptTemplate": "Use Claude in Chrome (Browsing Agent) when I need help with web research with action, form filling, navigating complex sites. Ask clarifying questions if needed, then produce a practical result with any relevant sources, files, or next steps.",
-    "tiers": [
-      {
-        "tier": "paid-low",
-        "label": "Beta access via Max plan or waitlist.",
-        "monthlyCost": "Varies"
-      }
-    ],
     "creditCost": {
       "estimate": "high",
       "notes": "Beta access via Max plan or waitlist."
@@ -1534,7 +1471,12 @@
       "perplexity-ai-perplexity-computer",
       "perplexity-ai-perplexity-deep-research"
     ],
-    "lastVerified": "2026-05-01"
+    "lastVerified": "2026-05-01",
+    "plansRequired": {
+      "minimumPlan": "claude-max",
+      "planLabel": "Beta access via Max plan or waitlist.",
+      "freeAlternative": "claude-free"
+    }
   },
   {
     "id": "anthropic-claude-in-excel",
@@ -1580,13 +1522,6 @@
       "Claude.ai → Excel integration setup"
     ],
     "promptTemplate": "Use Claude in Excel when I need help with data analysis in excel, formula generation, cleaning messy spreadsheets. Ask clarifying questions if needed, then produce a practical result with any relevant sources, files, or next steps.",
-    "tiers": [
-      {
-        "tier": "paid-low",
-        "label": "Beta access.",
-        "monthlyCost": "Varies"
-      }
-    ],
     "creditCost": {
       "estimate": "low",
       "notes": "Beta access."
@@ -1596,7 +1531,12 @@
       "coda-coda-ai",
       "google-gemini-in-google-workspace-gmail-docs-sheets-slides"
     ],
-    "lastVerified": "2026-05-01"
+    "lastVerified": "2026-05-01",
+    "plansRequired": {
+      "minimumPlan": "claude-max",
+      "planLabel": "Beta access.",
+      "freeAlternative": "claude-free"
+    }
   },
   {
     "id": "anthropic-claude-cowork",
@@ -1642,13 +1582,6 @@
       "Download from claude.ai"
     ],
     "promptTemplate": "Use Claude Cowork when I need help with file, task management automation, cross-app workflows. Ask clarifying questions if needed, then produce a practical result with any relevant sources, files, or next steps.",
-    "tiers": [
-      {
-        "tier": "paid-low",
-        "label": "Beta.",
-        "monthlyCost": "Varies"
-      }
-    ],
     "creditCost": {
       "estimate": "high",
       "notes": "Beta."
@@ -1658,7 +1591,12 @@
       "openai-chatgpt-codex",
       "anthropic-claude-api"
     ],
-    "lastVerified": "2026-05-01"
+    "lastVerified": "2026-05-01",
+    "plansRequired": {
+      "minimumPlan": "claude-max",
+      "planLabel": "Beta.",
+      "freeAlternative": "claude-free"
+    }
   },
   {
     "id": "anthropic-claude-api",
@@ -1701,13 +1639,6 @@
       "Console.anthropic.com"
     ],
     "promptTemplate": "Use Claude API when I need help with building any ai-powered product, rag pipelines, agentic tools. Ask clarifying questions if needed, then produce a practical result with any relevant sources, files, or next steps.",
-    "tiers": [
-      {
-        "tier": "paid-low",
-        "label": "Pay-per-token (~$3/M input, $15/M output for Sonnet, varies by model).",
-        "monthlyCost": "Usage-based"
-      }
-    ],
     "creditCost": {
       "estimate": "high",
       "notes": "Pay-per-token (~$3/M input, $15/M output for Sonnet, varies by model)."
@@ -1717,7 +1648,11 @@
       "udio-copilot-studio",
       "figma-figma-ai-make"
     ],
-    "lastVerified": "2026-05-01"
+    "lastVerified": "2026-05-01",
+    "plansRequired": {
+      "minimumPlan": "anthropic-api",
+      "planLabel": "Anthropic API pay-as-you-go access"
+    }
   },
   {
     "id": "google-deepmind-gemini-chat-default-2-5-pro-3-pro",
@@ -1768,13 +1703,6 @@
       "Gemini.google.com"
     ],
     "promptTemplate": "Use Gemini Chat (default 2.5 Pro / 3 Pro) when I need help with long-context tasks, research, multimodal input (image. Ask clarifying questions if needed, then produce a practical result with any relevant sources, files, or next steps.",
-    "tiers": [
-      {
-        "tier": "free",
-        "label": "Free tier; Google AI Pro ~$20/mo; Ultra plans for heavy usage.",
-        "monthlyCost": "Free tier available"
-      }
-    ],
     "creditCost": {
       "estimate": "high",
       "notes": "Free tier; Google AI Pro ~$20/mo; Ultra plans for heavy usage."
@@ -1784,7 +1712,11 @@
       "openai-chatgpt-deep-research",
       "anthropic-claude-artifacts"
     ],
-    "lastVerified": "2026-05-01"
+    "lastVerified": "2026-05-01",
+    "plansRequired": {
+      "minimumPlan": "gemini-free",
+      "planLabel": "Free tier; Google AI Pro ~$20/mo; Ultra plans for heavy usage."
+    }
   },
   {
     "id": "google-gemini-deep-research",
@@ -1830,13 +1762,6 @@
       "Gemini.google.com → Deep Research toggle"
     ],
     "promptTemplate": "Use Gemini Deep Research when I need help with research reports, comprehensive topic exploration with sources, especially anything benefiting from google's search index. Ask clarifying questions if needed, then produce a practical result with any relevant sources, files, or next steps.",
-    "tiers": [
-      {
-        "tier": "paid-low",
-        "label": "Google AI Pro or higher.",
-        "monthlyCost": "Varies"
-      }
-    ],
     "creditCost": {
       "estimate": "moderate",
       "notes": "Google AI Pro or higher."
@@ -1846,7 +1771,12 @@
       "perplexity-ai-perplexity-deep-research",
       "anthropic-claude-in-chrome-browsing-agent"
     ],
-    "lastVerified": "2026-05-01"
+    "lastVerified": "2026-05-01",
+    "plansRequired": {
+      "minimumPlan": "gemini-advanced",
+      "planLabel": "Google AI Pro or higher.",
+      "freeAlternative": "gemini-free"
+    }
   },
   {
     "id": "canva-gemini-canvas",
@@ -1894,13 +1824,6 @@
       "Gemini.google.com → Canvas mode"
     ],
     "promptTemplate": "Use Gemini Canvas when I need help with document drafting, code iteration, content that benefits from side-by-side editing. Ask clarifying questions if needed, then produce a practical result with any relevant sources, files, or next steps.",
-    "tiers": [
-      {
-        "tier": "paid-low",
-        "label": "Available in Gemini app.",
-        "monthlyCost": "Varies"
-      }
-    ],
     "creditCost": {
       "estimate": "low",
       "notes": "Available in Gemini app."
@@ -1910,7 +1833,11 @@
       "perplexity-ai-perplexity-comet-ai-browser",
       "openai-chatgpt-operator"
     ],
-    "lastVerified": "2026-05-01"
+    "lastVerified": "2026-05-01",
+    "plansRequired": {
+      "minimumPlan": "gemini-free",
+      "planLabel": "Available in Gemini app."
+    }
   },
   {
     "id": "google-gemini-live",
@@ -1958,13 +1885,6 @@
       "Gemini mobile app → Live mode"
     ],
     "promptTemplate": "Use Gemini Live when I need help with hands-free conversation, learning with visual aids, getting help while looking at something. Ask clarifying questions if needed, then produce a practical result with any relevant sources, files, or next steps.",
-    "tiers": [
-      {
-        "tier": "free",
-        "label": "Free and Pro tiers.",
-        "monthlyCost": "Free tier available"
-      }
-    ],
     "creditCost": {
       "estimate": "high",
       "notes": "Free and Pro tiers."
@@ -1974,7 +1894,11 @@
       "microsoft-copilot-chat-bing-chat-edge",
       "descript-descript"
     ],
-    "lastVerified": "2026-05-01"
+    "lastVerified": "2026-05-01",
+    "plansRequired": {
+      "minimumPlan": "gemini-free",
+      "planLabel": "Free and Pro tiers."
+    }
   },
   {
     "id": "google-notebooklm",
@@ -2022,13 +1946,6 @@
       "Notebooklm.google.com"
     ],
     "promptTemplate": "Use NotebookLM when I need help with studying, research synthesis, building a knowledge base from your own documents. Ask clarifying questions if needed, then produce a practical result with any relevant sources, files, or next steps.",
-    "tiers": [
-      {
-        "tier": "free",
-        "label": "Free with a generous tier; NotebookLM Plus for higher limits.",
-        "monthlyCost": "Free tier available"
-      }
-    ],
     "creditCost": {
       "estimate": "moderate",
       "notes": "Free with a generous tier; NotebookLM Plus for higher limits."
@@ -2038,7 +1955,11 @@
       "phind-phind",
       "google-deepmind-gemini-chat-default-2-5-pro-3-pro"
     ],
-    "lastVerified": "2026-05-01"
+    "lastVerified": "2026-05-01",
+    "plansRequired": {
+      "minimumPlan": "gemini-free",
+      "planLabel": "Free with a generous tier; NotebookLM Plus for higher limits."
+    }
   },
   {
     "id": "google-gemini-in-google-workspace-gmail-docs-sheets-slides",
@@ -2086,13 +2007,6 @@
       "Gemini icon in toolbar"
     ],
     "promptTemplate": "Use Gemini in Google Workspace (Gmail, Docs, Sheets, Slides) when I need help with productivity work within google's ecosystem, email drafting, document summarization. Ask clarifying questions if needed, then produce a practical result with any relevant sources, files, or next steps.",
-    "tiers": [
-      {
-        "tier": "paid-low",
-        "label": "Included in Google Workspace Business plans and Google One AI Premium.",
-        "monthlyCost": "Varies"
-      }
-    ],
     "creditCost": {
       "estimate": "moderate",
       "notes": "Included in Google Workspace Business plans and Google One AI Premium."
@@ -2102,7 +2016,12 @@
       "coda-coda-ai",
       "microsoft-microsoft-365-copilot"
     ],
-    "lastVerified": "2026-05-01"
+    "lastVerified": "2026-05-01",
+    "plansRequired": {
+      "minimumPlan": "gemini-advanced",
+      "planLabel": "Included in Google Workspace Business plans and Google One AI Premium.",
+      "freeAlternative": "gemini-free"
+    }
   },
   {
     "id": "google-imagen-4",
@@ -2139,13 +2058,6 @@
       "Via Gemini app or Vertex AI"
     ],
     "promptTemplate": "Use Imagen 4 when I need help with photo-realistic images, marketing visuals, image generation needing high quality. Ask clarifying questions if needed, then produce a practical result with any relevant sources, files, or next steps.",
-    "tiers": [
-      {
-        "tier": "free",
-        "label": "Free tier in Gemini app; API via Vertex AI.",
-        "monthlyCost": "Free"
-      }
-    ],
     "creditCost": {
       "estimate": "moderate",
       "notes": "Free tier in Gemini app; API via Vertex AI."
@@ -2155,7 +2067,11 @@
       "canva-canva-ai-magic-studio",
       "openai-chatgpt-data-analysis-advanced-data-analysis"
     ],
-    "lastVerified": "2026-05-01"
+    "lastVerified": "2026-05-01",
+    "plansRequired": {
+      "minimumPlan": "gemini-free",
+      "planLabel": "Free tier in Gemini app; API via Vertex AI."
+    }
   },
   {
     "id": "google-veo",
@@ -2196,13 +2112,6 @@
       "Through Gemini or Vertex AI"
     ],
     "promptTemplate": "Use Veo when I need help with short-form video generation, marketing clips, creative video work. Ask clarifying questions if needed, then produce a practical result with any relevant sources, files, or next steps.",
-    "tiers": [
-      {
-        "tier": "paid-low",
-        "label": "Limited access via Gemini app and Vertex AI.",
-        "monthlyCost": "Varies"
-      }
-    ],
     "creditCost": {
       "estimate": "high",
       "notes": "Limited access via Gemini app and Vertex AI."
@@ -2212,7 +2121,12 @@
       "descript-descript",
       "xai-grok-imagine"
     ],
-    "lastVerified": "2026-05-01"
+    "lastVerified": "2026-05-01",
+    "plansRequired": {
+      "minimumPlan": "gemini-advanced",
+      "planLabel": "Limited access via Gemini app and Vertex AI.",
+      "freeAlternative": "gemini-free"
+    }
   },
   {
     "id": "google-lyria",
@@ -2247,13 +2161,6 @@
       "Via Google AI products"
     ],
     "promptTemplate": "Use Lyria when I need help with ai music generation, soundtracks. Ask clarifying questions if needed, then produce a practical result with any relevant sources, files, or next steps.",
-    "tiers": [
-      {
-        "tier": "paid-low",
-        "label": "Limited access.",
-        "monthlyCost": "Varies"
-      }
-    ],
     "creditCost": {
       "estimate": "low",
       "notes": "Limited access."
@@ -2263,7 +2170,12 @@
       "udio-udio",
       "adobe-adobe-firefly"
     ],
-    "lastVerified": "2026-05-01"
+    "lastVerified": "2026-05-01",
+    "plansRequired": {
+      "minimumPlan": "gemini-advanced",
+      "planLabel": "Limited access.",
+      "freeAlternative": "gemini-free"
+    }
   },
   {
     "id": "google-vertex-ai-gemini-api",
@@ -2299,13 +2211,6 @@
       "Ai"
     ],
     "promptTemplate": "Use Vertex AI / Gemini API when I need help with this task. Ask clarifying questions if needed, then produce a practical result with any relevant sources, files, or next steps.",
-    "tiers": [
-      {
-        "tier": "paid-low",
-        "label": "Pay-per-token.",
-        "monthlyCost": "Usage-based"
-      }
-    ],
     "creditCost": {
       "estimate": "high",
       "notes": "Pay-per-token."
@@ -2315,7 +2220,11 @@
       "anthropic-claude-api",
       "anthropic-claude-cowork"
     ],
-    "lastVerified": "2026-05-01"
+    "lastVerified": "2026-05-01",
+    "plansRequired": {
+      "minimumPlan": "vertex-ai-payg",
+      "planLabel": "Vertex AI pay-as-you-go access"
+    }
   },
   {
     "id": "xai-grok-chat",
@@ -2364,13 +2273,6 @@
       "Grok.com or X app"
     ],
     "promptTemplate": "Use Grok Chat when I need help with current events from x, real-time social info, math. Ask clarifying questions if needed, then produce a practical result with any relevant sources, files, or next steps.",
-    "tiers": [
-      {
-        "tier": "paid-high",
-        "label": "Free tier; SuperGrok $30/mo; SuperGrok Heavy $300/mo for top models.",
-        "monthlyCost": "Free tier; SuperGrok $30/mo; SuperGrok Heavy $300/mo for top models."
-      }
-    ],
     "creditCost": {
       "estimate": "high",
       "notes": "Free tier; SuperGrok $30/mo; SuperGrok Heavy $300/mo for top models."
@@ -2380,7 +2282,11 @@
       "openai-chatgpt-chat-default-gpt-5",
       "openai-chatgpt-deep-research"
     ],
-    "lastVerified": "2026-05-01"
+    "lastVerified": "2026-05-01",
+    "plansRequired": {
+      "minimumPlan": "grok-free",
+      "planLabel": "Free tier; SuperGrok $30/mo; SuperGrok Heavy $300/mo for top models."
+    }
   },
   {
     "id": "xai-grok-think-reasoning-mode",
@@ -2418,13 +2324,6 @@
       "Grok.com → Think mode"
     ],
     "promptTemplate": "Use Grok Think (Reasoning Mode) when I need help with hard math, complex logic, multi-step problems. Ask clarifying questions if needed, then produce a practical result with any relevant sources, files, or next steps.",
-    "tiers": [
-      {
-        "tier": "paid-low",
-        "label": "SuperGrok or higher.",
-        "monthlyCost": "Varies"
-      }
-    ],
     "creditCost": {
       "estimate": "moderate",
       "notes": "SuperGrok or higher."
@@ -2434,7 +2333,12 @@
       "openai-chatgpt-voice-mode",
       "google-gemini-live"
     ],
-    "lastVerified": "2026-05-01"
+    "lastVerified": "2026-05-01",
+    "plansRequired": {
+      "minimumPlan": "supergrok",
+      "planLabel": "SuperGrok or higher.",
+      "freeAlternative": "grok-free"
+    }
   },
   {
     "id": "xai-grok-deepsearch",
@@ -2474,13 +2378,6 @@
       "Grok.com → DeepSearch toggle"
     ],
     "promptTemplate": "Use Grok DeepSearch when I need help with current events, real-time information, things happening on x/social media. Ask clarifying questions if needed, then produce a practical result with any relevant sources, files, or next steps.",
-    "tiers": [
-      {
-        "tier": "free",
-        "label": "Free and paid tiers.",
-        "monthlyCost": "Free tier available"
-      }
-    ],
     "creditCost": {
       "estimate": "moderate",
       "notes": "Free and paid tiers."
@@ -2490,7 +2387,11 @@
       "meta-llama-models-open-source",
       "you-com-you-com"
     ],
-    "lastVerified": "2026-05-01"
+    "lastVerified": "2026-05-01",
+    "plansRequired": {
+      "minimumPlan": "grok-free",
+      "planLabel": "Free and paid tiers."
+    }
   },
   {
     "id": "xai-grok-voice",
@@ -2527,13 +2428,6 @@
       "Grok mobile app"
     ],
     "promptTemplate": "Use Grok Voice when I need help with hands-free interaction, casual conversation. Ask clarifying questions if needed, then produce a practical result with any relevant sources, files, or next steps.",
-    "tiers": [
-      {
-        "tier": "paid-low",
-        "label": "SuperGrok plan.",
-        "monthlyCost": "Varies"
-      }
-    ],
     "creditCost": {
       "estimate": "minimal",
       "notes": "SuperGrok plan."
@@ -2543,7 +2437,12 @@
       "google-deepmind-gemini-chat-default-2-5-pro-3-pro",
       "google-gemini-live"
     ],
-    "lastVerified": "2026-05-01"
+    "lastVerified": "2026-05-01",
+    "plansRequired": {
+      "minimumPlan": "supergrok",
+      "planLabel": "SuperGrok plan.",
+      "freeAlternative": "grok-free"
+    }
   },
   {
     "id": "xai-grok-imagine",
@@ -2585,13 +2484,6 @@
       "Grok.com → Imagine"
     ],
     "promptTemplate": "Use Grok Imagine when I need help with quick image generation with fewer content restrictions than competitors. Ask clarifying questions if needed, then produce a practical result with any relevant sources, files, or next steps.",
-    "tiers": [
-      {
-        "tier": "paid-low",
-        "label": "SuperGrok plan.",
-        "monthlyCost": "Varies"
-      }
-    ],
     "creditCost": {
       "estimate": "high",
       "notes": "SuperGrok plan."
@@ -2601,7 +2493,12 @@
       "anthropic-claude-artifacts",
       "descript-descript"
     ],
-    "lastVerified": "2026-05-01"
+    "lastVerified": "2026-05-01",
+    "plansRequired": {
+      "minimumPlan": "supergrok",
+      "planLabel": "SuperGrok plan.",
+      "freeAlternative": "grok-free"
+    }
   },
   {
     "id": "xai-xai-api",
@@ -2635,13 +2532,6 @@
       "X.ai/api"
     ],
     "promptTemplate": "Use xAI API when I need help with this task. Ask clarifying questions if needed, then produce a practical result with any relevant sources, files, or next steps.",
-    "tiers": [
-      {
-        "tier": "paid-low",
-        "label": "Pay-per-token.",
-        "monthlyCost": "Usage-based"
-      }
-    ],
     "creditCost": {
       "estimate": "moderate",
       "notes": "Pay-per-token."
@@ -2651,7 +2541,11 @@
       "anthropic-claude-api",
       "anthropic-claude-cowork"
     ],
-    "lastVerified": "2026-05-01"
+    "lastVerified": "2026-05-01",
+    "plansRequired": {
+      "minimumPlan": "xai-api",
+      "planLabel": "xAI API pay-as-you-go access"
+    }
   },
   {
     "id": "meta-meta-ai-assistant",
@@ -2697,13 +2591,6 @@
       "Meta.ai or inside any Meta app"
     ],
     "promptTemplate": "Use Meta AI Assistant when I need help with quick questions in meta's apps, casual chat, image generation in chat. Ask clarifying questions if needed, then produce a practical result with any relevant sources, files, or next steps.",
-    "tiers": [
-      {
-        "tier": "free",
-        "label": "Free.",
-        "monthlyCost": "Free"
-      }
-    ],
     "creditCost": {
       "estimate": "moderate",
       "notes": "Free."
@@ -2713,7 +2600,11 @@
       "anthropic-claude-artifacts",
       "microsoft-copilot-chat-bing-chat-edge"
     ],
-    "lastVerified": "2026-05-01"
+    "lastVerified": "2026-05-01",
+    "plansRequired": {
+      "minimumPlan": "meta-free",
+      "planLabel": "Free."
+    }
   },
   {
     "id": "meta-meta-ai-on-ray-ban-smart-glasses",
@@ -2754,13 +2645,6 @@
       "Ban Meta glasses + Meta View app"
     ],
     "promptTemplate": "Use Meta AI on Ray-Ban Smart Glasses when I need help with hands-free queries, identifying what you're looking at, capturing. Ask clarifying questions if needed, then produce a practical result with any relevant sources, files, or next steps.",
-    "tiers": [
-      {
-        "tier": "free",
-        "label": "Free with glasses purchase.",
-        "monthlyCost": "Free"
-      }
-    ],
     "creditCost": {
       "estimate": "minimal",
       "notes": "Free with glasses purchase."
@@ -2770,7 +2654,12 @@
       "openai-chatgpt-voice-mode",
       "descript-descript"
     ],
-    "lastVerified": "2026-05-01"
+    "lastVerified": "2026-05-01",
+    "plansRequired": {
+      "minimumPlan": "meta-glasses",
+      "planLabel": "Free with glasses purchase.",
+      "freeAlternative": "meta-free"
+    }
   },
   {
     "id": "meta-meta-imagine-image-generation",
@@ -2809,13 +2698,6 @@
       "Meta apps → Imagine command"
     ],
     "promptTemplate": "Use Meta Imagine (Image Generation) when I need help with quick casual images, fast previews as you type. Ask clarifying questions if needed, then produce a practical result with any relevant sources, files, or next steps.",
-    "tiers": [
-      {
-        "tier": "free",
-        "label": "Free.",
-        "monthlyCost": "Free"
-      }
-    ],
     "creditCost": {
       "estimate": "minimal",
       "notes": "Free."
@@ -2825,7 +2707,11 @@
       "openai-chatgpt-data-analysis-advanced-data-analysis",
       "anthropic-claude-artifacts"
     ],
-    "lastVerified": "2026-05-01"
+    "lastVerified": "2026-05-01",
+    "plansRequired": {
+      "minimumPlan": "meta-free",
+      "planLabel": "Free."
+    }
   },
   {
     "id": "meta-llama-models-open-source",
@@ -2874,13 +2760,6 @@
       "Llama.meta.com or Hugging Face"
     ],
     "promptTemplate": "Use Llama Models (Open-Source) when I need help with self-hosted ai, fine-tuning, research. Ask clarifying questions if needed, then produce a practical result with any relevant sources, files, or next steps.",
-    "tiers": [
-      {
-        "tier": "paid-low",
-        "label": "Free (compute costs only).",
-        "monthlyCost": "Usage-based"
-      }
-    ],
     "creditCost": {
       "estimate": "moderate",
       "notes": "Free (compute costs only)."
@@ -2890,7 +2769,11 @@
       "openai-chatgpt-custom-gpts",
       "anthropic-claude-projects"
     ],
-    "lastVerified": "2026-05-01"
+    "lastVerified": "2026-05-01",
+    "plansRequired": {
+      "minimumPlan": "meta-free",
+      "planLabel": "Free (compute costs only)."
+    }
   },
   {
     "id": "microsoft-microsoft-365-copilot",
@@ -2940,13 +2823,6 @@
       "Teams"
     ],
     "promptTemplate": "Use Microsoft 365 Copilot when I need help with document drafting, email summarization, spreadsheet analysis. Ask clarifying questions if needed, then produce a practical result with any relevant sources, files, or next steps.",
-    "tiers": [
-      {
-        "tier": "paid-mid",
-        "label": "~$30/user/month on top of Microsoft 365.",
-        "monthlyCost": "~$30/user/month on top of Microsoft 365."
-      }
-    ],
     "creditCost": {
       "estimate": "low",
       "notes": "~$30/user/month on top of Microsoft 365."
@@ -2956,7 +2832,12 @@
       "coda-coda-ai",
       "google-gemini-in-google-workspace-gmail-docs-sheets-slides"
     ],
-    "lastVerified": "2026-05-01"
+    "lastVerified": "2026-05-01",
+    "plansRequired": {
+      "minimumPlan": "copilot-pro",
+      "planLabel": "~$30/user/month on top of Microsoft 365.",
+      "freeAlternative": "copilot-free"
+    }
   },
   {
     "id": "microsoft-windows-copilot",
@@ -3001,13 +2882,6 @@
       "Or Copilot icon in taskbar"
     ],
     "promptTemplate": "Use Windows Copilot when I need help with os-level help, file management, screen-aware assistance. Ask clarifying questions if needed, then produce a practical result with any relevant sources, files, or next steps.",
-    "tiers": [
-      {
-        "tier": "free",
-        "label": "Free with Windows 11.",
-        "monthlyCost": "Free"
-      }
-    ],
     "creditCost": {
       "estimate": "minimal",
       "notes": "Free with Windows 11."
@@ -3017,7 +2891,11 @@
       "canva-gemini-canvas",
       "stackblitz-bolt-stackblitz"
     ],
-    "lastVerified": "2026-05-01"
+    "lastVerified": "2026-05-01",
+    "plansRequired": {
+      "minimumPlan": "copilot-free",
+      "planLabel": "Free with Windows 11."
+    }
   },
   {
     "id": "microsoft-copilot-chat-bing-chat-edge",
@@ -3062,13 +2940,6 @@
       "Copilot.microsoft.com or Edge browser"
     ],
     "promptTemplate": "Use Copilot Chat (Bing Chat / Edge) when I need help with free access to powerful chat, web-grounded answers, image generation. Ask clarifying questions if needed, then produce a practical result with any relevant sources, files, or next steps.",
-    "tiers": [
-      {
-        "tier": "free",
-        "label": "Free; Copilot Pro $20/mo for priority access.",
-        "monthlyCost": "Free tier available"
-      }
-    ],
     "creditCost": {
       "estimate": "moderate",
       "notes": "Free; Copilot Pro $20/mo for priority access."
@@ -3078,7 +2949,11 @@
       "runway-runway",
       "anthropic-claude-api"
     ],
-    "lastVerified": "2026-05-01"
+    "lastVerified": "2026-05-01",
+    "plansRequired": {
+      "minimumPlan": "copilot-free",
+      "planLabel": "Free; Copilot Pro $20/mo for priority access."
+    }
   },
   {
     "id": "udio-copilot-studio",
@@ -3119,13 +2994,6 @@
       "Copilotstudio.microsoft.com"
     ],
     "promptTemplate": "Use Copilot Studio when I need help with custom enterprise ai agents, workflow automation, internal tooling. Ask clarifying questions if needed, then produce a practical result with any relevant sources, files, or next steps.",
-    "tiers": [
-      {
-        "tier": "paid-high",
-        "label": "Enterprise licensing.",
-        "monthlyCost": "Enterprise licensing."
-      }
-    ],
     "creditCost": {
       "estimate": "high",
       "notes": "Enterprise licensing."
@@ -3135,7 +3003,12 @@
       "anthropic-claude-api",
       "anthropic-claude-code"
     ],
-    "lastVerified": "2026-05-01"
+    "lastVerified": "2026-05-01",
+    "plansRequired": {
+      "minimumPlan": "copilot-pro-plus",
+      "planLabel": "Enterprise licensing.",
+      "freeAlternative": "copilot-free"
+    }
   },
   {
     "id": "microsoft-power-platform-copilot",
@@ -3178,13 +3051,6 @@
       "Within Power Platform tools"
     ],
     "promptTemplate": "Use Power Platform Copilot when I need help with building dashboards, apps, automations within power platform. Ask clarifying questions if needed, then produce a practical result with any relevant sources, files, or next steps.",
-    "tiers": [
-      {
-        "tier": "paid-low",
-        "label": "Per-license.",
-        "monthlyCost": "Varies"
-      }
-    ],
     "creditCost": {
       "estimate": "low",
       "notes": "Per-license."
@@ -3194,7 +3060,12 @@
       "canva-gemini-canvas",
       "perplexity-ai-perplexity-computer"
     ],
-    "lastVerified": "2026-05-01"
+    "lastVerified": "2026-05-01",
+    "plansRequired": {
+      "minimumPlan": "copilot-pro-plus",
+      "planLabel": "Per-license.",
+      "freeAlternative": "copilot-free"
+    }
   },
   {
     "id": "microsoft-dynamics-365-copilot",
@@ -3234,13 +3105,6 @@
       "Within Dynamics 365"
     ],
     "promptTemplate": "Use Dynamics 365 Copilot when I need help with sales, customer service, supply chain workflows within dynamics. Ask clarifying questions if needed, then produce a practical result with any relevant sources, files, or next steps.",
-    "tiers": [
-      {
-        "tier": "paid-low",
-        "label": "Per-license.",
-        "monthlyCost": "Varies"
-      }
-    ],
     "creditCost": {
       "estimate": "low",
       "notes": "Per-license."
@@ -3250,7 +3114,12 @@
       "openai-chatgpt-codex",
       "anthropic-claude-api"
     ],
-    "lastVerified": "2026-05-01"
+    "lastVerified": "2026-05-01",
+    "plansRequired": {
+      "minimumPlan": "copilot-pro",
+      "planLabel": "Per-license.",
+      "freeAlternative": "copilot-free"
+    }
   },
   {
     "id": "github-github-copilot",
@@ -3299,13 +3168,6 @@
       "Install Copilot extension in your IDE"
     ],
     "promptTemplate": "Use GitHub Copilot when I need help with inline code suggestions, writing boilerplate, code explanation. Ask clarifying questions if needed, then produce a practical result with any relevant sources, files, or next steps.",
-    "tiers": [
-      {
-        "tier": "paid-high",
-        "label": "Free tier (limited); Pro $10/mo; Pro+ $39/mo; Enterprise custom.",
-        "monthlyCost": "Free tier (limited); Pro $10/mo; Pro+ $39/mo; Enterprise custom."
-      }
-    ],
     "creditCost": {
       "estimate": "high",
       "notes": "Free tier (limited); Pro $10/mo; Pro+ $39/mo; Enterprise custom."
@@ -3315,7 +3177,11 @@
       "anthropic-claude-artifacts",
       "google-deepmind-gemini-chat-default-2-5-pro-3-pro"
     ],
-    "lastVerified": "2026-05-01"
+    "lastVerified": "2026-05-01",
+    "plansRequired": {
+      "minimumPlan": "copilot-free",
+      "planLabel": "Free tier (limited); Pro $10/mo; Pro+ $39/mo; Enterprise custom."
+    }
   },
   {
     "id": "anysphere-cursor",
@@ -3358,13 +3224,6 @@
       "Download from cursor.com"
     ],
     "promptTemplate": "Use Cursor when I need help with active development work where you're driving but want ai as a constant pair programmer, multi-file edits, codebase chat. Ask clarifying questions if needed, then produce a practical result with any relevant sources, files, or next steps.",
-    "tiers": [
-      {
-        "tier": "paid-mid",
-        "label": "Free tier; Pro $20/mo; Business $40/user.",
-        "monthlyCost": "Free tier; Pro $20/mo; Business $40/user."
-      }
-    ],
     "creditCost": {
       "estimate": "moderate",
       "notes": "Free tier; Pro $20/mo; Business $40/user."
@@ -3374,7 +3233,11 @@
       "anthropic-claude-code",
       "microsoft-copilot-chat-bing-chat-edge"
     ],
-    "lastVerified": "2026-05-01"
+    "lastVerified": "2026-05-01",
+    "plansRequired": {
+      "minimumPlan": "cursor-free",
+      "planLabel": "Free tier; Pro $20/mo; Business $40/user."
+    }
   },
   {
     "id": "codeium-windsurf-formerly-codeium",
@@ -3416,13 +3279,6 @@
       "Windsurf.com"
     ],
     "promptTemplate": "Use Windsurf (formerly Codeium) when I need help with free ai coding alternative, multi-file edits, in-ide chat. Ask clarifying questions if needed, then produce a practical result with any relevant sources, files, or next steps.",
-    "tiers": [
-      {
-        "tier": "paid-high",
-        "label": "Free for individuals; paid for teams/enterprise.",
-        "monthlyCost": "Free for individuals; paid for teams/enterprise."
-      }
-    ],
     "creditCost": {
       "estimate": "high",
       "notes": "Free for individuals; paid for teams/enterprise."
@@ -3432,7 +3288,11 @@
       "stackblitz-bolt-stackblitz",
       "anthropic-claude-api"
     ],
-    "lastVerified": "2026-05-01"
+    "lastVerified": "2026-05-01",
+    "plansRequired": {
+      "minimumPlan": "windsurf-free",
+      "planLabel": "Free for individuals; paid for teams/enterprise."
+    }
   },
   {
     "id": "replit-replit",
@@ -3483,13 +3343,6 @@
       "Replit.com"
     ],
     "promptTemplate": "Use Replit when I need help with building, deploying small apps without local setup, learning to code. Ask clarifying questions if needed, then produce a practical result with any relevant sources, files, or next steps.",
-    "tiers": [
-      {
-        "tier": "paid-mid",
-        "label": "Free Starter; Core $20/mo; Pro $95/mo.",
-        "monthlyCost": "Free Starter; Core $20/mo; Pro $95/mo."
-      }
-    ],
     "creditCost": {
       "estimate": "high",
       "notes": "Free Starter; Core $20/mo; Pro $95/mo."
@@ -3499,7 +3352,11 @@
       "anthropic-claude-in-chrome-browsing-agent",
       "anthropic-claude-in-excel"
     ],
-    "lastVerified": "2026-05-01"
+    "lastVerified": "2026-05-01",
+    "plansRequired": {
+      "minimumPlan": "replit-free",
+      "planLabel": "Free Starter; Core $20/mo; Pro $95/mo."
+    }
   },
   {
     "id": "replit-replit-agent",
@@ -3541,13 +3398,6 @@
       "Within Replit"
     ],
     "promptTemplate": "Use Replit Agent when I need help with going from idea to deployed app without coding, especially small projects. Ask clarifying questions if needed, then produce a practical result with any relevant sources, files, or next steps.",
-    "tiers": [
-      {
-        "tier": "paid-low",
-        "label": "Replit Core or Pro.",
-        "monthlyCost": "Varies"
-      }
-    ],
     "creditCost": {
       "estimate": "moderate",
       "notes": "Replit Core or Pro."
@@ -3557,7 +3407,12 @@
       "stackblitz-bolt-stackblitz",
       "anthropic-claude-api"
     ],
-    "lastVerified": "2026-05-01"
+    "lastVerified": "2026-05-01",
+    "plansRequired": {
+      "minimumPlan": "replit-core",
+      "planLabel": "Replit Core or Pro.",
+      "freeAlternative": "replit-free"
+    }
   },
   {
     "id": "lovable-lovable",
@@ -3605,13 +3460,6 @@
       "Lovable.dev"
     ],
     "promptTemplate": "Use Lovable when I need help with non-coders building mvps, founders prototyping, fast no-code apps with real backends. Ask clarifying questions if needed, then produce a practical result with any relevant sources, files, or next steps.",
-    "tiers": [
-      {
-        "tier": "paid-high",
-        "label": "Free (5 credits/day); Pro $25/mo; Business $50/mo. Realistic active use often runs $100-500/mo.",
-        "monthlyCost": "Free (5 credits/day); Pro $25/mo; Business $50/mo. Realistic active use often runs $100-500/mo."
-      }
-    ],
     "creditCost": {
       "estimate": "high",
       "notes": "Free (5 credits/day); Pro $25/mo; Business $50/mo. Realistic active use often runs $100-500/mo."
@@ -3621,7 +3469,11 @@
       "google-gemini-in-google-workspace-gmail-docs-sheets-slides",
       "ideogram-ideogram"
     ],
-    "lastVerified": "2026-05-01"
+    "lastVerified": "2026-05-01",
+    "plansRequired": {
+      "minimumPlan": "lovable-free",
+      "planLabel": "Free (5 credits/day); Pro $25/mo; Business $50/mo. Realistic active use often runs $100-500/mo."
+    }
   },
   {
     "id": "vercel-v0-by-vercel",
@@ -3673,13 +3525,6 @@
       "V0.dev"
     ],
     "promptTemplate": "Use v0 by Vercel when I need help with generating ui components, scaffolding next.js apps, design-to-code workflows. Ask clarifying questions if needed, then produce a practical result with any relevant sources, files, or next steps.",
-    "tiers": [
-      {
-        "tier": "paid-high",
-        "label": "Free tier ($5 credits, ~7 messages/day); Premium $20/mo; Team $30/user; Business $100/user.",
-        "monthlyCost": "Free tier ($5 credits, ~7 messages/day); Premium $20/mo; Team $30/user; Business $100/user."
-      }
-    ],
     "creditCost": {
       "estimate": "high",
       "notes": "Free tier ($5 credits, ~7 messages/day); Premium $20/mo; Team $30/user; Business $100/user."
@@ -3689,7 +3534,11 @@
       "anthropic-claude-api",
       "anthropic-claude-code"
     ],
-    "lastVerified": "2026-05-01"
+    "lastVerified": "2026-05-01",
+    "plansRequired": {
+      "minimumPlan": "v0-free",
+      "planLabel": "Free tier ($5 credits, ~7 messages/day); Premium $20/mo; Team $30/user; Business $100/user."
+    }
   },
   {
     "id": "stackblitz-bolt-stackblitz",
@@ -3737,13 +3586,6 @@
       "Bolt.new"
     ],
     "promptTemplate": "Use Bolt (StackBlitz) when I need help with quick web app prototyping, design-system-aware ui generation, browser-only workflows. Ask clarifying questions if needed, then produce a practical result with any relevant sources, files, or next steps.",
-    "tiers": [
-      {
-        "tier": "paid-mid",
-        "label": "Free (300K tokens/day); Pro $25/mo; Teams $30/user.",
-        "monthlyCost": "Free (300K tokens/day); Pro $25/mo; Teams $30/user."
-      }
-    ],
     "creditCost": {
       "estimate": "moderate",
       "notes": "Free (300K tokens/day); Pro $25/mo; Teams $30/user."
@@ -3753,7 +3595,11 @@
       "anthropic-claude-code",
       "microsoft-copilot-chat-bing-chat-edge"
     ],
-    "lastVerified": "2026-05-01"
+    "lastVerified": "2026-05-01",
+    "plansRequired": {
+      "minimumPlan": "bolt-free",
+      "planLabel": "Free (300K tokens/day); Pro $25/mo; Teams $30/user."
+    }
   },
   {
     "id": "figma-figma-ai-make",
@@ -3797,13 +3643,6 @@
       "Figma.com → AI features in Figma"
     ],
     "promptTemplate": "Use Figma AI / Make when I need help with ui design, design system generation, design-to-code workflows in figma. Ask clarifying questions if needed, then produce a practical result with any relevant sources, files, or next steps.",
-    "tiers": [
-      {
-        "tier": "paid-low",
-        "label": "Included in Figma Professional/Organization plans.",
-        "monthlyCost": "Varies"
-      }
-    ],
     "creditCost": {
       "estimate": "moderate",
       "notes": "Included in Figma Professional/Organization plans."
@@ -3813,7 +3652,11 @@
       "anthropic-claude-api",
       "anthropic-claude-code"
     ],
-    "lastVerified": "2026-05-01"
+    "lastVerified": "2026-05-01",
+    "plansRequired": {
+      "minimumPlan": "figma-professional",
+      "planLabel": "Included in Figma Professional/Organization plans."
+    }
   },
   {
     "id": "adobe-adobe-firefly",
@@ -3860,13 +3703,6 @@
       "Firefly.adobe.com or inside Adobe apps"
     ],
     "promptTemplate": "Use Adobe Firefly when I need help with commercial-safe image/video generation, in-app ai editing in adobe products, generative fill in photoshop. Ask clarifying questions if needed, then produce a practical result with any relevant sources, files, or next steps.",
-    "tiers": [
-      {
-        "tier": "free",
-        "label": "Free tier; Firefly Premium $10-30/mo; included in Creative Cloud plans.",
-        "monthlyCost": "Free tier available"
-      }
-    ],
     "creditCost": {
       "estimate": "high",
       "notes": "Free tier; Firefly Premium $10-30/mo; included in Creative Cloud plans."
@@ -3876,7 +3712,11 @@
       "runway-runway",
       "openai-chatgpt-data-analysis-advanced-data-analysis"
     ],
-    "lastVerified": "2026-05-01"
+    "lastVerified": "2026-05-01",
+    "plansRequired": {
+      "minimumPlan": "adobe-free",
+      "planLabel": "Free tier; Firefly Premium $10-30/mo; included in Creative Cloud plans."
+    }
   },
   {
     "id": "canva-canva-ai-magic-studio",
@@ -3917,13 +3757,6 @@
       "Canva.com → Magic Studio features"
     ],
     "promptTemplate": "Use Canva AI / Magic Studio when I need help with non-designers making social media graphics, presentations, marketing materials. Ask clarifying questions if needed, then produce a practical result with any relevant sources, files, or next steps.",
-    "tiers": [
-      {
-        "tier": "free",
-        "label": "Free tier; Canva Pro $15/mo.",
-        "monthlyCost": "Free tier available"
-      }
-    ],
     "creditCost": {
       "estimate": "moderate",
       "notes": "Free tier; Canva Pro $15/mo."
@@ -3933,7 +3766,11 @@
       "google-deepmind-gemini-chat-default-2-5-pro-3-pro",
       "github-github-copilot"
     ],
-    "lastVerified": "2026-05-01"
+    "lastVerified": "2026-05-01",
+    "plansRequired": {
+      "minimumPlan": "canva-free",
+      "planLabel": "Free tier; Canva Pro $15/mo."
+    }
   },
   {
     "id": "midjourney-midjourney",
@@ -3976,13 +3813,6 @@
       "Midjourney.com (web) or Discord"
     ],
     "promptTemplate": "Use Midjourney when I need help with artistic images, concept art, marketing visuals with style. Ask clarifying questions if needed, then produce a practical result with any relevant sources, files, or next steps.",
-    "tiers": [
-      {
-        "tier": "paid-high",
-        "label": "Basic $10/mo; Standard $30/mo; Pro $60/mo; Mega $120/mo.",
-        "monthlyCost": "Basic $10/mo; Standard $30/mo; Pro $60/mo; Mega $120/mo."
-      }
-    ],
     "creditCost": {
       "estimate": "high",
       "notes": "Basic $10/mo; Standard $30/mo; Pro $60/mo; Mega $120/mo."
@@ -3992,7 +3822,11 @@
       "google-gemini-live",
       "xai-grok-imagine"
     ],
-    "lastVerified": "2026-05-01"
+    "lastVerified": "2026-05-01",
+    "plansRequired": {
+      "minimumPlan": "midjourney-basic",
+      "planLabel": "Basic $10/mo; Standard $30/mo; Pro $60/mo; Mega $120/mo."
+    }
   },
   {
     "id": "ideogram-ideogram",
@@ -4036,13 +3870,6 @@
       "Ideogram.ai"
     ],
     "promptTemplate": "Use Ideogram when I need help with designs requiring text, posters, logos. Ask clarifying questions if needed, then produce a practical result with any relevant sources, files, or next steps.",
-    "tiers": [
-      {
-        "tier": "free",
-        "label": "Free tier; Plus $8/mo; Pro $20/mo.",
-        "monthlyCost": "Free tier available"
-      }
-    ],
     "creditCost": {
       "estimate": "high",
       "notes": "Free tier; Plus $8/mo; Pro $20/mo."
@@ -4052,7 +3879,11 @@
       "lovable-lovable",
       "perplexity-ai-perplexity-api-sonar"
     ],
-    "lastVerified": "2026-05-01"
+    "lastVerified": "2026-05-01",
+    "plansRequired": {
+      "minimumPlan": "ideogram-free",
+      "planLabel": "Free tier; Plus $8/mo; Pro $20/mo."
+    }
   },
   {
     "id": "stability-ai-stable-diffusion-open-source",
@@ -4101,13 +3932,6 @@
       "Or local install"
     ],
     "promptTemplate": "Use Stable Diffusion (Open-Source) when I need help with self-hosting, fine-tuning, full control. Ask clarifying questions if needed, then produce a practical result with any relevant sources, files, or next steps.",
-    "tiers": [
-      {
-        "tier": "free",
-        "label": "Free if self-hosted; varies via hosted services.",
-        "monthlyCost": "Free"
-      }
-    ],
     "creditCost": {
       "estimate": "minimal",
       "notes": "Free if self-hosted; varies via hosted services."
@@ -4117,7 +3941,11 @@
       "runway-runway",
       "stackblitz-bolt-stackblitz"
     ],
-    "lastVerified": "2026-05-01"
+    "lastVerified": "2026-05-01",
+    "plansRequired": {
+      "minimumPlan": "stable-diffusion-free",
+      "planLabel": "Free if self-hosted; varies via hosted services."
+    }
   },
   {
     "id": "black-forest-labs-flux-black-forest-labs",
@@ -4155,13 +3983,6 @@
       "Blackforestlabs.ai or partner platforms"
     ],
     "promptTemplate": "Use Flux (Black Forest Labs) when I need help with photo-realistic images, high quality without subscription. Ask clarifying questions if needed, then produce a practical result with any relevant sources, files, or next steps.",
-    "tiers": [
-      {
-        "tier": "free",
-        "label": "Free open-source; via APIs varies.",
-        "monthlyCost": "Free"
-      }
-    ],
     "creditCost": {
       "estimate": "moderate",
       "notes": "Free open-source; via APIs varies."
@@ -4171,7 +3992,11 @@
       "canva-canva-ai-magic-studio",
       "openai-chatgpt-data-analysis-advanced-data-analysis"
     ],
-    "lastVerified": "2026-05-01"
+    "lastVerified": "2026-05-01",
+    "plansRequired": {
+      "minimumPlan": "flux-free",
+      "planLabel": "Free open-source; via APIs varies."
+    }
   },
   {
     "id": "runway-runway",
@@ -4220,13 +4045,6 @@
       "Runwayml.com"
     ],
     "promptTemplate": "Use Runway when I need help with text-to-video, image-to-video, professional video editing with ai. Ask clarifying questions if needed, then produce a practical result with any relevant sources, files, or next steps.",
-    "tiers": [
-      {
-        "tier": "paid-mid",
-        "label": "Free trial; Standard $15/mo; Pro $35/mo; Unlimited $95/mo.",
-        "monthlyCost": "Free trial; Standard $15/mo; Pro $35/mo; Unlimited $95/mo."
-      }
-    ],
     "creditCost": {
       "estimate": "high",
       "notes": "Free trial; Standard $15/mo; Pro $35/mo; Unlimited $95/mo."
@@ -4236,7 +4054,11 @@
       "anthropic-claude-api",
       "anthropic-claude-code"
     ],
-    "lastVerified": "2026-05-01"
+    "lastVerified": "2026-05-01",
+    "plansRequired": {
+      "minimumPlan": "runway-free",
+      "planLabel": "Free trial; Standard $15/mo; Pro $35/mo; Unlimited $95/mo."
+    }
   },
   {
     "id": "openai-sora-openai",
@@ -4275,13 +4097,6 @@
       "Sora.com or ChatGPT"
     ],
     "promptTemplate": "Use Sora (OpenAI) when I need help with high-quality video generation from text, photorealistic clips. Ask clarifying questions if needed, then produce a practical result with any relevant sources, files, or next steps.",
-    "tiers": [
-      {
-        "tier": "paid-low",
-        "label": "ChatGPT Plus (limited) or Pro plan.",
-        "monthlyCost": "Varies"
-      }
-    ],
     "creditCost": {
       "estimate": "high",
       "notes": "ChatGPT Plus (limited) or Pro plan."
@@ -4291,7 +4106,12 @@
       "adobe-adobe-firefly",
       "canva-chatgpt-canvas"
     ],
-    "lastVerified": "2026-05-01"
+    "lastVerified": "2026-05-01",
+    "plansRequired": {
+      "minimumPlan": "chatgpt-plus",
+      "planLabel": "ChatGPT Plus (limited) or Pro plan.",
+      "freeAlternative": "chatgpt-free"
+    }
   },
   {
     "id": "pika-labs-pika-labs",
@@ -4331,13 +4151,6 @@
       "Pika.art"
     ],
     "promptTemplate": "Use Pika Labs when I need help with social-media-friendly ai videos, character-driven clips. Ask clarifying questions if needed, then produce a practical result with any relevant sources, files, or next steps.",
-    "tiers": [
-      {
-        "tier": "free",
-        "label": "Free tier; paid plans from $10/mo.",
-        "monthlyCost": "Free tier available"
-      }
-    ],
     "creditCost": {
       "estimate": "high",
       "notes": "Free tier; paid plans from $10/mo."
@@ -4347,7 +4160,11 @@
       "descript-descript",
       "google-gemini-live"
     ],
-    "lastVerified": "2026-05-01"
+    "lastVerified": "2026-05-01",
+    "plansRequired": {
+      "minimumPlan": "pika-free",
+      "planLabel": "Free tier; paid plans from $10/mo."
+    }
   },
   {
     "id": "luma-ai-luma-dream-machine",
@@ -4389,13 +4206,6 @@
       "Machine"
     ],
     "promptTemplate": "Use Luma Dream Machine when I need help with realistic motion, smooth video generation, image-to-video. Ask clarifying questions if needed, then produce a practical result with any relevant sources, files, or next steps.",
-    "tiers": [
-      {
-        "tier": "free",
-        "label": "Free tier; paid plans from $10/mo.",
-        "monthlyCost": "Free tier available"
-      }
-    ],
     "creditCost": {
       "estimate": "high",
       "notes": "Free tier; paid plans from $10/mo."
@@ -4405,7 +4215,11 @@
       "google-gemini-live",
       "xai-grok-imagine"
     ],
-    "lastVerified": "2026-05-01"
+    "lastVerified": "2026-05-01",
+    "plansRequired": {
+      "minimumPlan": "luma-free",
+      "planLabel": "Free tier; paid plans from $10/mo."
+    }
   },
   {
     "id": "elevenlabs-elevenlabs",
@@ -4446,13 +4260,6 @@
       "Elevenlabs.io"
     ],
     "promptTemplate": "Use ElevenLabs when I need help with audiobook narration, dubbing, podcast voices. Ask clarifying questions if needed, then produce a practical result with any relevant sources, files, or next steps.",
-    "tiers": [
-      {
-        "tier": "paid-mid",
-        "label": "Free tier; Starter $5/mo; Creator $22/mo; Pro $99/mo.",
-        "monthlyCost": "Free tier; Starter $5/mo; Creator $22/mo; Pro $99/mo."
-      }
-    ],
     "creditCost": {
       "estimate": "high",
       "notes": "Free tier; Starter $5/mo; Creator $22/mo; Pro $99/mo."
@@ -4462,7 +4269,11 @@
       "openai-openai-api",
       "stackblitz-bolt-stackblitz"
     ],
-    "lastVerified": "2026-05-01"
+    "lastVerified": "2026-05-01",
+    "plansRequired": {
+      "minimumPlan": "elevenlabs-free",
+      "planLabel": "Free tier; Starter $5/mo; Creator $22/mo; Pro $99/mo."
+    }
   },
   {
     "id": "suno-suno",
@@ -4504,13 +4315,6 @@
       "Suno.com"
     ],
     "promptTemplate": "Use Suno when I need help with music creators looking for inspiration, drafts, full songs from prompts. Ask clarifying questions if needed, then produce a practical result with any relevant sources, files, or next steps.",
-    "tiers": [
-      {
-        "tier": "free",
-        "label": "Free tier; Pro $8/mo; Premier $24/mo.",
-        "monthlyCost": "Free tier available"
-      }
-    ],
     "creditCost": {
       "estimate": "moderate",
       "notes": "Free tier; Pro $8/mo; Premier $24/mo."
@@ -4520,7 +4324,11 @@
       "adobe-adobe-firefly",
       "stackblitz-bolt-stackblitz"
     ],
-    "lastVerified": "2026-05-01"
+    "lastVerified": "2026-05-01",
+    "plansRequired": {
+      "minimumPlan": "suno-free",
+      "planLabel": "Free tier; Pro $8/mo; Premier $24/mo."
+    }
   },
   {
     "id": "udio-udio",
@@ -4555,13 +4363,6 @@
       "Udio.com"
     ],
     "promptTemplate": "Use Udio when I need help with same as suno, alternatives for music generation. Ask clarifying questions if needed, then produce a practical result with any relevant sources, files, or next steps.",
-    "tiers": [
-      {
-        "tier": "paid-mid",
-        "label": "Free tier; Standard $10/mo; Pro $30/mo.",
-        "monthlyCost": "Free tier; Standard $10/mo; Pro $30/mo."
-      }
-    ],
     "creditCost": {
       "estimate": "moderate",
       "notes": "Free tier; Standard $10/mo; Pro $30/mo."
@@ -4571,7 +4372,11 @@
       "suno-suno",
       "adobe-adobe-firefly"
     ],
-    "lastVerified": "2026-05-01"
+    "lastVerified": "2026-05-01",
+    "plansRequired": {
+      "minimumPlan": "udio-free",
+      "planLabel": "Free tier; Standard $10/mo; Pro $30/mo."
+    }
   },
   {
     "id": "descript-descript",
@@ -4616,13 +4421,6 @@
       "Descript.com"
     ],
     "promptTemplate": "Use Descript when I need help with podcast editing, video editing with transcript-based workflow, cleaning up speech. Ask clarifying questions if needed, then produce a practical result with any relevant sources, files, or next steps.",
-    "tiers": [
-      {
-        "tier": "paid-mid",
-        "label": "Free tier; Hobbyist $12/mo; Creator $24/mo; Business $40/mo.",
-        "monthlyCost": "Free tier; Hobbyist $12/mo; Creator $24/mo; Business $40/mo."
-      }
-    ],
     "creditCost": {
       "estimate": "high",
       "notes": "Free tier; Hobbyist $12/mo; Creator $24/mo; Business $40/mo."
@@ -4632,7 +4430,11 @@
       "canva-gemini-canvas",
       "google-gemini-live"
     ],
-    "lastVerified": "2026-05-01"
+    "lastVerified": "2026-05-01",
+    "plansRequired": {
+      "minimumPlan": "descript-free",
+      "planLabel": "Free tier; Hobbyist $12/mo; Creator $24/mo; Business $40/mo."
+    }
   },
   {
     "id": "notion-notion-ai",
@@ -4676,13 +4478,6 @@
       "Within Notion"
     ],
     "promptTemplate": "Use Notion AI when I need help with anyone already using notion who wants ai inside their docs, databases. Ask clarifying questions if needed, then produce a practical result with any relevant sources, files, or next steps.",
-    "tiers": [
-      {
-        "tier": "paid-high",
-        "label": "Included in Business ($20/user) and Enterprise; some features use credits.",
-        "monthlyCost": "Included in Business ($20/user) and Enterprise; some features use credits."
-      }
-    ],
     "creditCost": {
       "estimate": "high",
       "notes": "Included in Business ($20/user) and Enterprise; some features use credits."
@@ -4692,7 +4487,12 @@
       "coda-coda-ai",
       "canva-gemini-canvas"
     ],
-    "lastVerified": "2026-05-01"
+    "lastVerified": "2026-05-01",
+    "plansRequired": {
+      "minimumPlan": "notion-business",
+      "planLabel": "Included in Business ($20/user) and Enterprise; some features use credits.",
+      "freeAlternative": "notion-plus"
+    }
   },
   {
     "id": "coda-coda-ai",
@@ -4731,13 +4531,6 @@
       "Within Coda"
     ],
     "promptTemplate": "Use Coda AI when I need help with coda users wanting ai inside their workspace. Ask clarifying questions if needed, then produce a practical result with any relevant sources, files, or next steps.",
-    "tiers": [
-      {
-        "tier": "paid-low",
-        "label": "Included in paid Coda plans.",
-        "monthlyCost": "Varies"
-      }
-    ],
     "creditCost": {
       "estimate": "moderate",
       "notes": "Included in paid Coda plans."
@@ -4747,7 +4540,11 @@
       "google-gemini-in-google-workspace-gmail-docs-sheets-slides",
       "microsoft-microsoft-365-copilot"
     ],
-    "lastVerified": "2026-05-01"
+    "lastVerified": "2026-05-01",
+    "plansRequired": {
+      "minimumPlan": "coda-paid",
+      "planLabel": "Included in paid Coda plans."
+    }
   },
   {
     "id": "slack-slack-ai",
@@ -4788,13 +4585,6 @@
       "Within Slack workspace"
     ],
     "promptTemplate": "Use Slack AI when I need help with slack-heavy teams catching up on missed conversations. Ask clarifying questions if needed, then produce a practical result with any relevant sources, files, or next steps.",
-    "tiers": [
-      {
-        "tier": "paid-low",
-        "label": "Slack add-on, per-user.",
-        "monthlyCost": "Varies"
-      }
-    ],
     "creditCost": {
       "estimate": "high",
       "notes": "Slack add-on, per-user."
@@ -4804,7 +4594,11 @@
       "google-deepmind-gemini-chat-default-2-5-pro-3-pro",
       "google-notebooklm"
     ],
-    "lastVerified": "2026-05-01"
+    "lastVerified": "2026-05-01",
+    "plansRequired": {
+      "minimumPlan": "slack-ai-addon",
+      "planLabel": "Slack add-on, per-user."
+    }
   },
   {
     "id": "you-com-you-com",
@@ -4845,13 +4639,6 @@
       "You.com"
     ],
     "promptTemplate": "Use You.com when I need help with search alternative to perplexity, multi-model access in one place. Ask clarifying questions if needed, then produce a practical result with any relevant sources, files, or next steps.",
-    "tiers": [
-      {
-        "tier": "free",
-        "label": "Free tier; Pro $20/mo.",
-        "monthlyCost": "Free tier available"
-      }
-    ],
     "creditCost": {
       "estimate": "high",
       "notes": "Free tier; Pro $20/mo."
@@ -4861,7 +4648,11 @@
       "stability-ai-stable-diffusion-open-source",
       "anthropic-claude-in-chrome-browsing-agent"
     ],
-    "lastVerified": "2026-05-01"
+    "lastVerified": "2026-05-01",
+    "plansRequired": {
+      "minimumPlan": "you-free",
+      "planLabel": "Free tier; Pro $20/mo."
+    }
   },
   {
     "id": "phind-phind",
@@ -4905,13 +4696,6 @@
       "Phind.com"
     ],
     "promptTemplate": "Use Phind when I need help with programming help, debugging, technical documentation search. Ask clarifying questions if needed, then produce a practical result with any relevant sources, files, or next steps.",
-    "tiers": [
-      {
-        "tier": "free",
-        "label": "Free tier; Pro $20/mo.",
-        "monthlyCost": "Free tier available"
-      }
-    ],
     "creditCost": {
       "estimate": "moderate",
       "notes": "Free tier; Pro $20/mo."
@@ -4921,6 +4705,10 @@
       "perplexity-ai-perplexity-search-standard",
       "openai-chatgpt-deep-research"
     ],
-    "lastVerified": "2026-05-01"
+    "lastVerified": "2026-05-01",
+    "plansRequired": {
+      "minimumPlan": "phind-free",
+      "planLabel": "Free tier; Pro $20/mo."
+    }
   }
 ]
