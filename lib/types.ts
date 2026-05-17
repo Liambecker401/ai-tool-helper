@@ -93,3 +93,12 @@ export interface RecommendationResult {
   withinBudget: boolean;
   requiresUpgrade: boolean;
 }
+
+export interface AiRecommendation {
+  toolId: string;
+  rank: 1 | 2 | 3;
+  reasoning: string;
+  suggestedPrompt: string;
+  estimatedUsage: string;
+  upgradeRequired: boolean;
+}

@@ -147,6 +147,7 @@ function getReasoning(scoredTool: ScoredTool) {
 export function matchTools(
   intake: IntakeAnswers,
   preferences: UserPreferences = defaultUserPreferences,
+  limit = 3,
 ): RecommendationResult[] {
   const candidateTools = preferences.onlyShowOwned
     ? tools.filter((tool) =>
@@ -167,10 +168,10 @@ export function matchTools(
 
       return first.tool.name.localeCompare(second.tool.name);
     })
-    .slice(0, 3)
+    .slice(0, limit)
     .map((scoredTool, index) => ({
       toolId: scoredTool.tool.id,
-      rank: (index + 1) as 1 | 2 | 3,
+      rank: Math.min(index + 1, 3) as 1 | 2 | 3,
       reasoning: getReasoning(scoredTool),
       estimatedUsage: getEstimatedUsage(
         scoredTool.tool,

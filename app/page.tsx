@@ -14,7 +14,8 @@ import {
 } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
-import { getTools, matchTools } from "@/lib/matcher";
+import { getTools } from "@/lib/matcher";
+import { recommendTools } from "@/lib/recommend";
 import {
   defaultUserPreferences,
   getPlanOption,
@@ -23,11 +24,12 @@ import {
 } from "@/lib/storage";
 import { cn } from "@/lib/utils";
 import type {
+  AiRecommendation,
   Frequency,
   IntakeAnswers,
-  RecommendationResult,
   SkillLevel,
   TaskCategory,
+  Tier,
   Tool,
   UserPreferences,
 } from "@/lib/types";
@@ -49,8 +51,16 @@ type SkillOption = {
   value: SkillLevel;
 };
 
-type RecommendationWithTool = RecommendationResult & {
+type RecommendationWithTool = AiRecommendation & {
   tool: Tool;
+  withinBudget: boolean;
+};
+
+const tierRank: Record<Tier, number> = {
+  free: 0,
+  "paid-low": 1,
+  "paid-mid": 2,
+  "paid-high": 3,
 };
 
 const taskOptions: TaskOption[] = [
@@ -122,7 +132,7 @@ function getPlanBadge(
   );
   const shouldUpgrade =
     hasAnyPlanPreference &&
-    result.requiresUpgrade &&
+    result.upgradeRequired &&
     (requiredTier !== "free" || !result.withinBudget) &&
     !hasAccess;
 
@@ -304,7 +314,7 @@ function PrimaryRecommendation({
   result: RecommendationWithTool;
   preferences: UserPreferences;
   copiedPromptId: string | null;
-  onCopyPrompt: (tool: Tool) => void;
+  onCopyPrompt: (result: RecommendationWithTool) => void;
 }) {
   return (
     <section className="rounded-md border bg-card p-5 text-card-foreground shadow-sm">
@@ -326,8 +336,8 @@ function PrimaryRecommendation({
         <div className="grid content-start gap-3">
           <PromptTemplate
             copied={copiedPromptId === result.tool.id}
-            onCopy={() => onCopyPrompt(result.tool)}
-            prompt={result.tool.promptTemplate}
+            onCopy={() => onCopyPrompt(result)}
+            prompt={result.suggestedPrompt}
           />
           <div className="rounded-md border bg-background p-3">
             <p className="text-sm font-medium">Usage fit</p>
@@ -353,7 +363,7 @@ function SecondaryRecommendation({
   preferences: UserPreferences;
   expanded: boolean;
   copiedPromptId: string | null;
-  onCopyPrompt: (tool: Tool) => void;
+  onCopyPrompt: (result: RecommendationWithTool) => void;
   onToggle: () => void;
 }) {
   return (
@@ -383,8 +393,8 @@ function SecondaryRecommendation({
           <AccessSteps tool={result.tool} />
           <PromptTemplate
             copied={copiedPromptId === result.tool.id}
-            onCopy={() => onCopyPrompt(result.tool)}
-            prompt={result.tool.promptTemplate}
+            onCopy={() => onCopyPrompt(result)}
+            prompt={result.suggestedPrompt}
           />
         </div>
       )}
@@ -408,6 +418,8 @@ export default function HomePage() {
   const [copiedPromptId, setCopiedPromptId] = useState<string | null>(null);
   const [feedback, setFeedback] = useState<"up" | "down" | null>(null);
   const [hasSubmitted, setHasSubmitted] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
+  const [errorMessage, setErrorMessage] = useState<string | null>(null);
 
   const toolsById = useMemo(() => {
     return new Map(getTools().map((tool) => [tool.id, tool]));
@@ -461,34 +473,64 @@ export default function HomePage() {
     setCurrentStep(3);
   }
 
-  function getRecommendationSet() {
+  function isWithinBudget(tool: Tool, budget: Tier | null) {
+    if (!budget) {
+      return true;
+    }
+
+    const requiredTier =
+      getPlanOption(tool.plansRequired.minimumPlan)?.tier ?? "paid-mid";
+
+    return tierRank[requiredTier] <= tierRank[budget];
+  }
+
+  async function getRecommendationSet() {
     const intake: IntakeAnswers = {
       ...answers,
       budget: preferences.budget,
       freeText: answers.freeText.trim(),
     };
-    const recommendationPreferences = {
-      ...preferences,
-      onlyShowOwned: false,
-    };
+    const apiRecommendations = await recommendTools(
+      intake,
+      preferences.planSelections,
+    );
 
-    return matchTools(intake, recommendationPreferences)
+    return apiRecommendations
       .map((result) => {
         const tool = toolsById.get(result.toolId);
 
-        return tool ? { ...result, tool } : null;
+        return tool
+          ? {
+              ...result,
+              tool,
+              withinBudget: isWithinBudget(tool, intake.budget),
+            }
+          : null;
       })
       .filter((result): result is RecommendationWithTool => Boolean(result));
   }
 
-  function submit() {
-    const nextRecommendations = getRecommendationSet();
+  async function submit() {
+    setIsLoading(true);
+    setErrorMessage(null);
 
-    setRecommendations(nextRecommendations);
-    setExpandedToolIds(new Set());
-    setCopiedPromptId(null);
-    setFeedback(null);
-    setHasSubmitted(true);
+    try {
+      const nextRecommendations = await getRecommendationSet();
+
+      setRecommendations(nextRecommendations);
+      setExpandedToolIds(new Set());
+      setCopiedPromptId(null);
+      setFeedback(null);
+      setHasSubmitted(true);
+    } catch {
+      setRecommendations([]);
+      setErrorMessage(
+        "I could not reach the recommendation service. Please try again in a moment.",
+      );
+      setHasSubmitted(true);
+    } finally {
+      setIsLoading(false);
+    }
   }
 
   function tryAgain() {
@@ -499,6 +541,7 @@ export default function HomePage() {
     setExpandedToolIds(new Set());
     setCopiedPromptId(null);
     setFeedback(null);
+    setErrorMessage(null);
     setCurrentStep(0);
   }
 
@@ -516,9 +559,9 @@ export default function HomePage() {
     });
   }
 
-  async function copyPrompt(tool: Tool) {
-    await navigator.clipboard.writeText(tool.promptTemplate);
-    setCopiedPromptId(tool.id);
+  async function copyPrompt(result: RecommendationWithTool) {
+    await navigator.clipboard.writeText(result.suggestedPrompt);
+    setCopiedPromptId(result.tool.id);
   }
 
   const canContinue =
@@ -606,9 +649,8 @@ export default function HomePage() {
           <section className="rounded-md border bg-card p-6 text-card-foreground">
             <h2 className="text-xl font-semibold">No strong match yet</h2>
             <p className="mt-3 text-sm leading-6 text-muted-foreground">
-              Add a little more detail about the output you want, the app or
-              file you are working with, and whether this is a one-time task or
-              an ongoing workflow.
+              {errorMessage ??
+                "Add a little more detail about the output you want, the app or file you are working with, and whether this is a one-time task or an ongoing workflow."}
             </p>
             <Button className="mt-5" onClick={tryAgain} type="button">
               <RefreshCcw className="size-4" />
@@ -715,6 +757,7 @@ export default function HomePage() {
             </label>
             <textarea
               className="mt-6 min-h-36 w-full resize-y rounded-md border bg-background px-3 py-3 text-sm leading-6 outline-none focus-visible:ring-3 focus-visible:ring-ring/50"
+              disabled={isLoading}
               id="task"
               onChange={(event) =>
                 setAnswers((currentAnswers) => ({
@@ -728,9 +771,15 @@ export default function HomePage() {
           </div>
         )}
 
+        {errorMessage && !hasSubmitted && (
+          <p className="mt-4 rounded-md border border-destructive/30 bg-destructive/10 px-3 py-2 text-sm text-destructive">
+            {errorMessage}
+          </p>
+        )}
+
         <div className="mt-6 flex flex-col-reverse gap-3 border-t pt-5 sm:flex-row sm:items-center sm:justify-between">
           <Button
-            disabled={currentStep === 0}
+            disabled={currentStep === 0 || isLoading}
             onClick={goBack}
             type="button"
             variant="outline"
@@ -740,16 +789,16 @@ export default function HomePage() {
           </Button>
 
           {currentStep < 3 && canContinue && (
-            <Button onClick={goNext} type="button">
+            <Button disabled={isLoading} onClick={goNext} type="button">
               Next
               <ArrowRight className="size-4" />
             </Button>
           )}
 
           {currentStep === 3 && canSubmit && (
-            <Button onClick={submit} type="button">
-              Get Recommendation
-              <ArrowRight className="size-4" />
+            <Button disabled={isLoading} onClick={submit} type="button">
+              {isLoading ? "Getting recommendations..." : "Get Recommendation"}
+              {!isLoading && <ArrowRight className="size-4" />}
             </Button>
           )}
         </div>
